@@ -1,0 +1,68 @@
+
+Строчка для проставки данного значения для совместимости с IE и использования последних спецификаций в NGINX
+server {
+  #...
+  add_header X-UA-Compatible "IE=Edge,chrome=1";
+}
+
+----------------------------------------------------------------------------------------------
+
+Теги Open Graph:
+og:image - Рекомендуемый размер не менее 1200х630 пикселей для наилучшего отображения на устройствах с большим разрешением экрана. Для нормального отображения поста с изображения должно быть не менее 600х315 пикселей.
+Чтобы края картинки не обрезались в посте, старайтесь придерживаться соотношения сторон в картинке 1,91:1
+---
+og:type:
+по умолчанию: company
+article - статья,
+business.business - предприятие, где есть место, часы работы и контакты
+product - продукт,товар
+product.group - группа элементов продукта
+product.item - элемент продукта
+---
+<meta property="og:video" content="http://example.com/movie.swf" />
+<meta property="og:video:secure_url" content="https://secure.example.com/movie.swf" />
+<meta property="og:video:type" content="application/x-shockwave-flash" />
+<meta property="og:video:width" content="400" />
+<meta property="og:video:height" content="300" />
+добавляем опциональный тег, если на странице есть видео, собственно в содержимом ссылка на видео.
+---
+https://developers.facebook.com/tools/debug/sharing/ - отладчик перепостов для OG
+
+Удобное расширения для предпросмотра поста в соц. сетях.
+https://chrome.google.com/webstore/detail/open-graph-preview/ehaigphokkgebnmdiicabhjhddkaekgh?hl=ru
+
+Очистка кэша в VK
+https://vk.com/dev/pages.clearCache
+
+----------------------------------------------------------------------------------------------
+http://www.ravelrumba.com/blog/static-cookieless-domain/ Домен без куки
+
+
+
+-----------------------------------
+OG для твиттера
+Карта Twitter можно найти https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
+
+Я добавляю следующие теги
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@YourAccount">
+<meta name="twitter:creator" content="@YourAccount">
+<meta name="twitter:title" content="Title of your page">
+<meta name="twitter:url" content="URL of your page">
+<meta name="twitter:description" content="Your description here">
+<meta name="twitter:image:src" content="URL of image">
+Я обнаружил, что многие пользователи делают изображения размером 1300 пикселей на 650 пикселей и jpg/png.
+
+После добавления всех тегов они должны быть проверены https://cards-dev.twitter.com/validator
+------------------------------------
+meta name="thumbnail"  этот тег может быть использован поисковиками для вывода превьюшки в поиске
+
+Не забыть про PageMap
+
+
+https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85)
+настройка XML для иконок майкрософта
+
+
+http://qaru.site/questions/1275552/favicon-standard-2018-svg-ico-png-and-dimensions полезная статья
