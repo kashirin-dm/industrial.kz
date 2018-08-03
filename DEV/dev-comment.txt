@@ -28,32 +28,6 @@ https://vk.com/dev/pages.clearCache
 ----------------------------------------------------------------------------------------------
 http://www.ravelrumba.com/blog/static-cookieless-domain/ Домен без куки
 
-
-
------------------------------------
-OG для твиттера
-Карта Twitter можно найти https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
-
-Я добавляю следующие теги
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@YourAccount">
-<meta name="twitter:creator" content="@YourAccount">
-<meta name="twitter:title" content="Title of your page">
-<meta name="twitter:url" content="URL of your page">
-<meta name="twitter:description" content="Your description here">
-<meta name="twitter:image:src" content="URL of image">
-Я обнаружил, что многие пользователи делают изображения размером 1300 пикселей на 650 пикселей и jpg/png.
-
-После добавления всех тегов они должны быть проверены https://cards-dev.twitter.com/validator
 ------------------------------------
-meta name="thumbnail"  этот тег может быть использован поисковиками для вывода превьюшки в поиске
 
 Не забыть про PageMap
-
-
-https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85)
-настройка XML для иконок майкрософта
-
-
-http://qaru.site/questions/1275552/favicon-standard-2018-svg-ico-png-and-dimensions полезная статья

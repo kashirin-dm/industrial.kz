@@ -1,6 +1,39 @@
+~~~ HTML5 и движок:
 Не может быть использовано на нашем сервере:
 Строчка для проставки данного значения для совместимости с IE и использования последних спецификаций в NGINX
+Данная строка указывает, что IE должен запускать последнюю версию движка для лучшей поддержки HTML5
+Её можно указать в HTML либо на сервере.
+
 server {
   #...
-  add_header X-UA-Compatible "IE=Edge,chrome=1";
+  add_header X-UA-Compatible "IE=Edge";
 }
+--------------------------------------------------------------------------------
+
+~~~ ИКОНКИ:
+https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85)
+Настройка XML для плиток Microsoft
+
+http://qaru.site/questions/1275552/favicon-standard-2018-svg-ico-png-and-dimensions полезная статья
+--------------------------------------------------------------------------------
+
+~~~ МИКРОРАЗМЕТКА:
+meta name="thumbnail"  этот тег может быть использован поисковиками для вывода превьюшки в поиске
+в частности гугл.
+
+Реализовал с доработками.
+OG для твиттера
+Карта Twitter можно найти https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
+
+Я добавляю следующие теги
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@YourAccount">
+<meta name="twitter:creator" content="@YourAccount">
+<meta name="twitter:title" content="Title of your page">
+<meta name="twitter:url" content="URL of your page">
+<meta name="twitter:description" content="Your description here">
+<meta name="twitter:image:src" content="URL of image">
+Я обнаружил, что многие пользователи делают изображения размером 1300 пикселей на 650 пикселей и jpg/png.
+
+После добавления всех тегов они должны быть проверены https://cards-dev.twitter.com/validator
