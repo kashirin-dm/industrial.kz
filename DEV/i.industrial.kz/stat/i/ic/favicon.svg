@@ -1,0 +1,20 @@
+<svg width="146" height="146" xmlns="http://www.w3.org/2000/svg">
+ <style>.st0{fill:#1d73bf}</style>
+
+ <g>
+  <title>bg</title>
+  <rect x="-1" y="-1" width="148" height="148" id="canv_bg" fill="none"/>
+ </g>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="148" width="148" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>ind logo</title>
+  <g id="svg_2">
+   <path class="st0" d="m72.9,121.2l-60.5,-60.6l-12.4,12.3l72.9,73l73,-73l-12.4,-12.3l-60.6,60.6z" id="svg_3"/>
+   <path class="st0" d="m36.5,36.4l-12.8,12.8l49.2,49.2l49.3,-49.2l-12.8,-12.8l-36.5,36.5l-36.4,-36.5z" id="svg_4"/>
+   <path transform="rotate(-45.000999450683594 72.94999694824219,25.059000015258786) " class="st0" d="m55.2,7.3l35.4,0l0,35.4l-35.4,0l0,-35.4z" id="svg_5"/>
+  </g>
+ </g>
+</svg>
