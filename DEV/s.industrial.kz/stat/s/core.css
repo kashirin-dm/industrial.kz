@@ -21,7 +21,7 @@ time, mark, audio, video {
 }
 
 body {
-    line-height:1;
+    line-height:1.75;
 }
 
 article,aside,details,figcaption,figure,
@@ -121,6 +121,7 @@ input, select {
 }
 body {
     font: 400 18px 'Circe', sans-serif;
+    color: #000;
     -webkit-font-smoothing: antialiased;
 }
 img {width:100%}
@@ -134,48 +135,71 @@ img {width:100%}
     display: grid;
     position: fixed;
     width: 100%;
-    grid-template-columns: 217px 1fr auto auto;
+    grid-template-columns: auto 1fr auto auto;
     grid-template-rows: 60px;
-    background:rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+    transition: background-color .2s ease-in-out;
 }
+
 #dsk-top-menu .logo {
-    max-width: 137px;
-    margin: 10px 40px
+    width: 137px;
+    padding: 10px 40px;
 }
+#dsk-top-menu .logo:hover {opacity: 0.7}
+#dsk-top-menu .logo:active {opacity: 0.5}
 
 #dsk-top-menu nav {
-    background:#217a1e;
     justify-self: end;
+    line-height: 60px;
+    font-weight:700;
 }
+#dsk-top-menu nav ul li {
+    text-align:right;
+    display:inline;
+    padding:0 10px;
+}
+#dsk-top-menu nav ul li a {color: #000;}
+#dsk-top-menu nav ul li a:hover {
+    color: #cd3331;
+    transition: all .2s ease-in-out;
+}
+#dsk-top-menu nav ul li a:active {color: #8a2221;}
 
-#dsk-top-menu nav ul li{
-        text-align:right;
-        display:inline;
+#dsk-top-menu div {
+    line-height: 60px;
+    padding:0 20px 0 30px;
 }
+#dsk-top-menu div a{color:#000;}
+#dsk-top-menu div a:active{color:#417d00;}
 
 #dsk-top-menu .callback {
     max-width: 198px;
     background:#cd3331;
-    margin: 10px 40px;
+    margin: 10px 40px 10px 20px;
     padding: 0 30px;
     border-radius: 4px;
     font-size:77.78%;
+    font-weight:700;
     white-space:nowrap;
     text-transform: uppercase;
     line-height: 40px;
-    font-weight:700;
     color:#fff;
 }
-
-#dsk-top-menu .callback:active, #dsk-top-menu .callback:hover {
+#dsk-top-menu .callback:hover {
     background:#295776;
     transition: background-color .2s ease-in-out;
 }
+#dsk-top-menu .callback:active {
+    background:#18374d;
+    color:#e1f3ff;
+}
+/* END Top Menu Desktop*/
 
 #dsk-video {
-
+    background: url(../../../i.industrial.kz/stat/i/main_cover.jpg) no-repeat center;
+    background-size: cover;
     height: 100vh;
-    background: #cd3331;
+
     text-align: center;
     padding:40px;
 }
