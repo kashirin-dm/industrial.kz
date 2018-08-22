@@ -1,0 +1,223 @@
+/* ~~~~~~~~~~~~~~~~~~~~~ RESET CSS ~~~~~~~~~~~~~~~~~~~~~ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~ END RESET CSS ~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~ GLOBAL STYLE ~~~~~~~~~~~~~~~~~~~~~ */
+@font-face {
+  font-family: 'Circe';
+  src: url('../f/circe-r.eot');
+  src: url('../f/circe-r.woff2') format('woff2'),
+       url('../f/circe-r.woff') format('woff'),
+       url('../f/circe-r.ttf') format('truetype'),
+       url('../f/circe-r.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url('../f/circe-b.eot');
+  src: url('../f/circe-b.woff2') format('woff2'),
+       url('../f/circe-b.woff') format('woff'),
+       url('../f/circe-b.ttf') format('truetype'),
+       url('../f/circe-b.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+    font: 400 18px 'Circe', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+img {width:100%}
+.grid{display: grid;}
+.f0 {background: #f0f0f0}
+
+/* ~~~~~~~~~~~~~~~~~~~~~ END GLOBAL STYLE ~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Top Menu Desktop*/
+#dsk-top-menu {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    grid-template-columns: 217px 1fr auto auto;
+    grid-template-rows: 60px;
+    background:rgba(255, 255, 255, 0.5);
+}
+#dsk-top-menu .logo {
+    max-width: 137px;
+    margin: 10px 40px
+}
+
+#dsk-top-menu nav {
+    background:#217a1e;
+    justify-self: end;
+}
+
+#dsk-top-menu nav ul li{
+        text-align:right;
+        display:inline;
+}
+
+#dsk-top-menu .callback {
+    max-width: 198px;
+    background:#cd3331;
+    margin: 10px 40px;
+    padding: 0 30px;
+    border-radius: 4px;
+    font-size:77.78%;
+    white-space:nowrap;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight:700;
+    color:#fff;
+}
+
+#dsk-top-menu .callback:active, #dsk-top-menu .callback:hover {
+    background:#295776;
+    transition: background-color .2s ease-in-out;
+}
+
+#dsk-video {
+
+    height: 100vh;
+    background: #cd3331;
+    text-align: center;
+    padding:40px;
+}
+main {
+    background: #f0f0f0;
+}
+
+main .catalog-button {
+    height: 115px;
+    text-align: center;
+    padding:40px;
+}
+main .mainpage-text {
+    max-width: 70%;
+    justify-self: center;
+}
+
+main .main-clients {
+    height: 100vh;
+    background: #522;
+    text-align: center;
+    padding:40px;
+}
+
+.map-contacts {
+    grid-template-columns:1fr 1fr;
+    height: 388px;
+    text-align: center;
+}
+
+.map-contacts .map{
+    background: #808080;
+    padding:40px;
+}
+
+.map-contacts .contacts{
+    padding:40px;
+}
+
+footer {
+    background:#111;
+    padding-top:75px;
+    padding-bottom: 90px;
+    -osx-font-smoothing: grayscale;
+}
