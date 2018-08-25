@@ -76,6 +76,28 @@ input, select {vertical-align:middle;}
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Circe Rounded';
+  src: url('../f/circerounded-r.eot');
+  src: url('../f/circerounded-r.woff2') format('woff2'),
+       url('../f/circerounded-r.woff') format('woff'),
+       url('../f/circerounded-r.ttf') format('truetype'),
+       url('../f/circerounded-r.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe Rounded';
+  src: url('../f/circerounded-alt-b.eot');
+  src: url('../f/circerounded-alt-b.woff2') format('woff2'),
+       url('../f/circerounded-rcircerounded-alt-b.woff') format('woff'),
+       url('../f/circerounded-alt-b.ttf') format('truetype'),
+       url('../f/circerounded-alt-b.eot?#iefix') format('embedded-opentype');
+   font-weight: 700;
+   font-style: normal;
+}
+
 body {
     font: 400 18px 'Circe', sans-serif;
     color: #000;
@@ -91,13 +113,15 @@ img {width:100%}
     position: relative;
 }
 
-h1,h2,h3,h4,h5,h6 {font-weight: 400;}
+h1,h2,h3 {font-family:'Circe Rounded', sans-serif; font-weight: 400;}
+b, strong {font-weight: 700;}
 input, button, textarea {outline: 0;}
 
 /* ~~~~~~~~~~~~~~~~~~~~~ END GLOBAL STYLE ~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Top Menu Desktop*/
+/* Top Menu Desktop */
 #dsk-top-menu {
+    font-family:'Circe Rounded', sans-serif;
     display: grid;
     position: fixed;
     width: 100%;
@@ -133,6 +157,7 @@ input, button, textarea {outline: 0;}
 #dsk-top-menu nav ul li a {color: #000;}
 #dsk-top-menu nav ul li a:hover {
     color: #cd3331;
+    text-decoration: underline;
     transition: all .2s ease-in-out;
 }
 #dsk-top-menu nav ul li a:active {color: #8a2221;}
@@ -148,7 +173,7 @@ input, button, textarea {outline: 0;}
 
 #dsk-top-menu .callback {
     max-width: 198px;
-    background:#cd3331;
+    background:#44bb6e;
     margin: 10px 40px 10px 20px;
     padding: 0 30px;
     border-radius: 4px;
@@ -167,9 +192,12 @@ input, button, textarea {outline: 0;}
     background: #18374d;
     color: #e1f3ff;
 }
-/* END Top Menu Desktop*/
+/* END Top Menu Desktop */
 
-/* Video Section Desktop*/
+
+
+
+/* Video Section Desktop */
 #dsk-video::before {
     content: '';
     display: block;
@@ -200,25 +228,20 @@ input, button, textarea {outline: 0;}
     bottom: 0;
     margin: auto;
 }
-
 #dsk-video > .container {
     grid-template-columns: 1fr;
     align-content: center;
     height: 100vh;
     z-index: 3;
 }
-
-
 #dsk-video > .container h1 {
     font-size: 233.33%;
     line-height: 1;
 }
-
 #dsk-video > .container p {
     font-size: 168%;
     margin-bottom: 40px;
 }
-
 #dsk-video > .container form input, #dsk-video > .container form button {
     margin: 10px 10px;
 }
@@ -229,15 +252,14 @@ input, button, textarea {outline: 0;}
     padding: 0 20px;
     font-size: 88.89%;
     background: none;
-    border: 2px solid #0074c3;
+    border: 2px solid #1d73bf;
     border-radius: 4px;
-    font: 400 88.89% 'Circe', sans-serif;
-
+    font: 400 88.89% 'Circe Rounded', sans-serif;
 }
 #dsk-video > .container form input::placeholder {
     content: '';
     color:#000;
-    font: 400 100% 'Circe', sans-serif;
+    font: 400 100% 'Circe Rounded', sans-serif;
 }
 #dsk-video > .container form input:focus {
     background: rgba(255, 255, 255, 0.3);
@@ -245,72 +267,188 @@ input, button, textarea {outline: 0;}
 #dsk-video > .container form input:focus::placeholder {
     opacity: .3;
 }
-
 #dsk-video > .container form button {
-    font: 700 88.89% 'Circe', sans-serif;
+    font: 700 88.89% 'Circe Rounded', sans-serif;
     width: 100%;
     max-width: 130px;
     height: 56px;
     padding: 0 40px;
     white-space: nowrap;
-    background-color: #0074c3;
+    background-color: #1d73bf;
     color:#fff;
     border: none;
     border-radius: 4px;
 }
-
 #dsk-video > .container form button:hover {
     background: #295776;
     transition: background-color .2s ease-in-out;
     cursor: pointer;
 }
-
 #dsk-video > .container form button:active {
     background: #18374d;
     color: #e1f3ff;
 }
-
 #dsk-video > .container form p {
     font-size: 77.78%;
     margin-top: 10px;
+    font-weight: 700;
 }
+/* END Video Section Desktop */
+
+
 
 main {
     background: #f0f0f0;
     grid-template-columns: 1fr;
 
 }
+
+
+
+/* Catalog Button Desktop */
 main .catalog-button {
-    height: 115px;
     text-align: center;
     padding:40px;
 }
 main .catalog-button a {
     display: inline-block;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='#0073c3' viewBox='0 0 90 90'><path class='st0' d='M80.6 90V16.4L64.2 0H10.6v90m55-81.5l6.5 6.5h-6.5V8.5zM15.6 85V5h45v15h15v65'></path><path d='M28.2 38h34.7v5H28.2zM28.2 50h34.7v5H28.2z'></path></svg>")  no-repeat left top;
-    font-size: 133.33%;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='#1d73bf' viewBox='0 0 90 90'><path class='st0' d='M80.6 90V16.4L64.2 0H10.6v90m55-81.5l6.5 6.5h-6.5V8.5zM15.6 85V5h45v15h15v65'></path><path d='M28.2 38h34.7v5H28.2zM28.2 50h34.7v5H28.2z'></path></svg>")  no-repeat left top;
+    font: 400 133.33% 'Circe Rounded', sans-serif;
     color:#000;
     padding-left: 45px;
     padding-top: 4px;
 }
-
 main .catalog-button a:hover{
-    color:#0073c3;
+    color:#1d73bf;
     text-decoration: underline;
     transition: all .2s ease-out;
 }
 
-main .mainpage-text {
-    max-width: 70%;
-    justify-self: center;
+main .catalog-button a:active{
+    color:#18374d;
+    text-decoration: underline;
+    transition: all .2s ease-out;
 }
 
+main .dark-bg-color a{color:#fff;}
+main .dark-bg-color a:hover{color:#fff;}
+main .dark-bg-color a:active{color:#b0b0b0;}
+/* END Catalog Button Desktop */
+
+
+
+/* Main Article Desktop */
+main .mainpage-text h2 {
+    font-size: 155.56%;
+    line-height: 130%;
+    text-align: center;
+    padding: 40px 20px;
+}
+main .mainpage-text .article-content{
+    column-count: 2;
+    column-gap: 60px;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+main .mainpage-text .article-content h3{
+    font-size: 120%;
+    padding: 30px 0 15px;
+}
+main .mainpage-text .article-content h4{
+    font-size: 100%;
+    padding: 0 0 5px;
+    font-weight: 700;
+}
+main .mainpage-text .article-content p{
+    padding-bottom: 20px;
+    text-indent: 6%;
+}
+main .mainpage-text .article-content p:first-child{
+    text-indent: 0;
+}
+main .mainpage-text .article-content ul > li{
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+main .mainpage-text .article-content ul > li:before {
+    content: '\25c6 \20';
+    color: #1d73bf;margin-left: -3%;
+}
+main .mainpage-text .article-content a{
+    color: #1d73bf;
+    text-decoration: underline;
+}
+main .mainpage-text .article-content a:hover{
+    color: #295776;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+main .mainpage-text .article-content a:active{
+    color: #18374d;
+    text-decoration: none;
+}
+/* END Main Article Desktop */
+
+
+
+/* Main Company Block Desktop */
 main .main-clients {
     height: 100vh;
-    background: #522;
+    align-content:center;
     text-align: center;
     padding:40px;
+    color:#fff;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+main .main-clients .container{
+    width: 60%;
+}
+main .main-clients h2{
+    font-size: 233.33%;
+    line-height: 1;
+    padding: 10px;
+}
+main .main-clients p{
+    font: 400 133.33% 'Circe Rounded', sans-serif;
+    padding: 10px;
+}
+.mainpage-dark-bg {background: #000;}
+/* END Main Company Block Desktop */
+
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;text-align: center; vertical-align: middle;
+  padding: 100vh 0;
+
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--base *{
+position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.parallax__layer--back {
+    background: url(../../../i.industrial.kz/stat/i/main_cover.jpg);
+  transform: translateZ(-1px) scale(2);
+}
+
+
+
+
+
+
+
+
 
 .map-contacts {
     grid-template-columns:1fr 1fr;
