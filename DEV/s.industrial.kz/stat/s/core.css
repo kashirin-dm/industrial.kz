@@ -208,9 +208,10 @@ input, button, textarea {outline: 0;}
     width: 100%;
     background: rgba(255, 255, 255, 0.6);
     z-index: 1;
+    pointer-events: none;
 }
 #dsk-video {
-    background: url(../../../i.industrial.kz/stat/i/main_cover.jpg) no-repeat center;
+    background: url(../../../i.industrial.kz/stat/i/main_cover.jpg) center no-repeat fixed #000;
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -219,9 +220,7 @@ input, button, textarea {outline: 0;}
     position: relative;
 }
 #dsk-video video {
-    position: absolute;
-    background-size: cover;
-    background-position: center;
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
@@ -296,9 +295,8 @@ input, button, textarea {outline: 0;}
 /* END Video Section Desktop */
 
 
-
+.wrapper{background: #f0f0f0; z-index: 1}
 main {
-    background: #f0f0f0;
     grid-template-columns: 1fr;
 
 }
@@ -344,6 +342,9 @@ main .mainpage-text h2 {
     text-align: center;
     padding: 40px 20px;
 }
+main .container{
+    width: 70%;
+}
 main .mainpage-text .article-content{
     column-count: 2;
     column-gap: 60px;
@@ -352,7 +353,7 @@ main .mainpage-text .article-content{
 }
 main .mainpage-text .article-content h3{
     font-size: 120%;
-    padding: 30px 0 15px;
+    padding: 30px 0 15px; text-align: center;
 }
 main .mainpage-text .article-content h4{
     font-size: 100%;
@@ -372,7 +373,7 @@ main .mainpage-text .article-content ul > li{
 }
 main .mainpage-text .article-content ul > li:before {
     content: '\25c6 \20';
-    color: #1d73bf;margin-left: -3%;
+    color: #1d73bf;margin-left: -4%;
 }
 main .mainpage-text .article-content a{
     color: #1d73bf;
@@ -392,18 +393,34 @@ main .mainpage-text .article-content a:active{
 
 
 /* Main Company Block Desktop */
+main .main-clients::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,1));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,1));
+    background: -o-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,1));
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,1));
+    background: linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,1));
+    z-index: 1;
+}
 main .main-clients {
-    height: 100vh;
-    align-content:center;
+    position: relative;
+    height: 70vh;
+    align-content: center;
     text-align: center;
     padding:40px;
     color:#fff;
-    perspective: 1px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    background: url(../../../i.industrial.kz/stat/i/main_subcover.jpg) center no-repeat fixed #000;
+    overflow: hidden;
 }
 main .main-clients .container{
     width: 60%;
+    z-index: 3;
 }
 main .main-clients h2{
     font-size: 233.33%;
@@ -414,43 +431,18 @@ main .main-clients p{
     font: 400 133.33% 'Circe Rounded', sans-serif;
     padding: 10px;
 }
+
+main .main-clients .logos{
+    grid-template-columns: repeat(5,1fr); background-color: red; padding: 10px
+}
+main .main-clients .logos
 .mainpage-dark-bg {background: #000;}
 /* END Main Company Block Desktop */
 
 
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;text-align: center; vertical-align: middle;
-  padding: 100vh 0;
-
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--base *{
-position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-.parallax__layer--back {
-    background: url(../../../i.industrial.kz/stat/i/main_cover.jpg);
-  transform: translateZ(-1px) scale(2);
-}
 
 
-
-
-
-
-
-
-
-.map-contacts {
+.map-contacts { z-index: 1; position: relative;
     grid-template-columns:1fr 1fr;
     height: 388px;
     text-align: center;
@@ -466,6 +458,7 @@ position: absolute;
 }
 
 footer {
+    z-index: 1; position: relative;
     background:#111;
     padding-top:75px;
     padding-bottom: 90px;
