@@ -328,7 +328,7 @@ main .catalog-button a:active{
     text-decoration: underline;
     transition: all .2s ease-out;
 }
-
+main .mainpage-dark-bg {background: #000;}
 main .dark-bg-color a{color:#fff;}
 main .dark-bg-color a:hover{color:#fff;}
 main .dark-bg-color a:active{color:#b0b0b0;}
@@ -434,9 +434,41 @@ main .main-clients p{
 }
 
 main .main-clients .logos{
-    grid-template-columns: repeat(5,1fr); background-color: red; padding: 10px
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:10px;
+    object-fit: none;
+    text-align: center;
+    padding:30px 10px;
 }
-main .main-clients .logos
+main .main-clients .logos>*{
+    object-fit: none;
+    justify-self:center;
+    align-self:center;
+    height: 54px;
+    padding:10px;
+}
+main .main-clients .logos>:nth-child(1){
+  object-position: -2px -2px;
+  width: 191px;
+}
+main .main-clients .logos>:nth-child(2){
+  object-position: -195px -2px;
+  width: 89px;
+}
+main .main-clients .logos>:nth-child(3){
+  object-position: -2px -58px;
+  width: 134px;
+}
+main .main-clients .logos>:nth-child(4){
+  object-position: -138px -58px;
+  width: 128px;
+}
+main .main-clients .logos>:nth-child(5){
+  object-position: -268px -58px;
+  width: 163px;
+}
+
+
 .mainpage-dark-bg {background: #000;}
 /* END Main Company Block Desktop */
 
