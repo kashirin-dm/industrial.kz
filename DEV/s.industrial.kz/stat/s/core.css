@@ -30,8 +30,15 @@ a {
     vertical-align:baseline;
     background:transparent;
     text-decoration: none;
+    color: #1d73bf;
 }
-
+a:hover{
+    color: #295776;
+    text-decoration: underline;
+}
+a:active{
+    color: #18374d;
+}
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;
@@ -56,7 +63,7 @@ input, select {vertical-align:middle;}
 
 /* ~~~~~~~~~~~~~~~~~~~~~ GLOBAL STYLE ~~~~~~~~~~~~~~~~~~~~~ */
 @font-face {
-  font-family: 'Circe';
+  font-family: Circe;
   src: url('../f/circe-r.eot');
   src: url('../f/circe-r.woff2') format('woff2'),
        url('../f/circe-r.woff') format('woff'),
@@ -67,7 +74,7 @@ input, select {vertical-align:middle;}
 }
 
 @font-face {
-  font-family: 'Circe';
+  font-family: Circe;
   src: url('../f/circe-b.eot');
   src: url('../f/circe-b.woff2') format('woff2'),
        url('../f/circe-b.woff') format('woff'),
@@ -99,7 +106,7 @@ input, select {vertical-align:middle;}
 }
 
 body {
-    font: 400 18px 'Circe', sans-serif;
+    font: 400 18px Circe, sans-serif;
     color: #000;
     -webkit-font-smoothing: antialiased;
 }
@@ -114,7 +121,7 @@ img {width:100%}
     position: relative;
 }
 
-h1,h2,h3 {font-family:'Circe Rounded', sans-serif; font-weight: 400;}
+h1,h2,h3 {font: 400 18px 'Circe Rounded', sans-serif;}
 b, strong {font-weight: 700;}
 input, button, textarea {outline: 0;}
 
@@ -158,8 +165,6 @@ input, button, textarea {outline: 0;}
 #dsk-top-menu nav ul li a {color: #000;}
 #dsk-top-menu nav ul li a:hover {
     color: #cd3331;
-    text-decoration: underline;
-    transition: all .2s ease-in-out;
 }
 #dsk-top-menu nav ul li a:active {color: #8a2221;}
 
@@ -170,6 +175,7 @@ input, button, textarea {outline: 0;}
     font-size: 90%;
 }
 #dsk-top-menu div a{color: #000;}
+#dsk-top-menu div a:hover{text-decoration: none;}
 #dsk-top-menu div a:active{color: #417d00;}
 
 #dsk-top-menu .callback {
@@ -187,7 +193,7 @@ input, button, textarea {outline: 0;}
 }
 #dsk-top-menu .callback:hover {
     background: #295776;
-    transition: background-color .2s ease-in-out;
+    text-decoration: none;
 }
 #dsk-top-menu .callback:active {
     background: #18374d;
@@ -212,7 +218,7 @@ input, button, textarea {outline: 0;}
     pointer-events: none;
 }
 #dsk-video {
-    background: url(../../../i.industrial.kz/stat/i/main_cover.jpg) center no-repeat fixed #000;
+    background: url(../../../i.industrial.kz/stat/i/main_cover.jpg) center no-repeat #000;
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -221,7 +227,7 @@ input, button, textarea {outline: 0;}
     position: relative;
 }
 #dsk-video video {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
@@ -281,7 +287,6 @@ input, button, textarea {outline: 0;}
 }
 #dsk-video > .container form button:hover {
     background: #295776;
-    transition: background-color .2s ease-in-out;
     cursor: pointer;
 }
 #dsk-video > .container form button:active {
@@ -296,7 +301,10 @@ input, button, textarea {outline: 0;}
 /* END Video Section Desktop */
 
 
-.wrapper{background: #f0f0f0; z-index: 1}
+.wrapper{
+    background: #f0f0f0;
+    z-index: 1
+}
 main {
     grid-template-columns: 1fr;
 
@@ -319,18 +327,12 @@ main .catalog-button a {
 }
 main .catalog-button a:hover{
     color:#1d73bf;
-    text-decoration: underline;
-    transition: all .2s ease-out;
 }
-
 main .catalog-button a:active{
     color:#18374d;
-    text-decoration: underline;
-    transition: all .2s ease-out;
 }
 main .mainpage-dark-bg {background: #000;}
-main .dark-bg-color a{color:#fff;}
-main .dark-bg-color a:hover{color:#fff;}
+main .dark-bg-color a, main .dark-bg-color a:hover{color:#fff;}
 main .dark-bg-color a:active{color:#b0b0b0;}
 /* END Catalog Button Desktop */
 
@@ -375,19 +377,6 @@ main .mainpage-text .article-content ul > li{
 main .mainpage-text .article-content ul > li:before {
     content: '\25c6 \20';
     color: #1d73bf;margin-left: -4%;
-}
-main .mainpage-text .article-content a{
-    color: #1d73bf;
-    text-decoration: underline;
-}
-main .mainpage-text .article-content a:hover{
-    color: #295776;
-    text-decoration: none;
-    transition: all .2s ease-out;
-}
-main .mainpage-text .article-content a:active{
-    color: #18374d;
-    text-decoration: none;
 }
 /* END Main Article Desktop */
 
@@ -475,25 +464,65 @@ main .main-clients .logos>:nth-child(5){
 
 
 
-.map-contacts { z-index: 1; position: relative;
-    grid-template-columns:1fr 1fr;
-    height: 388px;
-    text-align: center;
+.map-contacts {
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    z-index: 1;
+}
+.map-contacts> .contacts {
+    justify-self: center;
+    align-self: center;
+}
+.map-contacts .contacts>*{
+    padding: 5%;
+}
+.map-contacts .contacts h2{
+    font-size: 150%;
+}
+.map-contacts .contacts p a{
+    font-size: 133.33%;
 }
 
-.map-contacts .map{
-    background: #808080;
-    padding:40px;
+.map-contacts .contacts p a:first-child{
+    color: #000;
+}
+.map-contacts .contacts p a:first-child:hover{
+    text-decoration: none;
+}
+.map-contacts .contacts p a:first-child:active{
+    color: #417d00;
 }
 
-.map-contacts .contacts{
-    padding:40px;
-}
+
 
 footer {
-    z-index: 1; position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
     background:#111;
     padding-top:75px;
     padding-bottom: 90px;
+    color:#fff;
     -osx-font-smoothing: grayscale;
+    z-index: 1;
+}
+footer .catalog-button {grid-column:1/5;}
+footer h3 {
+    font-size: 88.89%;
+    text-transform: uppercase;
+    color:#a1a1a1;
+    margin-bottom:10px;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li {
+    font-size: 77.78%;
+    line-height: 2.4;
+}
+footer a, footer a:hover{
+    color:#fff;
+}
+footer a:active {
+    color:#b0b0b0;
 }
