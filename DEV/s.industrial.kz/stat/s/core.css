@@ -228,6 +228,7 @@ input, button, textarea {outline: 0;}
 }
 #dsk-video video {
     position: absolute;
+    width: 100%;
     left: 0;
     top: 0;
     right: 0;
@@ -313,27 +314,29 @@ main {
 
 
 /* Catalog Button Desktop */
-main .catalog-button {
+.catalog-button {
     text-align: center;
-    padding:40px;
+    padding:40px 10px;
+    z-index: 1;
 }
-main .catalog-button a {
+.catalog-button a {
     display: inline-block;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='#1d73bf' viewBox='0 0 90 90'><path class='st0' d='M80.6 90V16.4L64.2 0H10.6v90m55-81.5l6.5 6.5h-6.5V8.5zM15.6 85V5h45v15h15v65'></path><path d='M28.2 38h34.7v5H28.2zM28.2 50h34.7v5H28.2z'></path></svg>")  no-repeat left top;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%231d73bf' viewBox='0 0 90 90'><path class='st0' d='M80.6 90V16.4L64.2 0H10.6v90m55-81.5l6.5 6.5h-6.5V8.5zM15.6 85V5h45v15h15v65'></path><path d='M28.2 38h34.7v5H28.2zM28.2 50h34.7v5H28.2z'></path></svg>")  no-repeat left top;
     font: 400 133.33% 'Circe Rounded', sans-serif;
     color:#000;
     padding-left: 45px;
     padding-top: 4px;
 }
-main .catalog-button a:hover{
+.catalog-button a:hover{
     color:#1d73bf;
 }
-main .catalog-button a:active{
+.catalog-button a:active{
     color:#18374d;
 }
-main .mainpage-dark-bg {background: #000;}
-main .dark-bg-color a, main .dark-bg-color a:hover{color:#fff;}
-main .dark-bg-color a:active{color:#b0b0b0;}
+.cat-butt-dark-company {padding:30px 10px 0;}
+.cat-butt-foot {padding:60px 10px;}
+.cat-butt-dark-color a, .cat-butt-dark-color a:hover{color:#fff;}
+.cat-butt-dark-color a:active{color:#b0b0b0;}
 /* END Catalog Button Desktop */
 
 
@@ -500,7 +503,6 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     position: relative;
     background:#111;
-    padding-top:75px;
     padding-bottom: 90px;
     color:#fff;
     -osx-font-smoothing: grayscale;
@@ -525,4 +527,14 @@ footer a, footer a:hover{
 }
 footer a:active {
     color:#b0b0b0;
+}
+footer img{
+    display: inline-block;
+    width: 137px;
+    padding: 0 40px;
+}
+footer p{
+    font-size: 60%;
+    color: #a1a1a1;
+    padding: 10px 40px;
 }
