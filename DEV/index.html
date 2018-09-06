@@ -78,8 +78,7 @@
     <link rel="stylesheet" href="s.industrial.kz/stat/s/m.css"><!-- ~~~MOBILE INCLUDE~~~ -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/d.css"><!-- ~~~DESKTOP INCLUDE~~~ -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="s.industrial.kz/stat/s/core.js"></script>
+
 </head>
 <body>
     <!-- GTM (noscript) -->
@@ -199,9 +198,10 @@
 
     <!-- Contacts -->
     <section class="grid map-contacts f0">
-    <div>
-        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A14642fc842e6fc8d2e8e76aeb966d632fd4b4d3c5221bd83f8bbf0e362cb65ec&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
-    </div>
+        <div class="ymap-container">
+    			<div class="loader loader-default"></div>
+    			<div id="map-yandex"></div>
+    	</div>
     <div class="contacts">
         <h2>ТОО «Industrial Energy JSC»</h2>
         <p>
@@ -257,5 +257,7 @@
             </ul>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="s.industrial.kz/stat/s/core.js"></script>
 </body>
 </html>

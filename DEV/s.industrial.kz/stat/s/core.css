@@ -538,3 +538,127 @@ footer p{
     color: #a1a1a1;
     padding: 10px 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: url('../../../i.industrial.kz/stat/i/yamap.png') #fff9e8 no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#map-yandex {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/*Индикатор загрузки, который показывается до загрузки карты*/
+.loader {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000;
+  transition: opacity .3s ease;
+  opacity: 0;
+  background-color: rgba(29, 115, 191, .3);
+}
+.loader:after,
+.loader:before {
+  box-sizing: border-box;
+}
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  content: '';
+  -webkit-animation: rotation .3s linear infinite;
+          animation: rotation .3s linear infinite;
+
+  border: solid 4px #fff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
