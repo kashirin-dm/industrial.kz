@@ -17,6 +17,7 @@ $(window).scroll(function() {
 });
 
 
+
 // Yandex Map
 //Переменная для включения/отключения индикатора загрузки
 var spinner = $('.ymap-container').children('.loader');

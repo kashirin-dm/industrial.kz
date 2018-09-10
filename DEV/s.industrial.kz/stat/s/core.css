@@ -96,6 +96,7 @@ b, strong {font-weight: 700;}
     position: fixed;
     grid-template-columns: 10% auto 1fr auto auto 10%;
     grid-template-rows: minmax(60px,7vh);
+    column-gap: 1%;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -108,57 +109,71 @@ b, strong {font-weight: 700;}
 }
 #top-menu>* {
     display: inline-grid;
+    position: relative;
 }
-#top-menu>.logo, #top-menu>.logo-img {grid-column: 2/4;}
-.logo, .logo-img{
-    align-self: center;
+
+.top-menu__logo-wrap {
+  grid-column: 2;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
 }
-.logo{
-    height: 100%;
+.top-menu__logo-wrap a{
+  height: 100%;
+  display: contents;
 }
-.logo-img {
+.top-menu__logo-wrap__logo-img {
     min-width: 100px;
-    height: 70%;
+    height: 65%;
 }
-.logo-img:hover {
+.top-menu__logo-wrap__logo-img:hover {
     opacity: 0.7;
     transition: all .2s ease-in-out;
 }
-.logo-img:active {opacity: 0.5}
+.top-menu__logo-wrap__logo-img:active {opacity: 0.5}
 
 #top-menu nav {
-    justify-self: end;
     font-weight:700;
     letter-spacing: -0.5px;
-    text-transform: uppercase;
-    font-size: 80%;
+    font-size: 0.9vw;
+    justify-content: start;
 }
+
+#top-menu nav ul{
+  align-items: center;
+  display: inline;
+}
+
 #top-menu nav ul li {
-    text-align: right;
-    display: inline;
-    padding: 0 10px;
+  display: inline-block;
+  padding: 1% 2%;
 }
-#top-menu nav ul li a {color: #000;}
+#top-menu nav ul li a {color: #000; border-bottom: 1px solid rgba(0, 0, 0, 0.3);}
 #top-menu nav ul li a:hover {
-    color: #cd3331;
+    color: #1d73bf; border-bottom: 1px solid rgba(29, 115, 191, 0.3); text-decoration: none;
 }
 #top-menu nav ul li a:active {color: #8a2221;}
 
-#top-menu .container div {
-    padding: 0 20px 0 30px;
+#top-menu .top-phone {
     letter-spacing: -0.5px;
-    font-size: 90%;
+    font-size: 100%;
+    justify-content: center;
+    padding: 0 7%; text-align: center;
 }
-#top-menu div a{color: #000;}
-#top-menu div a:hover{text-decoration: none;}
-#top-menu div a:active{color: #417d00;}
+#top-menu .top-phone p{
+    letter-spacing: -0.5px;
+    font-size: 70%;
+}
+#top-menu .top-phone a{color: #000;}
+#top-menu .top-phone a:hover{text-decoration: none; color: #417d00;}
+#top-menu .top-phone a:active{color: #18374d;}
 
 #top-menu .callback {
-    grid-column: 6;
-    max-width: 138px;
+    grid-column: 5;
     background:#44bb6e;
+    background-image: url(../../../i.industrial.kz/stat/i/source.gif); background-repeat: no-repeat; background-position: bottom;
     padding: 0 30px;
-    border-radius: 4px;
+    border-radius: 50px;
     font-size:77.78%;
     font-weight: 700;
     white-space: nowrap;
@@ -236,7 +251,7 @@ b, strong {font-weight: 700;}
     font-size: 88.89%;
     background: none;
     border: 2px solid #1d73bf;
-    border-radius: 4px;
+    border-radius: 50px;
     font: 400 88.89% 'Circe Rounded', sans-serif;
 }
 .main-cover > .container form input::placeholder {
@@ -255,12 +270,12 @@ b, strong {font-weight: 700;}
     width: 100%;
     max-width: 130px;
     height: 56px;
-    padding: 0 40px;
     white-space: nowrap;
+    text-transform: uppercase;
     background-color: #1d73bf;
     color:#fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
 }
 .main-cover > .container form button:hover {
     background: #295776;
