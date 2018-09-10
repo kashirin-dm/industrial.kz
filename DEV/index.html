@@ -59,24 +59,13 @@
 
     <!-- GTM -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5BR2CM5');
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5BR2CM5');
     </script>
     <!-- End GTM -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/core.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/m.css"><!-- ~~~MOBILE INCLUDE~~~ -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/d.css"><!-- ~~~DESKTOP INCLUDE~~~ -->
+    <link rel="stylesheet" href="s.industrial.kz/stat/s/media.css">
 
 
 </head>
@@ -87,29 +76,27 @@
     </noscript>
     <!-- End GTM (noscript) -->
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- Header navigation -->
-    <header id="dsk-top-menu">
-      <div class="container grid">
-        <a href="#" class="logo">
-            <img src="i.industrial.kz/stat/i/ind_logo.svg" alt="Логотип INDUSTRIAL" title="Перейти на главную страницу">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Соглашения</a></li>
-                <li><a href="#">Репутация</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a href="tel:+77273565227" title="Позвонить по телефону или Skype">+7 (727) 356-52-27</a>
-        </div>
-        <a href="#" class="callback">Заказать звонок</a>
-        </div>
+    <header id="top-menu" class="grid">
+            <a href="#" class="logo">
+                <img src="i.industrial.kz/stat/i/ind_logo.svg" alt="Логотип INDUSTRIAL" title="Перейти на главную страницу" class="logo-img">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="#">Соглашения</a></li>
+                    <li><a href="#">Репутация</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="tel:+77273565227" title="Позвонить по телефону или Skype">+7 (727) 356-52-27</a>
+            </div>
+            <a href="#" class="callback">Заказать звонок</a>
     </header>
+
     <main class="grid">
         <!-- Video -->
         <section class="main-cover">
