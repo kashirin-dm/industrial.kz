@@ -94,11 +94,11 @@ b, strong {font-weight: 700;}
 #top-menu {
     font-family: 'Circe Rounded', sans-serif;
     position: fixed;
-    grid-template-columns: 10% auto 1fr auto auto 10%;
+    grid-template-columns: 10% auto 1fr minmax(60px,7vh) auto auto 10%;
     grid-template-rows: minmax(60px,7vh);
-    column-gap: 1%;
+    column-gap: 2%;
     align-items: center;
-    width: 100%;
+    width: 98%;
     height: 100%;
     min-height: 60px;
     max-height: 7vh;
@@ -106,6 +106,7 @@ b, strong {font-weight: 700;}
     z-index: 10;
     overflow: hidden;
     transition: background-color .2s ease-in-out;
+    border-radius: 10px; margin-top: .8%; margin-left: 1%;
 }
 #top-menu>* {
     display: inline-grid;
@@ -154,24 +155,36 @@ b, strong {font-weight: 700;}
 }
 #top-menu nav ul li a:active {color: #8a2221;}
 
+#top-menu .whatsapp {
+    background-image: url(../../../i.industrial.kz/stat/i/wsp.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self:end;
+    display: inline-grid;
+    height: 55%;
+    width: 55%;
+}
+
 #top-menu .top-phone {
     letter-spacing: -0.5px;
     font-size: 100%;
     justify-content: center;
-    padding: 0 7%; text-align: center;
+    text-align: center;
+    line-height: 1.2;
 }
 #top-menu .top-phone p{
     letter-spacing: -0.5px;
-    font-size: 70%;
+    font-size: 65%;
+    line-height: 1.2;
+    font-weight: 700;
 }
 #top-menu .top-phone a{color: #000;}
 #top-menu .top-phone a:hover{text-decoration: none; color: #417d00;}
 #top-menu .top-phone a:active{color: #18374d;}
 
 #top-menu .callback {
-    grid-column: 5;
-    background:#44bb6e;
-    background-image: url(../../../i.industrial.kz/stat/i/source.gif); background-repeat: no-repeat; background-position: bottom;
+    grid-column: 6;
+    background:#1d73bf;
     padding: 0 30px;
     border-radius: 50px;
     font-size:77.78%;
@@ -191,7 +204,6 @@ b, strong {font-weight: 700;}
     color: #e1f3ff;
 }
 /* END Top Menu Desktop */
-
 
 
 

@@ -43,7 +43,12 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 1224px) {
-/* Styles */
+    #top-menu {
+        grid-template-columns: 1% auto 1fr minmax(60px,7vh) auto auto 1%;
+    }
+    #top-menu nav {
+        font-size: 1.2vw;
+    }
 }
 
 /* Large screens ----------- */
