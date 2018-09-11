@@ -51,10 +51,26 @@ and (min-width : 1224px) {
     }
 }
 
+/* Full HD screens ----------- */
+@media only screen
+and (min-width : 1600px) {
+  #top-menu {
+      grid-template-columns: 10% auto 1fr minmax(60px,7vh) auto auto 10%;
+  }
+  #top-menu nav {
+      font-size: 0.9vw;
+  }
+}
+
 /* Large screens ----------- */
 @media only screen
 and (min-width : 1824px) {
-/* Styles */
+  #top-menu {
+      grid-template-columns: 10% auto 1fr minmax(60px,7vh) auto auto 10%;
+  }
+  #top-menu nav {
+      font-size: 0.9vw;
+  }
 }
 
 /* iPhone 4 ----------- */
