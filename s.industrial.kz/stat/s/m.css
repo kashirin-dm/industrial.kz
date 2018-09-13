@@ -1,0 +1,14 @@
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #top-menu {
+        grid-template-columns: 0 auto 1fr minmax(60px,7vh) auto auto 0;
+        column-gap: 1%;
+    }
+    #top-menu nav {
+        font-size: 90%;
+    }
+    #top-menu nav ul li:nth-child(2), #top-menu nav ul li:nth-child(3), #top-menu nav ul li:nth-child(4) {
+        display: none;
+    }
+}

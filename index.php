@@ -63,10 +63,27 @@
     </script>
     <!-- End GTM -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/core.css">
-    <link rel="stylesheet" href="s.industrial.kz/stat/s/m.css"><!-- ~~~MOBILE INCLUDE~~~ -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/d.css"><!-- ~~~DESKTOP INCLUDE~~~ -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/media.css">
 
+
+    <!-- ONLY FOR DEV.
+    PHP Include for phones and tablets detection.
+    Need use MODx Mobile Detect Plugin instead of this PHP code! 
+    -->
+    <style>
+    <?php
+        require_once 'Mobile_Detect.php';
+        $detect = new Mobile_Detect;
+
+        // Any mobile device (phones or tablets).
+        if ( $detect->isMobile() ) {
+            include 's.industrial.kz/stat/s/m.css';
+        }
+    ?>
+    </style>
+    <!-- ONLY FOR DEV.
+    -->
 
 </head>
 <body>

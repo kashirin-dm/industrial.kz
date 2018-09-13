@@ -142,12 +142,14 @@ b, strong {font-weight: 700;}
 
 #top-menu nav ul{
   align-items: center;
-  display: inline;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 2%;
 }
 
 #top-menu nav ul li {
-  display: inline-block;
-  padding: 1% 2%;
+  display: inline-grid;
+  grid-row: 1;
 }
 #top-menu nav ul li a {color: #000; border-bottom: 1px solid rgba(0, 0, 0, 0.3);}
 #top-menu nav ul li a:hover {
