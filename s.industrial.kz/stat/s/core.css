@@ -106,7 +106,8 @@ b, strong {font-weight: 700;}
     z-index: 10;
     overflow: hidden;
     transition: background-color .2s ease-in-out;
-    border-radius: 10px; margin-top: .8%; margin-left: 1%;
+    border-radius: 10px;
+    margin: .8% 0 0 1%;
 }
 #top-menu>* {
     display: inline-grid;
@@ -115,17 +116,20 @@ b, strong {font-weight: 700;}
 
 .top-menu__logo-wrap {
   grid-column: 2;
+  width: 100%;
   height: 100%;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: start;
 }
 .top-menu__logo-wrap a{
   height: 100%;
   display: contents;
 }
 .top-menu__logo-wrap__logo-img {
-    min-width: 100px;
+    min-width: 133px;
     height: 65%;
+    align-self: center;
+    display: inline-grid;
 }
 .top-menu__logo-wrap__logo-img:hover {
     opacity: 0.7;
@@ -142,23 +146,24 @@ b, strong {font-weight: 700;}
 
 #top-menu nav ul{
   align-items: center;
-  display: grid;
-  grid-auto-rows: 1fr;
-  grid-column-gap: 2%;
+  display: flex;
 }
 
 #top-menu nav ul li {
-  display: inline-grid;
-  grid-row: 1;
+  display: inline-flex;
+  padding-right: 4%;
 }
-#top-menu nav ul li a {color: #000; border-bottom: 1px solid rgba(0, 0, 0, 0.3);}
+#top-menu nav ul li:last-child {
+  padding-right: 0;
+}
+#top-menu nav ul li a {color: #000; border-bottom: 1px solid rgba(0, 0, 0, 0.3);box-sizing: border-box;}
 #top-menu nav ul li a:hover {
     color: #1d73bf; border-bottom: 1px solid rgba(29, 115, 191, 0.3); text-decoration: none;
 }
 #top-menu nav ul li a:active {color: #8a2221;}
 
 #top-menu .whatsapp {
-    background-image: url(../../../i.industrial.kz/stat/i/wsp.svg);
+    background-image: url(../../../i.industrial.kz/stat/i/wsp2.svg);
     background-repeat: no-repeat;
     background-size: cover;
     justify-self:end;
@@ -184,16 +189,27 @@ b, strong {font-weight: 700;}
 #top-menu .top-phone a:hover{text-decoration: none; color: #417d00;}
 #top-menu .top-phone a:active{color: #18374d;}
 
-#top-menu .callback {
+#top-menu .top-callback {
+    width: 100%;
+    height: 100%;
+}
+
+#top-menu .callback::before{
+    content: 'Заказать звонок'
     grid-column: 6;
+}
+#top-menu .callback {
     background:#1d73bf;
-    padding: 0 30px;
+    padding: 8% 30px;
     border-radius: 50px;
     font-size:77.78%;
     font-weight: 700;
     white-space: nowrap;
     text-transform: uppercase;
-    line-height: 40px;
+    justify-self:end;
+    align-self: center;
+    text-align: center;
+    line-height: 1.1;
     color: #fff;
 }
 #top-menu .callback:hover {

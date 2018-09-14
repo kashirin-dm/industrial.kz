@@ -69,11 +69,11 @@
 
     <!-- ONLY FOR DEV.
     PHP Include for phones and tablets detection.
-    Need use MODx Mobile Detect Plugin instead of this PHP code! 
+    Need use MODx Mobile Detect Plugin instead of this PHP code!
     -->
     <style>
     <?php
-        require_once 'Mobile_Detect.php';
+        require_once 'mob-detect.php';
         $detect = new Mobile_Detect;
 
         // Any mobile device (phones or tablets).
@@ -82,7 +82,7 @@
         }
     ?>
     </style>
-    <!-- ONLY FOR DEV.
+    <!-- end ONLY FOR DEV.
     -->
 
 </head>
@@ -115,7 +115,9 @@
                 <a href="tel:+77273565227" title="Позвонить по телефону или Skype">+7 (727) 356-52-27</a>
                 <p>Звоните с 8 до 17 по будням</p>
             </div>
-            <a href="#" class="callback">Заказать звонок</a>
+            <div class="top-callback">
+                <a href="#" class="callback"></a>
+            </div>
     </header>
 
     <main class="grid">
