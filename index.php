@@ -65,24 +65,25 @@
     <link rel="stylesheet" href="s.industrial.kz/stat/s/core.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/d.css"><!-- ~~~DESKTOP INCLUDE~~~ -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/media.css">
+    <link rel="stylesheet" href="s.industrial.kz/stat/s/m.css">
 
 
     <!-- ONLY FOR DEV.
     PHP Include for phones and tablets detection.
     Need use MODx Mobile Detect Plugin instead of this PHP code!
-    -->
+
     <style>
     <?php
-        require_once 'mob-detect.php';
-        $detect = new Mobile_Detect;
+        //require_once 'mob-detect.php';
+        //$detect = new Mobile_Detect;
 
         // Any mobile device (phones or tablets).
-        if ( $detect->isMobile() ) {
-            include 's.industrial.kz/stat/s/m.css';
-        }
+        //if ( $detect->isMobile() ) {
+            //include 's.industrial.kz/stat/s/m.css';
+        //}
     ?>
     </style>
-    <!-- end ONLY FOR DEV.
+    end ONLY FOR DEV.
     -->
 
 </head>
@@ -116,7 +117,7 @@
                 <p>Звоните с 8 до 17 по будням</p>
             </div>
             <div class="top-callback">
-                <a href="#" class="callback"></a>
+                <a href="#" class="callback"><span></span></a>
             </div>
     </header>
 
@@ -204,7 +205,7 @@
 
 
     <!-- Contacts -->
-    <section class="grid map-contacts f0">
+    <section class="grid map-contacts">
         <div class="ymap-container">
     			<div class="loader loader-default"></div>
     			<div id="map-yandex"></div>

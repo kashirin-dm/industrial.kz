@@ -1,45 +1,158 @@
-@media only screen and (max-width: 400px) {
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* PHONES*/
+/* Phones Portrait ----------- */
+@media only screen and (max-width: 420px) {
     #top-menu {
-        grid-template-columns: 1% auto 1fr minmax(60px,7vh) auto auto 1%;
+        grid-template-columns: 0 auto 1fr 60px auto 75px 0;
+        grid-template-rows: minmax(60px,15vh);
+        min-height: 60px;
+        max-height: 15vh;
+        width: 96%;
+        margin: 1.8% 0 0 2%;
+        border-radius: 20px;
     }
     #top-menu nav {
         font-size: 90%;
     }
+    #top-menu nav ul li:nth-child(2), #top-menu nav ul li:nth-child(3), #top-menu nav ul li:nth-child(4) {
+        display: none;
+    }
+    #top-menu nav ul li {
+      padding-right: 8%;
+    }
+    #top-menu .callback {
+        height: 80%;
+        width: 100%;
+        display:block;
+        position: relative;
+        padding:0 18%;
+        border-radius: 50px;
+        font-size:70%;
+        font-weight: 700;
+        white-space:  pre-wrap;
+        text-transform: uppercase;
+        line-height: 1.1;
+        color: #fff;
+    }
+
+    #top-menu .callback span {
+        display: inline-block;
+        margin: 18% 0;
+    }
+
+    #top-menu .top-callback .callback span::before {
+        content: 'Заказать\Aзвонок';
+    }
 }
 
-/* Full HD screens ----------- */
-@media only screen and (min-width : 1600px) {
-  #top-menu {
-      grid-template-columns: 10% auto 1fr minmax(60px,7vh) auto auto 10%;
-  }
-  #top-menu nav {
-      font-size: 0.9vw;
-  }
+/* Phones Landskape ----------- */
+@media only screen and (min-width: 421px) and (max-width: 800px) {
+    #top-menu {
+        grid-template-columns: 0 auto 1fr 60px auto auto 0;
+    }
+    #top-menu nav {
+        font-size: 90%;
+    }
+    #top-menu nav ul li:nth-child(2), #top-menu nav ul li:nth-child(3), #top-menu nav ul li:nth-child(4) {
+        display: none;
+    }
+    #top-menu nav ul li {
+        padding-right: 8%;
+    }
+    #top-menu .callback {
+        height: 70%;
+        width: 100%;
+        position: relative;
+        padding:1%;
+        border-radius: 50px;
+        font-size:50%;
+        font-weight: 700;
+        white-space:  pre-wrap;
+        text-transform: uppercase;
+        line-height: 1.1;
+        color: #fff;
+    }
+    #top-menu .top-callback .callback span::before {
+        content: 'Заказать\Aзвонок';
+    }
 }
 
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-  #top-menu {
-      grid-template-columns: 10% auto 1fr minmax(60px,7vh) auto auto 10%;
-  }
-  #top-menu nav {
-      font-size: 0.9vw;
-  }
+/* @media only screen and (max-width: 400px) {}
+/* Extra small devices (phones, 600px and down) @media only screen and (max-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) @media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) @media only screen and (min-width: 992px) {}
+
+
+/* DESKTOPS */
+/* Standart office screens ----------- */
+@media only screen and (min-width: 801px) and (max-width: 1370px) {
+    #top-menu {
+        grid-template-columns: 1% auto 1fr 60px auto 162px 1%;
+    }
+    #top-menu nav {
+        font-size: 90%;
+    }
+    #top-menu .top-callback .callback {
+        display: flex;
+        width: auto;
+        padding:0 7%;
+        line-height: 2.9em;
+    }
+    #top-menu .top-callback .callback span::before {
+        content: 'Заказать звонок';
+        white-space: nowrap;
+    }
+    #top-menu .callback span {display: inline-flex;
+        width: auto;
+        height:100%;
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+/* Full HD ----------- */
+@media only screen and (min-width:1371px) and (max-width : 1920px) {
+    #top-menu {
+        grid-template-columns: 10% auto 1fr 60px auto 162px 10%;
+    }
+    #top-menu nav {
+        font-size: 0.9vw;
+    }
+     #top-menu .top-callback .callback {
+        padding: 0;
+    }
+    #top-menu .top-callback .callback span::before {
+        content: 'Заказать звонок';
+        white-space: nowrap;
+    }
+    #top-menu .callback span {
+        display: inline-block;
+        margin: 0;
+    }
+    #top-menu .top-callback .callback {
+        display: flex;
+        width: auto;
+        padding:0 7%;
+        line-height: 2.9em;
+    }
+}
+
+/* Large Screens ----------- */
+@media only screen and (min-width : 1921px) {
+    #top-menu {
+        grid-template-columns: 10% auto 1fr 60px auto 162px 10%;
+    }
+    #top-menu nav {
+        font-size: 0.9vw;
+    }
+    #top-menu .top-callback .callback {
+        padding: 0;
+    }
+    #top-menu .top-callback .callback span::before {
+        content: 'Заказать звонок';
+        white-space: nowrap;
+    }
+    #top-menu .callback span {
+        display: inline-block;
+        margin: 0;
+    }
 }
