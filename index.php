@@ -116,9 +116,7 @@
                 <a href="tel:+77273565227" title="Позвонить по телефону или Skype">+7 (727) 356-52-27</a>
                 <p>Звоните с 8 до 17 по будням</p>
             </div>
-            <div class="top-callback">
-                <a href="#" class="callback"><span></span></a>
-            </div>
+                <a href="#" class="callback">Заказать звонок</a>
     </header>
 
     <main class="grid">

@@ -99,13 +99,11 @@ b, strong {font-weight: 700;}
     font-family: 'Circe Rounded', sans-serif;
     position: fixed;
     grid-template-columns: 10% auto 1fr 60px auto 162px 10%;
-    grid-template-rows: minmax(60px,7vh);
+    grid-template-rows: 60px;
     column-gap: 2%;
     align-items: center;
     width: 98%;
-    height: 100%;
-    min-height: 60px;
-    max-height: 7vh;
+    height: 60px;
     white-space: nowrap;
     z-index: 10;
     overflow: hidden;
@@ -124,6 +122,8 @@ b, strong {font-weight: 700;}
   height: 100%;
   align-items: center;
   justify-content: start;
+  grid-row: 1;
+  grid-auto-rows: 1fr;
 }
 .top-menu__logo-wrap a{
   height: 100%;
@@ -146,6 +146,9 @@ b, strong {font-weight: 700;}
     letter-spacing: -0.5px;
     font-size: 0.9vw;
     justify-content: start;
+    grid-row: 1;
+    grid-column: 3;
+    grid-auto-rows: 1fr;
 }
 
 #top-menu nav ul{
@@ -176,33 +179,35 @@ b, strong {font-weight: 700;}
     display: inline-grid;
     height: 55%;
     width: 55%;
+    grid-row: 1;
+    grid-column: 4;
+    grid-auto-rows: 1fr;
 }
 
 #top-menu .top-phone {
     letter-spacing: -0.5px;
     font-size: 100%;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    line-height: 1.2;
+    grid-row: 1;
+    grid-column: 5;
+    grid-auto-rows: 1fr; margin-top:6px;
 }
 #top-menu .top-phone p{
-    letter-spacing: -0.5px;
     font-size: 65%;
     line-height: 1.2;
     font-weight: 700;
 }
-#top-menu .top-phone a{color: #000;}
+#top-menu .top-phone a{color: #000;line-height: 1;}
 #top-menu .top-phone a:hover{text-decoration: none; color: #417d00;}
 #top-menu .top-phone a:active{color: #18374d;}
 
-#top-menu .top-callback {
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
+
 #top-menu .callback {
     background: var(--accent-clr);
-    display: inline-grid;
+    width: 162px;
+    height: 70%;
     border-radius: 50px;
     font-size:77.78%;
     font-weight: 700;
@@ -211,9 +216,13 @@ b, strong {font-weight: 700;}
     justify-self:end;
     align-self: center;
     text-align: center;
-    line-height: 1.1;
+    vertical-align: middle;
+    line-height: 42px;
     color: #fff;
     padding: 0;
+    grid-row: 1;
+    grid-column: 6;
+    grid-auto-rows: 1fr;
 }
 #top-menu .callback:hover {
     background: var(--second-clr);
@@ -223,9 +232,6 @@ b, strong {font-weight: 700;}
 #top-menu .callback:active {
     background: #18374d;
     color: #e1f3ff;
-}
-#top-menu .top-callback .callback span::before {
-    content: 'Заказать звонок';
 }
 /* END Top Menu Desktop */
 

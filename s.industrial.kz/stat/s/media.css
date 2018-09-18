@@ -1,80 +1,282 @@
 /* PHONES*/
-/* Phones Portrait ----------- */
-@media only screen and (max-width: 420px) {
+/*
+iPhone 5:  portrait 320x460, lanscape 568x320
+iPhone 6:  portrait 375x553, lanscape 667x375
+Mi Note 5: portrait 393x706, lanscape 786x313
+*/
+/* PORTRAIT ----------- */
+/* Phones Small Portrait ----------- */
+@media only screen and (min-width: 300px)
+and (max-width: 389px)
+and (orientation: portrait) {
     #top-menu {
-        grid-template-columns: 0 auto 1fr 60px auto 75px 0;
-        grid-template-rows: minmax(60px,15vh);
-        min-height: 60px;
-        max-height: 15vh;
-        width: 96%;
-        margin: 1.8% 0 0 2%;
+        grid-template-columns: .5% auto 1fr 100px auto 260px .5%;
+        grid-template-rows: 100px;
+        height: 50vh;
+        width: 98.5%;
+        margin: .5% 0 0 .5%;
         border-radius: 20px;
+        grid-auto-rows: 1fr;
     }
     #top-menu nav {
-        font-size: 90%;
+        font-size: 240%;
+        grid-row: 2;
+        grid-column: 1/7;
+        grid-auto-rows: 1fr;
+        justify-content: center;
     }
-    #top-menu nav ul li:nth-child(2), #top-menu nav ul li:nth-child(3), #top-menu nav ul li:nth-child(4) {
-        display: none;
+    #top-menu nav ul {
+      justify-content: center;
     }
     #top-menu nav ul li {
-      padding-right: 8%;
+      padding: 0 2%;
     }
-    #top-menu .callback {
-        height: 80%;
-        width: 100%;
-        display:block;
-        position: relative;
-        padding:0 18%;
-        border-radius: 50px;
-        font-size:70%;
+    #top-menu nav ul li:first-child {
+      padding-left: 0;
+    }
+
+    #top-menu nav ul li:nth-child(4), #top-menu nav ul li:nth-child(5){
+      display: none;
+    }
+
+    #top-menu .top-phone {
+        display: grid;
+        grid-template-columns: 270px 75px;
+        grid-template-rows: 100px;
+        column-gap: 0;
+        white-space: normal;
+        letter-spacing: -0.5px;
+        align-items: center;
+        text-align: left;
+        grid-row: 1;
+        margin-top: 6px;
+    }
+    #top-menu .top-phone p{
+        width: 75px;
+        font-size: 90%;
+        line-height: 1.2;
         font-weight: 700;
-        white-space:  pre-wrap;
-        text-transform: uppercase;
-        line-height: 1.1;
-        color: #fff;
+        justify-self:start; display: none;
     }
+    #top-menu .top-phone a{font-size: 190%; color: #000;line-height: 1; justify-self:end; grid-column: 1/2;}
 
-    #top-menu .callback span {
-        display: inline-block;
-        margin: 18% 0;
-    }
-
-    #top-menu .top-callback .callback span::before {
-        content: 'Заказать\Aзвонок';
-    }
-}
-
-/* Phones Landskape ----------- */
-@media only screen and (min-width: 421px) and (max-width: 800px) {
-    #top-menu {
-        grid-template-columns: 0 auto 1fr 60px auto auto 0;
-    }
-    #top-menu nav {
-        font-size: 90%;
-    }
-    #top-menu nav ul li:nth-child(2), #top-menu nav ul li:nth-child(3), #top-menu nav ul li:nth-child(4) {
-        display: none;
-    }
-    #top-menu nav ul li {
-        padding-right: 8%;
-    }
     #top-menu .callback {
-        height: 70%;
-        width: 100%;
+        height: 60%;
+        width: 260px;
         position: relative;
         padding:1%;
         border-radius: 50px;
-        font-size:50%;
+        font-size:120%;
         font-weight: 700;
         white-space:  pre-wrap;
         text-transform: uppercase;
-        line-height: 1.1;
+        line-height: 54px;
         color: #fff;
     }
-    #top-menu .top-callback .callback span::before {
-        content: 'Заказать\Aзвонок';
+}
+
+/* Phones Portrait ----------- */
+@media only screen
+and (min-width: 390px)
+and (max-width: 420px)
+and (orientation: portrait) {
+    #top-menu {
+        grid-template-columns: 0 auto 1fr 90px auto 240px 0;
+        grid-template-rows: 90px;
+        height: 21vh;
+        width: 96%;
+        margin: 1.8% 0 0 2%;
+        border-radius: 20px;
+        grid-auto-rows: 1fr;
+    }
+    #top-menu nav {
+        font-size: 140%;
+        grid-row: 2;
+        grid-column: 1/7;
+        grid-auto-rows: 1fr;
+        justify-content: center;
+    }
+    #top-menu nav ul {
+      justify-content: center;
+    }
+    #top-menu nav ul li {
+      padding: 0 2%;
+    }
+    #top-menu nav ul li:first-child {
+      padding-left: 0;
+    }
+
+    #top-menu .top-phone {
+        display: grid;
+        grid-template-columns: 248px 75px;
+        grid-template-rows: 90px;
+        column-gap: 6%;
+        white-space: normal;
+        letter-spacing: -0.5px;
+        align-items: center;
+        text-align: left;
+        grid-row: 1;
+        margin-top: 6px;
+    }
+    #top-menu .top-phone p{
+        width: 75px;
+        font-size: 90%;
+        line-height: 1.2;
+        font-weight: 700;
+        justify-self:start;
+    }
+    #top-menu .top-phone a{font-size: 170%; color: #000;line-height: 1; justify-self:end;}
+
+    #top-menu .callback {
+        height: 60%;
+        width: 240px;
+        position: relative;
+        padding:1%;
+        border-radius: 50px;
+        font-size:120%;
+        font-weight: 700;
+        white-space:  pre-wrap;
+        text-transform: uppercase;
+        line-height: 54px;
+        color: #fff;
     }
 }
+
+/* LANDSCAPE ----------- */
+/* Phones Small Landscape ----------- */
+@media only screen and (min-width: 390px)
+and (max-width: 570px)
+and (orientation: landscape) {
+    #top-menu {
+        grid-template-columns: .5% auto 1fr 90px auto 240px .5%;
+        grid-template-rows: 90px;
+        height: 50vh;
+        width: 98.5%;
+        margin: .5% 0 0 .5%;
+        border-radius: 20px;
+        grid-auto-rows: 1fr;
+    }
+    #top-menu nav {
+        font-size: 140%;
+        grid-row: 2;
+        grid-column: 1/7;
+        grid-auto-rows: 1fr;
+        justify-content: center;
+    }
+    #top-menu nav ul {
+      justify-content: center;
+    }
+    #top-menu nav ul li {
+      padding: 0 2%;
+    }
+    #top-menu nav ul li:first-child {
+      padding-left: 0;
+    }
+
+    #top-menu .top-phone {
+        display: grid;
+        grid-template-columns: 248px 75px;
+        grid-template-rows: 90px;
+        column-gap: 6%;
+        white-space: normal;
+        letter-spacing: -0.5px;
+        align-items: center;
+        text-align: left;
+        grid-row: 1;
+        margin-top: 6px;
+    }
+    #top-menu .top-phone p{
+        width: 75px;
+        font-size: 90%;
+        line-height: 1.2;
+        font-weight: 700;
+        justify-self:start;
+    }
+    #top-menu .top-phone a{font-size: 170%; color: #000;line-height: 1; justify-self:end;}
+
+    #top-menu .callback {
+        height: 60%;
+        width: 240px;
+        position: relative;
+        padding:1%;
+        border-radius: 50px;
+        font-size:120%;
+        font-weight: 700;
+        white-space:  pre-wrap;
+        text-transform: uppercase;
+        line-height: 54px;
+        color: #fff;
+    }
+}
+
+/* Phones Landscape ----------- */
+@media only screen
+and (min-width: 700px)
+and (max-width: 800px)
+and (orientation: landscape) {
+    #top-menu {
+        grid-template-columns: 0 auto 1fr 60px auto 162px 0;
+        height: 28vh;
+        column-gap: 3%;
+        border-radius: 14px;
+    }
+    #top-menu nav {
+        font-size: 90%;
+        grid-row: 2;
+        grid-column: 2/7;
+        grid-auto-rows: 1fr;
+        justify-content: center;
+    }
+    #top-menu nav ul {
+      justify-content: center;
+    }
+    #top-menu nav ul li {
+        padding: 0 4%;
+    }
+    #top-menu nav ul li:first-child {
+      padding-left: 0;
+    }
+
+
+
+    #top-menu .top-phone {
+        display: grid;
+        grid-template-columns: 208px 50px;
+        grid-template-rows: 60px;
+        column-gap: 4%;
+        white-space: normal;
+        letter-spacing: -0.5px;
+        align-items: center;
+        text-align: left;
+        grid-row: 1;
+        margin-top:6px;
+    }
+    #top-menu .top-phone p{width: 50px;
+        font-size: 65%;
+        line-height: 1.2;
+        font-weight: 700;
+        justify-self:start;
+    }
+    #top-menu .top-phone a{font-size: 150%; color: #000;line-height: 1; justify-self:end;}
+
+
+
+
+    #top-menu .callback {
+        height: 70%;
+        width: 162px;
+        position: relative;
+        padding:1%;
+        border-radius: 50px;
+        font-size:80%;
+        font-weight: 700;
+        white-space:  pre-wrap;
+        text-transform: uppercase;
+        line-height: 42px;
+        color: #fff;
+    }
+}
+
 
 /* @media only screen and (max-width: 400px) {}
 /* Extra small devices (phones, 600px and down) @media only screen and (max-width: 600px) {}
@@ -87,25 +289,18 @@
 @media only screen and (min-width: 801px) and (max-width: 1370px) {
     #top-menu {
         grid-template-columns: 1% auto 1fr 60px auto 162px 1%;
+        grid-template-rows: 60px;
+        height: 60px;
     }
     #top-menu nav {
         font-size: 90%;
+        grid-row: 1;
+        grid-column: 3;
+        grid-auto-rows: 1fr;
     }
-    #top-menu .top-callback .callback {
-        display: flex;
-        width: auto;
-        padding:0 7%;
-        line-height: 2.9em;
-    }
-    #top-menu .top-callback .callback span::before {
-        content: 'Заказать звонок';
-        white-space: nowrap;
-    }
-    #top-menu .callback span {display: inline-flex;
-        width: auto;
-        height:100%;
-        display: inline-block;
-        margin: 0;
+    #top-menu .callback {
+        width: 162px;
+        line-height: 42px;
     }
 }
 
@@ -116,19 +311,12 @@
     }
     #top-menu nav {
         font-size: 0.9vw;
+        grid-row: 1;
     }
-     #top-menu .top-callback .callback {
+     #top-menu .callback {
         padding: 0;
     }
-    #top-menu .top-callback .callback span::before {
-        content: 'Заказать звонок';
-        white-space: nowrap;
-    }
-    #top-menu .callback span {
-        display: inline-block;
-        margin: 0;
-    }
-    #top-menu .top-callback .callback {
+    #top-menu .callback {
         display: flex;
         width: auto;
         padding:0 7%;
@@ -143,16 +331,9 @@
     }
     #top-menu nav {
         font-size: 0.9vw;
+        grid-row: 1;
     }
-    #top-menu .top-callback .callback {
+    #top-menu .callback {
         padding: 0;
-    }
-    #top-menu .top-callback .callback span::before {
-        content: 'Заказать звонок';
-        white-space: nowrap;
-    }
-    #top-menu .callback span {
-        display: inline-block;
-        margin: 0;
     }
 }
