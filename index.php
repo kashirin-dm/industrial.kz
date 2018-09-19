@@ -7,7 +7,8 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" sizes="16x16 32x32" href="i.industrial.kz/stat/i/ic/favicon.ico">
     <![endif]-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="HandheldFriendly" content="True"><!-- ~~~MOBILE INCLUDE~~~ -->
     <title>Title Index Document, 70 symbols</title>
     <meta name="description" content="Page description text, 160 symbols">
@@ -70,20 +71,19 @@
 
     <!-- ONLY FOR DEV.
     PHP Include for phones and tablets detection.
-    Need use MODx Mobile Detect Plugin instead of this PHP code!
+    Need use MODx Mobile Detect Plugin instead of this PHP code! -->
 
-    <style>
+
     <?php
-        //require_once 'mob-detect.php';
-        //$detect = new Mobile_Detect;
+        require_once 'mob-detect.php';
+        $detect = new Mobile_Detect;
 
         // Any mobile device (phones or tablets).
-        //if ( $detect->isMobile() ) {
-            //include 's.industrial.kz/stat/s/m.css';
-        //}
+        if ( $detect->isMobile() ) {
+            echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">';
+        }
     ?>
-    </style>
-    end ONLY FOR DEV.
+    <!-- end ONLY FOR DEV.
     -->
 
 </head>

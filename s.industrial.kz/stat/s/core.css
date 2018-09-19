@@ -133,12 +133,6 @@ b, strong {font-weight: 700;}
     justify-content: start;
     justify-self: start;
 }
-.top-menu__logo-wrap__logo-img:hover {
-    opacity: 0.7;
-    transition: all .2s ease-in-out;
-}
-.top-menu__logo-wrap__logo-img:active {opacity: 0.5}
-
 #top-menu nav {
     font-weight:700;
     letter-spacing: -0.5px;
@@ -148,12 +142,10 @@ b, strong {font-weight: 700;}
     grid-column: 3;
     grid-auto-rows: 1fr;
 }
-
 #top-menu nav ul{
   align-items: center;
   display: flex; width: 100%;
 }
-
 #top-menu nav ul li {
   display: inline-flex;
   padding-right: 4%;
@@ -181,7 +173,6 @@ b, strong {font-weight: 700;}
     grid-column: 4;
     grid-auto-rows: 1fr;
 }
-
 #top-menu .top-phone {
     letter-spacing: -0.5px;
     font-size: 100%;
@@ -201,7 +192,19 @@ b, strong {font-weight: 700;}
 #top-menu .top-phone a:hover{text-decoration: none; color: #417d00;}
 #top-menu .top-phone a:active{color: #18374d;}
 
-
+#top-menu .callback, #top-menu .whatsapp, .top-menu__logo-wrap__logo-img {
+    transform: scale(1);
+    transition: all .05s ease-out;
+}
+#top-menu .callback:hover, #top-menu .whatsapp:hover, .top-menu__logo-wrap__logo-img:hover {
+    text-decoration: none;
+    transform: scale(.95);
+    transition: all .03s ease-in;
+}
+#top-menu .callback:active, #top-menu .whatsapp:active, .top-menu__logo-wrap__logo-img:active {
+    transform: scale(.90);
+    transition: all .02s ease-in;
+}
 #top-menu .callback {
     box-sizing: border-box;
     border: 3px solid var(--accent-clr);
@@ -222,8 +225,6 @@ b, strong {font-weight: 700;}
     grid-row: 1;
     grid-column: 6;
     grid-auto-rows: 1fr;
-    transform: scale(1);
-    transition: all .05s ease-out;
 
 }
 #top-menu .callback:hover {
@@ -255,6 +256,7 @@ b, strong {font-weight: 700;}
 }
 .main-cover {
     height: 100vh;
+    width: 100vw;
     text-align: center;
     padding: 40px;
     overflow: hidden;
@@ -284,6 +286,7 @@ b, strong {font-weight: 700;}
 .main-cover > .container p {
     font-size: 168%;
     margin-bottom: 40px;
+    line-height: 1.2;
 }
 .main-cover > .container form input, #dsk-video > .container form button {
     margin: 10px 10px;
