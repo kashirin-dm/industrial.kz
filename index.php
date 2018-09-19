@@ -65,7 +65,7 @@
     <link rel="stylesheet" href="s.industrial.kz/stat/s/core.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/d.css"><!-- ~~~DESKTOP INCLUDE~~~ -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/media.css">
-    <link rel="stylesheet" href="s.industrial.kz/stat/s/m.css">
+    <!-- <link rel="stylesheet" href="s.industrial.kz/stat/s/m.css"> -->
 
 
     <!-- ONLY FOR DEV.
@@ -96,11 +96,9 @@
 
     <!-- Header navigation -->
     <header id="top-menu" class="grid">
-            <div class="top-menu__logo-wrap">
-              <a href="#">
-                  <img src="i.industrial.kz/stat/i/ind_logo.svg" alt="Логотип INDUSTRIAL" title="Перейти на главную страницу" class="top-menu__logo-wrap__logo-img">
-              </a>
-            </div>
+            <a href="#" class="top-menu__logo-wrap">
+                <img src="i.industrial.kz/stat/i/ind_logo.svg" alt="Логотип INDUSTRIAL" title="Перейти на главную страницу" class="top-menu__logo-wrap__logo-img">
+            </a>
             <nav>
                 <ul>
                     <li><a href="#">Каталог</a></li>
