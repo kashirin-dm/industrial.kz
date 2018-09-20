@@ -440,6 +440,7 @@ main .main-clients::before {
     z-index: 1;
 }
 main .main-clients {
+    width: 100vw;
     position: relative;
     height: 70vh;
     align-content: center;
@@ -560,7 +561,7 @@ footer ul li {
     font-size: 77.78%;
     line-height: 2.4;
 }
-footer a, footer a:hover{
+footer a, footer a:hover, footer a:visited{
     color:#fff;
 }
 footer a:active {
