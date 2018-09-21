@@ -199,7 +199,6 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     }
     main .main-clients {
         width: auto;
-        position: relative;
         width: 100vw;
         align-content: center;
         text-align: center;

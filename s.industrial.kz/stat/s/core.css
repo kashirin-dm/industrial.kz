@@ -1,73 +1,93 @@
-/* ~~~~~~~~~~~~~~~~~~~~~ Core Style ~~~~~~~~~~~~~~~~~~~~~ */
+/*
+-----------------------------
+Core Style
+-----------------------------
+*/
+
+/* Variables*/
 :root {
     --accent-clr: #1d73bf;
     --second-clr: #295776;
     --f0-clr: #f0f0f0;
 }
 
-/* Reset, Start*/
+/* Reset, Start & Base Style */
 * {
+    position: relative;
     margin: 0;
     padding: 0;
     border: 0;
     outline: none;
-    vertical-align: baseline;
+    vertical-align: middle;
     background: transparent;
 }
-html, body {width: 100%; height: 100%;}
+body > *, main > * {display: grid;}
+script {
+    position: static;
+    display: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
 body {
     line-height: 1.75;
     font: 400 18px Circe, sans-serif;
     color: #000;
     -webkit-font-smoothing: antialiased;
 }
-/* Text Fonts*/
+
+/* Fonts */
+/* Text Fonts */
 @font-face {
-  font-family: Circe;
-  src: url('../f/circe-r.eot');
-  src: url('../f/circe-r.woff2') format('woff2'),
-       url('../f/circe-r.woff') format('woff'),
-       url('../f/circe-r.ttf') format('truetype'),
-       url('../f/circe-r.eot?#iefix') format('embedded-opentype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: Circe;
+    src: url('../f/circe-r.eot');
+    src: url('../f/circe-r.woff2') format('woff2'),
+         url('../f/circe-r.woff') format('woff'),
+         url('../f/circe-r.ttf') format('truetype'),
+         url('../f/circe-r.eot?#iefix') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
 }
 @font-face {
-  font-family: Circe;
-  src: url('../f/circe-b.eot');
-  src: url('../f/circe-b.woff2') format('woff2'),
-       url('../f/circe-b.woff') format('woff'),
-       url('../f/circe-b.ttf') format('truetype'),
-       url('../f/circe-b.eot?#iefix') format('embedded-opentype');
-  font-weight: 700;
-  font-style: normal;
+    font-family: Circe;
+    src: url('../f/circe-b.eot');
+    src: url('../f/circe-b.woff2') format('woff2'),
+         url('../f/circe-b.woff') format('woff'),
+         url('../f/circe-b.ttf') format('truetype'),
+         url('../f/circe-b.eot?#iefix') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* Headers Fonts*/
 @font-face {
-  font-family: 'Circe Rounded';
-  src: url('../f/circerounded-r.eot');
-  src: url('../f/circerounded-r.woff2') format('woff2'),
-       url('../f/circerounded-r.woff') format('woff'),
-       url('../f/circerounded-r.ttf') format('truetype'),
-       url('../f/circerounded-r.eot?#iefix') format('embedded-opentype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Circe Rounded';
+    src: url('../f/circerounded-r.eot');
+    src: url('../f/circerounded-r.woff2') format('woff2'),
+         url('../f/circerounded-r.woff') format('woff'),
+         url('../f/circerounded-r.ttf') format('truetype'),
+         url('../f/circerounded-r.eot?#iefix') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
 }
 @font-face {
-  font-family: 'Circe Rounded';
-  src: url('../f/circerounded-alt-b.eot');
-  src: url('../f/circerounded-alt-b.woff2') format('woff2'),
-       url('../f/circerounded-rcircerounded-alt-b.woff') format('woff'),
-       url('../f/circerounded-alt-b.ttf') format('truetype'),
-       url('../f/circerounded-alt-b.eot?#iefix') format('embedded-opentype');
-   font-weight: 700;
-   font-style: normal;
+    font-family: 'Circe Rounded';
+    src: url('../f/circerounded-alt-b.eot');
+    src: url('../f/circerounded-alt-b.woff2') format('woff2'),
+         url('../f/circerounded-rcircerounded-alt-b.woff') format('woff'),
+         url('../f/circerounded-alt-b.ttf') format('truetype'),
+         url('../f/circerounded-alt-b.eot?#iefix') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
 }
 
-/* Global Style */
-::selection {background: var(--accent-clr); color: #fff;}
-nav ul {list-style: none;}
+::selection {
+    background: var(--accent-clr);
+    color: #fff;
+}
+h1,h2,h3 {font: 400 18px 'Circe Rounded', sans-serif;}
+b, strong {font-weight: 700;}
 a, a:visited {
     font-size: 100%;
     text-decoration: none;
@@ -78,170 +98,129 @@ a:hover {
     text-decoration: underline;
 }
 a:active {color: #18374d;}
-
-input, select {vertical-align:middle;} /* -------------- TO FORMS */
-input, button, textarea {outline: 0;} /* -------------- TO FORMS */
-
-.grid{display: grid;}
 .container{
     width: 60%;
     margin: 0 auto;
     padding:0 0.74%;
-    position: relative;
 }
-h1,h2,h3 {font: 400 18px 'Circe Rounded', sans-serif;}
-b, strong {font-weight: 700;}
+/* END Reset, Start & Base Style */
 
-/* ~~~~~~~~~~~~~~~~~~~~~ END GLOBAL STYLE ~~~~~~~~~~~~~~~~~~~~~ */
-
-/* Top Menu Desktop */
+/* Top Menu */
 #top-menu {
     font-family: 'Circe Rounded', sans-serif;
     position: fixed;
-    grid-template-columns: 10% 200px 1fr 60px auto 162px 10%;
-    grid-template-rows: 60px;
-    column-gap: 2%;
+    overflow: hidden;
     align-items: center;
     align-self: center;
-    width: 98%;
-    height: 60px;
     white-space: nowrap;
     z-index: 10;
-    overflow: hidden;
-    transition: background-color .2s ease-in-out;
     border-radius: 10px;
-    margin: .8% 0 0 1%;
+    letter-spacing: -0.5px;
+    transition: background-color .2s ease-in-out;
+    will-change: transform;
 }
-#top-menu>* {
-    display: inline-grid;
-    position: relative;
-}
+#top-menu> * {display: inline-grid;}
 
+    /* Logo */
 .top-menu__logo-wrap {
-  grid-column: 2;
-  height: 65%;
-  align-items: center;
-  align-self: center;
-  justify-content: start;
-  justify-self: start;
-  grid-row: 1;
-  grid-auto-rows: 1fr;
+    align-items: center;
+    align-self: center;
+    justify-content: start; /*CHECK IT*/
+    justify-self: start; /*CHECK IT*/
 }
 .top-menu__logo-wrap__logo-img {
     height: 100%;
     align-self: center;
-    justify-content: start;
-    justify-self: start;
+    justify-content: start; /*CHECK IT*/
+    justify-self: start; /*CHECK IT*/
 }
+.top-menu__logo-wrap__logo-img:hover {transform: scale(.96);}
+.top-menu__logo-wrap__logo-img:active {transform: scale(.91);}
+
+    /* Navigation */
 #top-menu nav {
-    font-weight:700;
-    letter-spacing: -0.5px;
-    font-size: 0.9vw;
+    font-weight: 700;
     justify-content: start;
-    grid-row: 1;
-    grid-column: 3;
-    grid-auto-rows: 1fr;
 }
 #top-menu nav ul{
-  align-items: center;
-  display: flex; width: 100%;
+    list-style: none;
+    display: block;
+    width: 100%;
+    align-items: center;
 }
-#top-menu nav ul li {
-  display: inline-flex;
-  padding-right: 4%;
+#top-menu nav ul li {display: inline-block;}
+#top-menu nav ul li:first-child {padding-left: 0;}
+#top-menu nav ul li:last-child {padding-right: 0;}
+#top-menu nav ul li a {
+    display: inline-block;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    color: #000;
 }
-#top-menu nav ul li:last-child {
-  padding-right: 0;
-}
-#top-menu nav ul li a {color: #000; border-bottom: 1px solid rgba(0, 0, 0, 0.3);box-sizing: border-box;}
 #top-menu nav ul li a:hover {
     color: var(--accent-clr);
-    border-bottom: 1px solid rgba(29, 115, 191, 0.3);
     text-decoration: none;
+    border-bottom: 1px solid rgba(29, 115, 191, 0.3);
 }
-#top-menu nav ul li a:active {color: #8a2221;}
+#top-menu nav ul li a:active {transform: scale(.95);}
 
+    /* WhatsApp Button */
 #top-menu .whatsapp {
-    background-image: url(../../../i.industrial.kz/stat/i/wsp2.svg);
-    background-repeat: no-repeat;
+    grid-column: 4;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 418.88 420.76'><defs><linearGradient id='a' x1='209.44' x2='209.44' y1='420.76' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='%23f9f9f9'/><stop offset='1' stop-color='%23fff'/></linearGradient></defs><path fill='%2325d366' d='M7.25 413.48l28.57-104.3A201 201 0 0 1 8.94 208.55C9 97.57 99.31 7.29 210.28 7.29a201.35 201.35 0 0 1 201.35 201.42C411.58 319.69 321.25 410 210.29 410h-.09a201.26 201.26 0 0 1-96.2-24.51z'/><path fill='url(#a)' d='M0 420.76l29.59-108A208.15 208.15 0 0 1 1.75 208.49C1.8 93.53 95.35 0 210.32 0a208.57 208.57 0 0 1 208.56 208.65c-.05 115-93.62 208.5-208.56 208.5h-.09a208.44 208.44 0 0 1-99.67-25.38zM115.69 354l6.33 3.76a173.18 173.18 0 0 0 88.23 24.16h.07c95.54 0 173.31-77.75 173.35-173.3a173.36 173.36 0 0 0-173.29-173.4C114.76 35.22 37 113 37 208.5a172.8 172.8 0 0 0 26.51 92.22l4.12 6.56-17.51 64z'/><path fill='%23fff' fill-rule='evenodd' d='M158.19 121.33c-3.9-8.68-8-8.86-11.73-9-3-.13-6.51-.12-10-.12a19.17 19.17 0 0 0-13.9 6.52c-4.78 5.22-18.24 17.82-18.24 43.46s18.68 50.42 21.28 53.9 36 57.77 89 78.66c44 17.36 53 13.9 62.53 13S308 295.17 312.35 283s4.34-22.59 3-24.77-4.78-3.48-10-6.08-30.83-15.22-35.61-17-8.25-2.6-11.73 2.62-13.45 16.94-16.49 20.42-6.08 3.91-11.29 1.31-22-8.11-41.91-25.87c-15.49-13.81-26-30.87-29-36.08s-.33-8 2.28-10.64c2.34-2.33 5.22-6.08 7.82-9.12s3.47-5.22 5.21-8.69.87-6.53-.44-9.13-11.37-28.34-16-38.64z'/></svg>") no-repeat;
     background-size: cover;
-    justify-self:end;
     display: inline-grid;
+    justify-self: end;
     height: 55%;
     width: 55%;
-    grid-row: 1;
-    grid-column: 4;
-    grid-auto-rows: 1fr;
 }
+#top-menu .whatsapp:hover {transform: scale(.93);}
+#top-menu .whatsapp:active {transform: scale(.84);}
+
+    /* Phone Block */
 #top-menu .top-phone {
-    letter-spacing: -0.5px;
-    font-size: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    grid-row: 1;
-    grid-column: 5;
-    grid-auto-rows: 1fr; margin-top:6px;
+    margin-top:6px;
 }
+#top-menu .top-phone a{
+    line-height: 1;
+    color: #000;
+}
+#top-menu .top-phone a:hover{
+    text-decoration: none;
+    color: #417d00;
+}
+#top-menu .top-phone a:active {transform: scale(.95);}
 #top-menu .top-phone p{
-    font-size: 65%;
     line-height: 1.2;
     font-weight: 700;
 }
-#top-menu .top-phone a{color: #000;line-height: 1;}
-#top-menu .top-phone a:hover{text-decoration: none; color: #417d00;}
-#top-menu .top-phone a:active{color: #18374d;}
 
-#top-menu .callback, #top-menu .whatsapp, .top-menu__logo-wrap__logo-img {
-    transform: scale(1);
-    transition: all .05s ease-out;
-}
-#top-menu .callback:hover, #top-menu .whatsapp:hover, .top-menu__logo-wrap__logo-img:hover {
-    text-decoration: none;
-    transform: scale(.95);
-    transition: all .03s ease-in;
-}
-#top-menu .callback:active, #top-menu .whatsapp:active, .top-menu__logo-wrap__logo-img:active {
-    transform: scale(.90);
-    transition: all .02s ease-in;
-}
+    /* Callback Button */
 #top-menu .callback {
     box-sizing: border-box;
     border: 3px solid var(--accent-clr);
-    width: 162px;
-    height: 70%;
     border-radius: 100px;
-    font-size: 80%;
     font-weight: 700;
     white-space: nowrap;
     text-transform: uppercase;
     justify-self:end;
     align-self: center;
     text-align: center;
-    vertical-align: middle;
     line-height: 36px;
     color: var(--accent-clr);
-    padding: 0;
-    grid-row: 1;
-    grid-column: 6;
-    grid-auto-rows: 1fr;
-
 }
 #top-menu .callback:hover {
     text-decoration: none;
-    transform: scale(.95);
-    transition: all .03s ease-in;
-
+    transform: scale(.97);
 }
-#top-menu .callback:active {
-    transform: scale(.90);
-    transition: all .02s ease-in;
-}
-/* END Top Menu Desktop */
+#top-menu .callback:active {transform: scale(.93);}
+.top-menu__logo-wrap__logo-img:hover, #top-menu .whatsapp:hover, #top-menu .callback:hover, .top-menu__logo-wrap__logo-img:active, #top-menu nav ul li a:active, #top-menu .whatsapp:active, #top-menu .top-phone a:active, #top-menu .callback:active {transition: all .02s ease-in;}
+/* END Top Menu */
 
-
-
-/* Video Section Desktop */
+/* Video Section */
 .main-cover::before {
     content: '';
     display: block;
@@ -260,7 +239,6 @@ b, strong {font-weight: 700;}
     text-align: center;
     padding: 40px;
     overflow: hidden;
-    position: relative;
 }
 
 /*
@@ -441,7 +419,6 @@ main .main-clients::before {
 }
 main .main-clients {
     width: 100vw;
-    position: relative;
     height: 70vh;
     align-content: center;
     text-align: center;
@@ -507,7 +484,6 @@ main .main-clients .logos>:nth-child(5){
 
 
 .map-contacts {
-    position: relative;
     grid-template-columns: 1fr 1fr;
     height: 70vh;
     z-index: 1;
@@ -537,7 +513,7 @@ main .main-clients .logos>:nth-child(5){
 }
 
 
-footer{position: relative;
+footer{
 background:#111;
 padding-bottom: 90px;
 color:#fff;
@@ -583,7 +559,6 @@ footer p{
 
 
 .ymap-container {
-  position: relative;
   overflow: hidden;
   cursor: pointer;
   background: url('../../../i.industrial.kz/stat/i/ya_map_psh.png') #fff9e8 no-repeat;
@@ -592,7 +567,6 @@ footer p{
 }
 
 #map-yandex {
-  position: relative;
   width: 100%;
   height: 70vh;
   cursor: pointer;

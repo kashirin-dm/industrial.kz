@@ -71,21 +71,16 @@
 
     <!-- ONLY FOR DEV.
     PHP Include for phones and tablets detection.
-    Need use MODx Mobile Detect Plugin instead of this PHP code! -->
-
-
+    Need use MODx Mobile Detect Plugin instead of this PHP code!
     <?php
-        require_once 'mob-detect.php';
-        $detect = new Mobile_Detect;
-
+        //require_once 'mob-detect.php';
+        //$detect = new Mobile_Detect;
         // Any mobile device (phones or tablets).
-        if ( $detect->isMobile() ) {
-            echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">';
-        }
+        //if ( $detect->isMobile() ) {
+            //echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, //user-scalable=no">';
+        //}
     ?>
-    <!-- end ONLY FOR DEV.
-    -->
-
+     end ONLY FOR DEV -->
 </head>
 <body>
     <!-- GTM (noscript) -->
@@ -95,7 +90,7 @@
     <!-- End GTM (noscript) -->
 
     <!-- Header navigation -->
-    <header id="top-menu" class="grid">
+    <header id="top-menu">
             <a href="#" class="top-menu__logo-wrap">
                 <img src="i.industrial.kz/stat/i/ind_logo.svg" alt="Логотип INDUSTRIAL" title="Перейти на главную страницу" class="top-menu__logo-wrap__logo-img">
             </a>
@@ -117,14 +112,14 @@
                 <a href="#" class="callback">Заказать звонок</a>
     </header>
 
-    <main class="grid">
+    <main>
         <!-- Video -->
         <section class="main-cover">
             <!--<video preload loop playsinline autoplay muted>
                 <source src="i.industrial.kz/stat/v/cover.mp4" type='video/mp4; codecs="avc1.4D4020"'>
                 <source src="i.industrial.kz/stat/v/cover.webm" type='video/webm; codecs="vp8"'>
             </video>-->
-            <div class="container grid">
+            <div class="container">
                 <header>
                     <h1>Промышленные расходные материалы</h1>
                     <p>для казахстанских промышленных компаний</p>
@@ -170,13 +165,13 @@
         </article>
 
         <!-- Clients -->
-        <section class="main-clients grid">
+        <section class="main-clients">
             <div class="container">
                 <header>
                     <h2>Компанию Industrial выбирают<br>как постоянного поставщика</h2>
                     <p>Реализуем товары с нашего склада в г. Алматы и от производителей.<br>Являемся официальными и единственными представителями многих производителей в РК.</p>
                 </header>
-                <div class="grid logos">
+                <div class="logos">
                     <img src="i.industrial.kz/stat/i/logos_sprite.png"  alt="Клиент: Knauf" title="Клиент: Knauf">
                     <img src="i.industrial.kz/stat/i/logos_sprite.png" height="54" alt="Клиент: Turkuaz Machinery" title="Клиент: Turkuaz Machinery">
                     <img src="i.industrial.kz/stat/i/logos_sprite.png" height="54" alt="Клиент: Eurasian Foods" title="Клиент: Eurasian Foods">
@@ -201,7 +196,7 @@
 
 
     <!-- Contacts -->
-    <section class="grid map-contacts">
+    <section class="map-contacts">
         <div class="ymap-container">
     			<div class="loader loader-default"></div>
     			<div id="map-yandex"></div>
@@ -218,8 +213,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="grid">
-      <div class="container grid">
+    <footer>
+      <div class="container">
         <aside class="catalog-button cat-butt-dark-color cat-butt-foot">
         <a href="#">Смотреть каталог</a>
         </aside>

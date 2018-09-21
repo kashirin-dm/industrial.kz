@@ -1,7 +1,8 @@
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {}
 
-/* --------------------------
+/*
+-----------------------------
 for-tablet-portait-only */
 @media (min-width: 600px) and (max-width: 899px) {
     #top-menu {
@@ -26,9 +27,6 @@ for-tablet-portait-only */
 
     #top-menu nav ul li {
         padding: 0 1.4vmin;
-    }
-    #top-menu nav ul li:first-child {
-        padding-left: 0;
     }
 
     #top-menu .whatsapp {
@@ -78,7 +76,8 @@ for-tablet-portait-only */
 @media (min-width: 900px) {}
 
 /*
--------------------------- for-tablet-landscape-only */
+-----------------------------
+for-tablet-landscape-only */
 @media (min-width: 900px) and (max-width: 1199px) {
     #top-menu {
         grid-template-columns: 3vmin 1fr 6vmin auto 1fr 3vmin;
@@ -102,9 +101,6 @@ for-tablet-portait-only */
 
     #top-menu nav ul li {
         padding: 0 5vmin;
-    }
-    #top-menu nav ul li:first-child {
-        padding-left: 0;
     }
 
     #top-menu .whatsapp {
@@ -154,7 +150,8 @@ for-tablet-portait-only */
 @media (min-width: 1200px) {}
 
 /*
--------------------------- for-desktop-only */
+-----------------------------
+for-desktop-only */
 @media (min-width: 1200px) and (max-width: 1799px) {
     #top-menu {
         width: 98%;
@@ -162,6 +159,7 @@ for-tablet-portait-only */
         grid-template-rows: 4.37vw;
         height: 4.37vw;
         column-gap: 2vw;
+        margin: .8% 0 0 1%;
     }
     .top-menu__logo-wrap {
         grid-column: 2;
@@ -177,9 +175,6 @@ for-tablet-portait-only */
     }
     #top-menu nav ul li {
         padding: 0 0.8vw;
-    }
-    #top-menu nav ul li:first-child{
-        padding-left: 0;
     }
     #top-menu .whatsapp {
         height: 2.5vw;
@@ -204,7 +199,8 @@ for-tablet-portait-only */
 }
 
 /*
--------------------------- for-big-desktop-up */
+-----------------------------
+for-big-desktop-up */
 @media (min-width: 1800px) {
     #top-menu {
         width: 98%;
@@ -212,6 +208,7 @@ for-tablet-portait-only */
         grid-template-rows: 3.6vw;
         height: 3.6vw;
         column-gap: 1vw;
+        margin: .8% 0 0 1%;
     }
     .top-menu__logo-wrap {justify-content: center;
         grid-column: 2;
@@ -226,9 +223,6 @@ for-tablet-portait-only */
     }
     #top-menu nav ul li {
         padding: 0 0.8vw;
-    }
-    #top-menu nav ul li:first-child{
-        padding-left: 0;
     }
     #top-menu .whatsapp {
         height: 2.2vw;
