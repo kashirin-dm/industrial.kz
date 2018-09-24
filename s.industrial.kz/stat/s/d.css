@@ -1,0 +1,147 @@
+/* for-desktop-up */
+@media (min-width: 1200px) {
+    .main-cover form {
+        grid-template-columns: 20% 9fr 1fr 20%;
+        column-gap: 1vw;
+    }
+}
+
+/*
+-----------------------------
+for-desktop-only */
+@media (min-width: 1200px) and (max-width: 1799px) {
+    #main-menu {
+        width: 98%;
+        grid-template-columns: 1vw 10.24vw 3fr 2.5vw auto 14vw 1vw;
+        grid-template-rows: 4.37vw;
+        height: 4.37vw;
+        column-gap: 2vw;
+        margin: .8% 0 0 1%;
+    }
+    .main-menu__logo-wrap {
+        grid-column: 2;
+        height: 3vw;
+        grid-row: 1;
+        grid-auto-rows: 1fr;
+        }
+    #main-menu nav {
+        font-size: 1.3vw;
+        grid-row: 1;
+        grid-column: 3;
+        grid-auto-rows: 1fr;
+    }
+    #main-menu nav ul li {
+        padding: 0 0.8vw;
+    }
+    #main-menu .whatsapp {
+        grid-column: 4;
+        height: 2.5vw;
+        width: 100%;
+    }
+    #main-menu .top-phone span{
+        font-size: .86vw;
+    }
+    #main-menu .top-phone a{
+        font-size: 1.3vw;
+    }
+    #main-menu .callback {
+        width: 162px;
+        line-height: 42px;
+    }
+    #main-menu .callback {
+        width: 100%;
+        height: 3vw;
+        font-size: 1.2vw;
+        line-height: 2.7vw;
+    }
+    .main-cover h1 {
+        font-size: 4vw;
+        line-height: 1;
+    }
+    .main-cover p {
+        font-size: 2.5vw;
+        margin-bottom: 4vw;
+        line-height: 1.75;
+    }
+    .main-cover form * {height: 4vw;}
+    .main-cover form input {
+        padding: 0 30px;
+        font-size: 1.5vw;
+    }
+    .main-cover form input::placeholder {
+        font-size: 1.5vw;
+    }
+    .main-cover form button {
+        font-size: 1.7vw;
+    }
+}
+
+/*
+-----------------------------
+for-big-desktop-up */
+@media (min-width: 1800px) {
+    #main-menu {
+        width: 98%;
+        grid-template-columns: 10vw 8.3vw 3fr 2.2vw auto 10vw 10vw;
+        grid-template-rows: 3.6vw;
+        height: 3.6vw;
+        column-gap: 1vw;
+        margin: .8% 0 0 1%;
+    }
+    .main-menu__logo-wrap {justify-content: center;
+        grid-column: 2;
+        height: 2.4vw;
+        grid-row: 1;
+        }
+    #main-menu nav {
+        font-size: 0.96vw;
+        grid-row: 1;
+        grid-column: 3;
+        grid-auto-rows: 1fr;
+    }
+    #main-menu nav ul li {
+        padding: 0 0.8vw;
+    }
+    #main-menu .whatsapp {
+        grid-column: 4;
+        height: 2.2vw;
+        width: 100%;
+    }
+    #main-menu .top-phone span{
+        font-size: .7vw;
+    }
+    #main-menu .top-phone a{
+        font-size: 1.1vw;
+    }
+    #main-menu .callback {
+        width: 162px;
+        line-height: 42px;
+    }
+    #main-menu .callback {
+        width: 100%;
+        height: 2.4vw;
+        font-size: .9vw;
+        line-height: 2.2vw;
+    }
+    .main-cover {grid-template-columns: 15% 1fr 15%;}
+    .main-cover h1 {
+        font-size: 4vw;
+        line-height: 1;
+    }
+    .main-cover p {
+        font-size: 2.5vw;
+        margin-bottom: 4vw;
+        line-height: 1.75;
+    }
+    .main-cover form * {height: 4vw;}
+    .main-cover form input {
+        padding: 0 30px;
+        font-size: 1.5vw;
+    }
+    .main-cover form input::placeholder {
+        font-size: 1.5vw;
+    }
+    .main-cover form button {
+        font-size: 1.7vw;
+    }
+}

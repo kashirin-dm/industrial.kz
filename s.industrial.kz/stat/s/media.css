@@ -1,5 +1,11 @@
 /* for-tablet-portrait-up */
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+    .main-cover {grid-template-columns: 5% 1fr 5%;}
+    .main-cover > * {
+        grid-column: 2;
+        z-index: 3;
+    }
+}
 
 /*
 -----------------------------
@@ -70,10 +76,40 @@ for-tablet-portait-only */
         height: 7vmin;
         line-height: 7vmin;
     }
+    .main-cover h1 {
+        font-size: 7vw;
+        line-height: 1;
+    }
+    .main-cover p {
+        font-size: 4vw;
+        margin-bottom: 4vw;
+        line-height: 1.9;
+    }
+    .main-cover form {
+        grid-template-columns: 7fr 1fr;
+        column-gap: 1vw;
+    }
+    .main-cover form * {height: 11vw;}
+    .main-cover form input {
+        grid-column: 1;
+        padding: 0 30px;
+        font-size: 3.4vw;
+    }
+    .main-cover form input::placeholder {
+        font-size: 3.4vw;
+    }
+    .main-cover form button {
+        grid-column: 2;
+        font-size: 3.5vw;
+    }
 }
 
 /* for-tablet-landscape-up */
-@media (min-width: 900px) {}
+@media (min-width: 900px) {
+    .main-cover {grid-template-columns: 10% 1fr 10%;}
+    .main-cover form input {grid-column: 2;}
+    .main-cover form button {grid-column: 3;}
+}
 
 /*
 -----------------------------
@@ -98,11 +134,9 @@ for-tablet-landscape-only */
         grid-auto-rows: 1fr;
         justify-content: center;
     }
-
     #main-menu nav ul li {
         padding: 0 5vmin;
     }
-
     #main-menu .whatsapp {
         grid-column: 3;
         height: 6vmin;
@@ -144,106 +178,28 @@ for-tablet-landscape-only */
         font-size: 2.5vmin;
         line-height: 6vmin;
     }
-}
-
-/* for-desktop-up */
-@media (min-width: 1200px) {}
-
-/*
------------------------------
-for-desktop-only */
-@media (min-width: 1200px) and (max-width: 1799px) {
-    #main-menu {
-        width: 98%;
-        grid-template-columns: 1vw 10.24vw 3fr 2.5vw auto 14vw 1vw;
-        grid-template-rows: 4.37vw;
-        height: 4.37vw;
-        column-gap: 2vw;
-        margin: .8% 0 0 1%;
+    .main-cover h1 {
+        font-size: 6vw;
+        line-height: 1;
     }
-    .main-menu__logo-wrap {
-        grid-column: 2;
-        height: 3vw;
-        grid-row: 1;
-        grid-auto-rows: 1fr;
-        }
-    #main-menu nav {
-        font-size: 1.3vw;
-        grid-row: 1;
-        grid-column: 3;
-        grid-auto-rows: 1fr;
+    .main-cover p {
+        font-size: 3.5vw;
+        margin-bottom: 4vw;
+        line-height: 1.9;
     }
-    #main-menu nav ul li {
-        padding: 0 0.8vw;
-    }
-    #main-menu .whatsapp {
-        grid-column: 4;
-        height: 2.5vw;
-        width: 100%;
-    }
-    #main-menu .top-phone span{
-        font-size: .86vw;
-    }
-    #main-menu .top-phone a{
-        font-size: 1.3vw;
-    }
-    #main-menu .callback {
-        width: 162px;
-        line-height: 42px;
-    }
-    #main-menu .callback {
-        width: 100%;
-        height: 3vw;
-        font-size: 1.2vw;
-        line-height: 2.7vw;
-    }
-}
-
-/*
------------------------------
-for-big-desktop-up */
-@media (min-width: 1800px) {
-    #main-menu {
-        width: 98%;
-        grid-template-columns: 10vw 8.3vw 3fr 2.2vw auto 10vw 10vw;
-        grid-template-rows: 3.6vw;
-        height: 3.6vw;
+    .main-cover form {
+        grid-template-columns: 5% 7fr 1fr 5%;
         column-gap: 1vw;
-        margin: .8% 0 0 1%;
     }
-    .main-menu__logo-wrap {justify-content: center;
-        grid-column: 2;
-        height: 2.4vw;
-        grid-row: 1;
-        }
-    #main-menu nav {
-        font-size: 0.96vw;
-        grid-row: 1;
-        grid-column: 3;
-        grid-auto-rows: 1fr;
+    .main-cover form * {height: 8vw;}
+    .main-cover form input {
+        padding: 0 30px;
+        font-size: 2.6vw;
     }
-    #main-menu nav ul li {
-        padding: 0 0.8vw;
+    .main-cover form input::placeholder {
+        font-size: 2.6vw;
     }
-    #main-menu .whatsapp {
-        grid-column: 4;
-        height: 2.2vw;
-        width: 100%;
-    }
-    #main-menu .top-phone span{
-        font-size: .7vw;
-    }
-    #main-menu .top-phone a{
-        font-size: 1.1vw;
-    }
-    #main-menu .callback {
-        width: 162px;
-        line-height: 42px;
-    }
-    #main-menu .callback {
-        width: 100%;
-        height: 2.4vw;
-        font-size: .9vw;
-        line-height: 2.2vw;
+    .main-cover form button {
+        font-size: 2.7vw;
     }
 }
