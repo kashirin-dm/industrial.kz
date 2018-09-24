@@ -16,8 +16,6 @@ $(window).scroll(function() {
     main_menu_opacity_bg();
 });
 
-
-
 // Yandex Map
 //Переменная для включения/отключения индикатора загрузки
 var spinner = $('.ymap-container').children('.loader');

@@ -1,10 +1,5 @@
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {
-    .main-cover {grid-template-columns: 5% 1fr 5%;}
-    .main-cover > * {
-        grid-column: 2;
-        z-index: 3;
-    }
 }
 
 /*
@@ -38,7 +33,8 @@ for-tablet-portait-only */
     #main-menu .whatsapp {
         grid-column: 3;
         height: 7vmin;
-        width: 100%;grid-row: 1;
+        width: 100%;
+        grid-row: 1;
     }
     #main-menu .top-phone {
         grid-column: 4;
@@ -77,36 +73,37 @@ for-tablet-portait-only */
         line-height: 7vmin;
     }
     .main-cover h1 {
-        font-size: 7vw;
+        font-size: 5.5vmax;
         line-height: 1;
+        margin-bottom: 2vmax;
     }
     .main-cover p {
-        font-size: 4vw;
-        margin-bottom: 4vw;
-        line-height: 1.9;
+        font-size: 3vmax;
+        margin-bottom: 3vmax;
+        line-height: 1.2;
     }
     .main-cover form {
         grid-template-columns: 7fr 1fr;
-        column-gap: 1vw;
+        column-gap: 1vmax;
     }
-    .main-cover form * {height: 11vw;}
+    .main-cover form * {height: 11vmax;}
     .main-cover form input {
         grid-column: 1;
-        padding: 0 30px;
-        font-size: 3.4vw;
+        padding: 0 5vmax;
+        font-size: 3.4vmax;
     }
     .main-cover form input::placeholder {
-        font-size: 3.4vw;
+        font-size: 3.4vmax;
     }
     .main-cover form button {
         grid-column: 2;
-        font-size: 3.5vw;
+        font-size: 3.5vmax;
     }
 }
 
 /* for-tablet-landscape-up */
 @media (min-width: 900px) {
-    .main-cover {grid-template-columns: 10% 1fr 10%;}
+    #main-menu {position: fixed;}
     .main-cover form input {grid-column: 2;}
     .main-cover form button {grid-column: 3;}
 }
@@ -179,27 +176,28 @@ for-tablet-landscape-only */
         line-height: 6vmin;
     }
     .main-cover h1 {
-        font-size: 6vw;
+        font-size: 5.5vmax;
         line-height: 1;
+        margin-bottom: 2vmax;
     }
     .main-cover p {
-        font-size: 3.5vw;
-        margin-bottom: 4vw;
-        line-height: 1.9;
+        font-size: 3vmax;
+        margin-bottom: 4vmax;
+        line-height: 1.2;
     }
     .main-cover form {
         grid-template-columns: 5% 7fr 1fr 5%;
-        column-gap: 1vw;
+        column-gap: 1vmax;
     }
-    .main-cover form * {height: 8vw;}
+    .main-cover form * {height: 7vmax;}
     .main-cover form input {
-        padding: 0 30px;
-        font-size: 2.6vw;
+        padding: 0 4vmax;
+        font-size: 2.6vmax;
     }
     .main-cover form input::placeholder {
-        font-size: 2.6vw;
+        font-size: 2.6vmax;
     }
     .main-cover form button {
-        font-size: 2.7vw;
+        font-size: 2.7vmax;
     }
 }

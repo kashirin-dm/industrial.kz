@@ -1,8 +1,8 @@
 /* for-desktop-up */
 @media (min-width: 1200px) {
     .main-cover form {
-        grid-template-columns: 20% 9fr 1fr 20%;
-        column-gap: 1vw;
+        grid-template-columns: 15% 9fr 1fr 15%;
+        column-gap: 1vmax;
     }
 }
 
@@ -55,24 +55,24 @@ for-desktop-only */
         line-height: 2.7vw;
     }
     .main-cover h1 {
-        font-size: 4vw;
+        font-size: 5vmax;
         line-height: 1;
     }
     .main-cover p {
-        font-size: 2.5vw;
-        margin-bottom: 4vw;
+        font-size: 3vmax;
+        margin-bottom: 4vmax;
         line-height: 1.75;
     }
-    .main-cover form * {height: 4vw;}
+    .main-cover form * {height: 6vmax;}
     .main-cover form input {
-        padding: 0 30px;
-        font-size: 1.5vw;
+        padding: 0 3vmax;
+        font-size: 2.2vmax;
     }
     .main-cover form input::placeholder {
-        font-size: 1.5vw;
+        font-size: 2.2vmax;
     }
     .main-cover form button {
-        font-size: 1.7vw;
+        font-size: 2.5vmax;
     }
 }
 
@@ -125,23 +125,24 @@ for-big-desktop-up */
     }
     .main-cover {grid-template-columns: 15% 1fr 15%;}
     .main-cover h1 {
-        font-size: 4vw;
+        font-size: 4vmax;
         line-height: 1;
+        margin-bottom: 2vmax;
     }
     .main-cover p {
-        font-size: 2.5vw;
-        margin-bottom: 4vw;
+        font-size: 2.5vmax;
+        margin-bottom: 4vmax;
         line-height: 1.75;
     }
-    .main-cover form * {height: 4vw;}
+    .main-cover form * {height: 4vmax;}
     .main-cover form input {
-        padding: 0 30px;
-        font-size: 1.5vw;
+        padding: 0 2vmax;
+        font-size: 1.5vmax;
     }
     .main-cover form input::placeholder {
-        font-size: 1.5vw;
+        font-size: 1.5vmax;
     }
     .main-cover form button {
-        font-size: 1.7vw;
+        font-size: 1.7vmax;
     }
 }

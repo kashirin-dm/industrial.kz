@@ -72,10 +72,85 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     #main-menu .callback {
         display: none;
     }
+    .main-cover {grid-template-columns: 5% 1fr 5%;}
+    .main-cover > * {
+        grid-column: 2;
+        z-index: 3;
+    }
+    .main-cover h1 {
+        font-size: 6vmax;
+        line-height: 1;
+        margin-bottom: 4vmax;
+        font-weight: 700;
+    }
+    .main-cover p {
+        display: none;
+    }
+    .main-cover form {
+        grid-template-columns: 1fr;
+        grid-row-gap: 2vmax;
+        justify-items:center;
+    }
+    .main-cover form * {height: 10vmax;}
+    .main-cover form input {
+        text-align: center;
+        padding: 0 3vmax;
+        font-size: 4.5vmax;
+    }
+    .main-cover form input::placeholder {
+        font-size: 4.5vmax;
+    }
+    .main-cover form button {width: 80%;
+        height: 9vmax;
+        font-size: 5vmax;
+    }
+
+    .mainpage-text {
+        grid-template-columns: 5% 1fr 5%;
+    }
+    .mainpage-text .article-content{
+        column-count: 1;
+        margin-bottom: 6vmax;
+    }
+    .mainpage-text h2 {
+        font-size: 6vmax;
+        font-weight: 700;
+        padding: 4vmax 0;
+    }
+    .mainpage-text figcaption {
+        text-align: center;
+        font-size: 4vmax;
+    }
+    .mainpage-text h3{
+        font-size: 5vmax;
+        font-weight: 700;
+        padding: 3vmax 2vmax .5vmax;
+    }
+    .mainpage-text h4{
+        font-size: 4.5vmax;
+        font-weight: 700;
+        padding: 1vmax 2vmax .2vmax;
+    }
+    .mainpage-text p{
+        font-size: 5vmax;
+        padding: 0 2vmax 4vmax;
+    }
+    .mainpage-text ul {
+        font-size: 4.5vmax;
+        padding: 0 3vmax 4vmax;
+    }
+    .mainpage-text ul > li{padding-bottom: 3vmax;}
+
 }
 
 /* for-small-phone-up */
-@media (min-width: 320px) {}
+@media (min-width: 320px) {
+    .main-cover {grid-template-columns: 5% 1fr 5%;}
+    .main-cover > * {
+        grid-column: 2;
+        z-index: 3;
+    }
+}
 /*
 -------------------------- for-phone-only */
 @media (min-width: 320px) and (max-width: 599px) {
@@ -146,20 +221,39 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         display: none;
     }
     .main-cover {
-        padding: 10px;
+        grid-template-rows: 1fr 1fr;
+    }
+    .main-cover h1 {
+        font-size: 3.4vmax;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 1.5vmax;
+    }
+    .main-cover p {
+        font-size: 2.8vmax;
+        margin-bottom: 2vmax;
+        line-height: 1.1;
+    }
+    .main-cover form {
+        grid-template-columns: 1fr;
+        grid-row-gap: 1vmax;
+        justify-items:center;
+    }
+    .main-cover form * {height: 8vmax;}
+    .main-cover form input {
+        text-align: center;
+        padding: 0 4vmax;
+        font-size: 2.4vmax;
+    }
+    .main-cover form input::placeholder {
+        font-size: 2.4vmax;
+    }
+    .main-cover form button {
+        width: 70%;
+        height: 6vmax;
+        font-size: 3.4vmax;
+    }
 
-    }
-    .main-cover > h1 {
-        font-size: 6vmin;
-    }
-    .main-cover > p {
-        font-size: 5vmin;
-        margin-bottom: 20px;
-    }
-
-    .main-cover {
-        width: 85vw;
-    }
     .catalog-button {
         text-align: center;
         padding:10px 10px;
@@ -173,22 +267,42 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     }
 
 
-    .container{
-        width: 100vw; display: inline-grid;
+    .mainpage-text {
+        grid-template-columns: 5% 1fr 5%;
     }
-    main .mainpage-text .article-content{
+    .mainpage-text .article-content{
         column-count: 1;
-        column-gap: 0;
-        padding: 0 20px;
-        margin-bottom: 80px;
+        margin-bottom: 4vmax;
     }
-    main .mainpage-text h2 {
-        text-align: left;
+    .mainpage-text h2 {
+        font-size: 4vmax;
+        font-weight: 700;
     }
-    main .mainpage-text .article-content h3{
-        text-align: left;
+    .mainpage-text figcaption {
+        text-align: center;
+        font-size: 2vmax;
     }
-    main .main-clients::before {
+    .mainpage-text h3{
+        font-size: 3vmax;
+        font-weight: 700;
+        padding: 3vmax 2vmax .5vmax;
+    }
+    .mainpage-text h4{
+        font-size: 2.4vmax;
+        font-weight: 700;
+        padding: 1vmax 2vmax .2vmax;
+    }
+    .mainpage-text p{
+        font-size: 2.7vmax;
+        padding: 0 2vmax 4vmax;
+    }
+    .mainpage-text ul {
+        font-size: 2.4vmax;
+        padding: 0 3vmax 4vmax;
+    }
+    .mainpage-text ul > li{padding-bottom: 1.4vmax;}
+
+    .main-clients::before {
         content: '';
         display: block;
         position: absolute;
@@ -197,7 +311,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         height: 100%;
         width: 100vw;
     }
-    main .main-clients {
+    .main-clients {
         width: auto;
         width: 100vw;
         align-content: center;
@@ -207,28 +321,28 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         background: url(../../../i.industrial.kz/stat/i/main_subcover.jpg) center no-repeat fixed #000;
         overflow: hidden;
     }
-    main .main-clients .container{
+    .main-clients .container{
         width: 95vw;
         z-index: 3;
     }
-    main .main-clients h2{
+    .main-clients h2{
         font-size: 5vmin;
         line-height: 1;
         padding: 10px;
     }
-    main .main-clients p{
+    .main-clients p{
         font: 400 4vmin 'Circe Rounded', sans-serif;
         padding: 10px;
     }
 
-    main .main-clients .logos{
+    .main-clients .logos{
         grid-template-columns: repeat(2,1fr);
         grid-gap:10px;
         object-fit: none;
         text-align: center;
         padding:5px 5px;
     }
-    main .main-clients .logos>*{
+    .main-clients .logos>*{
         object-fit: none;
         justify-self:center;
         align-self:center;
@@ -236,19 +350,19 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         padding:5px;
         background-size: 10% 10%;
     }
-    main .main-clients .logos>:nth-child(1){
+    .main-clients .logos>:nth-child(1){
       width: 91.68px;
     }
-    main .main-clients .logos>:nth-child(2){
+    .main-clients .logos>:nth-child(2){
       width: 42.72px;
     }
-    main .main-clients .logos>:nth-child(3){
+    .main-clients .logos>:nth-child(3){
       width: 64.32px;
     }
-    main .main-clients .logos>:nth-child(4){
+    .main-clients .logos>:nth-child(4){
       width: 61.44px;
     }
-    main .main-clients .logos>:nth-child(5){
+    .main-clients .logos>:nth-child(5){
       width: 78.24px;
     }
     .cat-butt-dark-company {padding:10px 10px 0;  font-size: 3vmin;}
