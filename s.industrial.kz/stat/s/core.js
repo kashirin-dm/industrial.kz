@@ -1,19 +1,19 @@
 /* Функция ловит события скролла и передает прозрачность верхнему меню,
 когда позиция ниже 40px.
 Анимания происходит через CSS */
-function top_menu_opacity_bg() {
+function main_menu_opacity_bg() {
     if ($(window).scrollTop() <= 40) {
-        $('#top-menu').css('background', 'rgba(255,255,255,0)');
-        $('#top-menu').css('box-shadow', 'none');
+        $('#main-menu').css('background', 'rgba(255,255,255,0)');
+        $('#main-menu').css('box-shadow', 'none');
     }
     else {
-        $('#top-menu').css('background', 'rgba(255,255,255,1)');
-        $('#top-menu').css('box-shadow', 'rgba(0, 0, 0, 0.1) 0px 1px 3px');
+        $('#main-menu').css('background', 'rgba(255,255,255,1)');
+        $('#main-menu').css('box-shadow', 'rgba(0, 0, 0, .2) 0px 1px 3px');
     }
 }
-top_menu_opacity_bg();
+main_menu_opacity_bg();
 $(window).scroll(function() {
-    top_menu_opacity_bg();
+    main_menu_opacity_bg();
 });
 
 

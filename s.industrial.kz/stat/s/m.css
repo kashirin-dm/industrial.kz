@@ -6,7 +6,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
 /*
 -------------------------- for-super-small-device-only */
 @media (max-width: 319px) {
-    #top-menu {
+    #main-menu {
         grid-template-columns:auto 1fr 10vw 1fr;
         grid-template-rows: 16vw;
         column-gap: 3%;
@@ -16,37 +16,37 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         border-radius: 10px;
         grid-auto-rows: 1fr;
     }
-    .top-menu__logo-wrap {
+    .main-menu__logo-wrap {
         grid-column: 2;
         height: 10vw;
         grid-row: 1;
         grid-auto-rows: 1fr;
         }
-    #top-menu nav {
+    #main-menu nav {
         font-size: 6vw;
         grid-row: 2;
         grid-column: 1/7;
         grid-auto-rows: 1fr;
         justify-content: center;
     }
-    #top-menu nav ul {
+    #main-menu nav ul {
         justify-content: center;
     }
-    #top-menu nav ul li {
+    #main-menu nav ul li {
         padding: 0 4vw;
     }
-    #top-menu nav ul li:first-child {
+    #main-menu nav ul li:first-child {
         padding-left: 0;
     }
-    #top-menu nav ul li:nth-child(3), #top-menu nav ul li:nth-child(4), #top-menu nav ul li:nth-child(5){
+    #main-menu nav ul li:nth-child(3), #main-menu nav ul li:nth-child(4), #main-menu nav ul li:nth-child(5){
         display: none;
     }
-    #top-menu .whatsapp {
+    #main-menu .whatsapp {
         grid-column: 3;
         height: 10vw;
         width: 100%;
     }
-    #top-menu .top-phone {
+    #main-menu .top-phone {
         grid-column: 4/6;
         display: inline-grid;
         grid-template-columns: 1fr;
@@ -60,16 +60,16 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-row: 1;
         margin-top: auto;
     }
-    #top-menu .top-phone p{
+    #main-menu .top-phone span{
         display: none;
     }
-    #top-menu .top-phone a{
+    #main-menu .top-phone a{
         font-size: 5vw;
         color: #000;
         justify-self:end;
         grid-column: 1/2;
     }
-    #top-menu .callback {
+    #main-menu .callback {
         display: none;
     }
 }
@@ -79,7 +79,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
 /*
 -------------------------- for-phone-only */
 @media (min-width: 320px) and (max-width: 599px) {
-    #top-menu {
+    #main-menu {
         grid-template-columns:auto 1fr 9vmin 1fr;
         grid-template-rows: 15vmin;
         column-gap: 3%;
@@ -89,37 +89,37 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         border-radius: 10px;
         grid-auto-rows: 1fr;
     }
-    .top-menu__logo-wrap {
+    .main-menu__logo-wrap {
         grid-column: 2;
         height: 9vmin;
         grid-row: 1;
         grid-auto-rows: 1fr;
         }
-    #top-menu nav {
+    #main-menu nav {
         font-size: 4vmin;
         grid-row: 2;
         grid-column: 1/7;
         grid-auto-rows: 1fr;
         justify-content: center;
     }
-    #top-menu nav ul {
+    #main-menu nav ul {
         justify-content: center;
     }
-    #top-menu nav ul li {
+    #main-menu nav ul li {
         padding: 0 4vmin;
     }
-    #top-menu nav ul li:first-child {
+    #main-menu nav ul li:first-child {
         padding-left: 0;
     }
-    #top-menu nav ul li:nth-child(4), #top-menu nav ul li:nth-child(5){
+    #main-menu nav ul li:nth-child(4), #main-menu nav ul li:nth-child(5){
         display: none;
     }
-    #top-menu .whatsapp {
+    #main-menu .whatsapp {
         grid-column: 3;
         height: 10vw;
         width: 100%;
     }
-    #top-menu .top-phone {
+    #main-menu .top-phone {
         grid-column: 4/6;
         display: inline-grid;
         grid-template-columns: 1fr;
@@ -133,31 +133,31 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-row: 1;
         margin-top: auto;
     }
-    #top-menu .top-phone p{
+    #main-menu .top-phone span{
         display: none;
     }
-    #top-menu .top-phone a{
+    #main-menu .top-phone a{
         font-size: 5vw;
         color: #000;
         justify-self:end;
         grid-column: 1/2;
     }
-    #top-menu .callback {
+    #main-menu .callback {
         display: none;
     }
     .main-cover {
         padding: 10px;
 
     }
-    .main-cover > .container h1 {
+    .main-cover > h1 {
         font-size: 6vmin;
     }
-    .main-cover > .container p {
+    .main-cover > p {
         font-size: 5vmin;
         margin-bottom: 20px;
     }
 
-    .main-cover > .container {
+    .main-cover {
         width: 85vw;
     }
     .catalog-button {

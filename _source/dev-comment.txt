@@ -34,3 +34,21 @@ http://www.ravelrumba.com/blog/static-cookieless-domain/ Домен без ку�
 
 
 https://font-converter.net/en хороший конвертер шрифтов
+
+
+<!--<video preload loop playsinline autoplay muted>
+    <source src="i.industrial.kz/stat/v/cover.mp4" type='video/mp4; codecs="avc1.4D4020"'>
+    <source src="i.industrial.kz/stat/v/cover.webm" type='video/webm; codecs="vp8"'>
+</video>-->
+
+
+/*
+#dsk-video video {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}*/
