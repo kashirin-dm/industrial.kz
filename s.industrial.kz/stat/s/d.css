@@ -4,6 +4,9 @@
         grid-template-columns: 15% 9fr 1fr 15%;
         column-gap: 1vmax;
     }
+    .mainpage-text {
+        grid-template-columns: 15% 1fr 15%;
+    }
 }
 
 /*
@@ -74,6 +77,40 @@ for-desktop-only */
     .main-cover form button {
         font-size: 2.5vmax;
     }
+    .mainpage-text .article-content{
+        column-count: 2;
+        column-gap: 3vmax;
+        margin-bottom: 4vmax;
+        column-rule: 1px dotted #ccc;
+    }
+    .mainpage-text h2 {
+        font-size: 2.8vmax;
+        font-weight: 400;
+        padding: 2vmax 0;
+    }
+    .mainpage-text figcaption {
+        font-size: 1vmax;
+        padding-top: .5vmax;
+    }
+    .mainpage-text h3{
+        font-size: 1.7vmax;
+        font-weight: 400;
+        padding: 0 2vmax .5vmax;
+    }
+    .mainpage-text h4{
+        font-size: 1.2vmax;
+        font-weight: 700;
+        padding: 1vmax 2vmax .2vmax;
+    }
+    .mainpage-text p{
+        font-size: 1.3vmax;
+        padding: 0 2vmax 3vmax;
+    }
+    .mainpage-text ul {
+        font-size: 1.2vmax;
+        padding: 0 3vmax 2vmax;
+    }
+    .mainpage-text ul > li{padding-bottom: .4vmax;}
 }
 
 /*
@@ -145,4 +182,38 @@ for-big-desktop-up */
     .main-cover form button {
         font-size: 1.7vmax;
     }
+    .mainpage-text .article-content{
+        column-count: 2;
+        column-gap: 3vmax;
+        margin-bottom: 4vmax;
+        column-rule: 1px dotted #ccc;
+    }
+    .mainpage-text h2 {
+        font-size: 2vmax;
+        padding: 2vmax 0;
+    }
+    .mainpage-text figcaption {
+        font-size: .8vmax;
+        padding-top: .5vmax;
+    }
+    .mainpage-text h3{
+        font-size: 1.4vmax;
+        font-weight: 400;
+        padding: 0 2vmax .5vmax;
+    }
+    .mainpage-text h4{
+        font-size: .9vmax;
+        font-weight: 700;
+        padding: 1vmax 2vmax .2vmax;
+    }
+    .mainpage-text p{
+        font-size: 1vmax;
+        padding: 0 2vmax 2vmax;
+    }
+    .mainpage-text ul {
+        font-size: .9vmax;
+        padding: 0 3vmax 2vmax;
+    }
+    .mainpage-text ul > li{padding-bottom: .4vmax;}
+    /* END Main Article */
 }

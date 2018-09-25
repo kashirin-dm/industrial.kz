@@ -1,5 +1,8 @@
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {
+    .mainpage-text figcaption {
+        text-align: right;
+    }
 }
 
 /*
@@ -99,6 +102,7 @@ for-tablet-portait-only */
         grid-column: 2;
         font-size: 3.5vmax;
     }
+
 }
 
 /* for-tablet-landscape-up */
@@ -200,4 +204,38 @@ for-tablet-landscape-only */
     .main-cover form button {
         font-size: 2.7vmax;
     }
+    .mainpage-text .article-content{
+        grid-column: 2;
+        column-count: 2;
+        column-gap: 3vmax;
+        margin-bottom: 4vmax;
+        column-rule: 1px dotted #ccc;
+    }
+    .mainpage-text h2 {
+        font-size: 6vmax;
+        font-weight: 400;
+        padding: 2vmax 0;
+    }
+    .mainpage-text figcaption {
+        font-size: 2vmax;
+        padding-top: .5vmax;
+    }
+    .mainpage-text h3{
+        font-size: 3.5vmax;
+        padding: 0 2vmax .5vmax;
+    }
+    .mainpage-text h4{
+        font-size: 2.3vmax;
+        font-weight: 700;
+        padding: 1vmax 2vmax .2vmax;
+    }
+    .mainpage-text p{
+        font-size: 2.5vmax;
+        padding: 0 2vmax 4vmax;
+    }
+    .mainpage-text ul {
+        font-size: 2.3vmax;
+        padding: 0 3vmax 2vmax;
+    }
+    .mainpage-text ul > li{padding-bottom: .4vmax;}
 }

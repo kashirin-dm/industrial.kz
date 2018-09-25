@@ -150,6 +150,40 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-column: 2;
         z-index: 3;
     }
+    .mainpage-text {
+        grid-template-columns: 5% 1fr 5%;
+    }
+    .mainpage-text .article-content{
+        column-count: 1;
+        margin-bottom: 4vmax;
+    }
+    .mainpage-text h2 {
+        font-size: 4vmax;
+        font-weight: 700;
+    }
+    .mainpage-text figcaption {
+        text-align: center;
+        font-size: 2vmax;
+    }
+    .mainpage-text h3{
+        font-size: 3vmax;
+        font-weight: 700;
+        padding: 3vmax 2vmax .5vmax;
+    }
+    .mainpage-text h4{
+        font-size: 2.4vmax;
+        font-weight: 700;
+        padding: 1vmax 2vmax .2vmax;
+    }
+    .mainpage-text p{
+        font-size: 2.7vmax;
+        padding: 0 2vmax 4vmax;
+    }
+    .mainpage-text ul {
+        font-size: 2.4vmax;
+        padding: 0 3vmax 4vmax;
+    }
+    .mainpage-text ul > li{padding-bottom: 1.4vmax;}
 }
 /*
 -------------------------- for-phone-only */
@@ -265,42 +299,6 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         padding-left: 45px;
         padding-top: 4px;
     }
-
-
-    .mainpage-text {
-        grid-template-columns: 5% 1fr 5%;
-    }
-    .mainpage-text .article-content{
-        column-count: 1;
-        margin-bottom: 4vmax;
-    }
-    .mainpage-text h2 {
-        font-size: 4vmax;
-        font-weight: 700;
-    }
-    .mainpage-text figcaption {
-        text-align: center;
-        font-size: 2vmax;
-    }
-    .mainpage-text h3{
-        font-size: 3vmax;
-        font-weight: 700;
-        padding: 3vmax 2vmax .5vmax;
-    }
-    .mainpage-text h4{
-        font-size: 2.4vmax;
-        font-weight: 700;
-        padding: 1vmax 2vmax .2vmax;
-    }
-    .mainpage-text p{
-        font-size: 2.7vmax;
-        padding: 0 2vmax 4vmax;
-    }
-    .mainpage-text ul {
-        font-size: 2.4vmax;
-        padding: 0 3vmax 4vmax;
-    }
-    .mainpage-text ul > li{padding-bottom: 1.4vmax;}
 
     .main-clients::before {
         content: '';
