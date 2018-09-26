@@ -310,29 +310,68 @@ a:active {color: #18374d;}
 .catalog-category-items {
     grid-template-columns: 5% repeat(3, 1fr) 5%;
     grid-gap: 3vmax;
-    padding: 3vmax 0;
+    padding:8vmax 0 3vmax;
+}
+.catalog-category-items a {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    color:#000;
+    text-decoration: none;
+    text-align: center;
+    transition: all .1s ease-out;
+    box-shadow: rgba(0, 0, 0, .05) 0px 1px 45px;
+}
+.catalog-category-items a:hover {
+    transform: scale(.98);
+    transition: all .05s ease-in;
+}
+.catalog-category-items a:active {
+    transform: scale(.95);
+    transition: all .02s ease-in;
+}
+.catalog-category-items img {
+    width: 100%;
+    border-radius: 5px;
 }
 .catalog-category-items figure {
-    display: inline-grid;
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
 }
-.catalog-category-items figure:first-child, .catalog-category-items figure:nth-child(4n+4) {
+.catalog-category-items figcaption {
+    font-size: 120%;
+    padding: 20px;
+}
+.catalog-category-items a:first-child, .catalog-category-items a:nth-child(4n+4) {
     grid-column: 2;
 }
-.catalog-category-items figure:nth-child(3n+3) {
+.catalog-category-items a:nth-child(3n+3) {
     grid-column: 4;
 }
-.catalog-category-items figure h4 {
-}
-.catalog-category-items figure p {
-}
-.catalog-category-items figure a {
-}
 .catalog-category-items aside {
-    grid-column: 2/5;
+    grid-column: 1/6;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    color:#000;
+    padding:120px 0;
+    background: rgba(240,240,240,0);
+background: -moz-linear-gradient(top, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240,240,240,0)), color-stop(50%, rgba(240,240,240,1)), color-stop(100%, rgba(240,240,240,1)));
+background: -webkit-linear-gradient(top, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+background: -o-linear-gradient(top, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+background: -ms-linear-gradient(top, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+background: linear-gradient(to bottom, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0', GradientType=0 );
 }
+.catalog-category-items aside a, .catalog-category-items aside a:active{
+    color:var(--accent-clr);
+    border-color: var(--accent-clr);
+    background: none;
+}
+.catalog-category-items aside a {box-shadow: rgba(0, 0, 0, .2) 0px 1px 5px;}
 
 /* Catalog Button */
 .catalog-button {
@@ -353,10 +392,9 @@ a:active {color: #18374d;}
     text-transform: uppercase;
     text-decoration: none;
     max-width: 50vw;
-    padding: 20px 30px;
+    padding: 1.5vmax 2vmax;
     line-height: 1;
 }
-
 .catalog-button a:hover{
     text-decoration: none;
     transform: scale(.97);
@@ -367,11 +405,6 @@ a:active {color: #18374d;}
     transform: scale(.93);
     transition: all .02s ease-in;
 }
-.blue-button{padding:60px 0; color:#000;}
-.blue-button a, .blue-button a:active{color:var(--accent-clr); border-color: var(--accent-clr);}
-.blue-button a {box-shadow: rgba(0, 0, 0, .2) 0px 1px 5px;}
-.cat-butt-dark-company {padding:30px 10px 0;}
-.cat-butt-foot {padding:60px 10px;}
 /* END Catalog Button */
 
 
@@ -412,14 +445,14 @@ a:active {color: #18374d;}
 
 
 /* Main Company Block Desktop */
-main .main-clients::before { /* Pseudo-class for layers performance */
+.main-clients::before { /* Pseudo-class for layers performance */
     will-change: transform; /* For performance */
     content: '';
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 101%;
     width: 100%;
     background: -moz-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,1));
     background: -webkit-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,1));
@@ -428,108 +461,171 @@ main .main-clients::before { /* Pseudo-class for layers performance */
     background: linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,1));
     z-index: 1;
 }
-main .main-clients {
+.main-clients {
+    grid-template-columns: 15% 1fr 15%;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     align-content: center;
     text-align: center;
+    justify-content: center;
+    justify-items: center;
     color:#fff;
-    background: url(../../../i.industrial.kz/stat/i/main_subcover.jpg) center no-repeat fixed #000;
+    background: url(../../../i.industrial.kz/stat/i/main_subcover.jpg) center no-repeat fixed #22150f;
     overflow: hidden;
 }
-main .main-clients .container{
-    width: 60%;
+.main-clients > *{
+    grid-column: 2;
     z-index: 3;
 }
-main .main-clients h2{
-    font-size: 233.33%;
+.main-clients h2{
+    font-size: 2.5vmax;
     line-height: 1;
-    padding: 10px;
 }
-main .main-clients p{
-    font: 400 133.33% 'Circe Rounded', sans-serif;
-    padding: 10px;
+.main-clients p{
+    font: 400 1.5vmax 'Circe Rounded', sans-serif;
+    padding: 2vmax 0;
 }
 
-main .main-clients .logos{
+.main-clients .logos {
     grid-template-columns: repeat(5,1fr);
     grid-gap:10px;
     object-fit: none;
     text-align: center;
-    padding:30px 10px;
+    padding: 1vmax 0;
 }
-main .main-clients .logos>*{
+.main-clients .logos > * {
     object-fit: none;
     justify-self:center;
     align-self:center;
     height: 54px;
-    padding:10px;
+    padding:1vmax;
 }
-main .main-clients .logos>:nth-child(1){
-  object-position: -2px -2px;
-  width: 191px;
+.main-clients .logos img:nth-child(1){
+    object-position: -2px -2px;
+    width: 191px;
 }
-main .main-clients .logos>:nth-child(2){
-  object-position: -195px -2px;
-  width: 89px;
+.main-clients .logos img:nth-child(2){
+    object-position: -195px -2px;
+    width: 89px;
 }
-main .main-clients .logos>:nth-child(3){
-  object-position: -2px -58px;
-  width: 134px;
+.main-clients .logos img:nth-child(3){
+    object-position: -2px -58px;
+    width: 134px;
 }
-main .main-clients .logos>:nth-child(4){
-  object-position: -138px -58px;
-  width: 128px;
+.main-clients .logos img:nth-child(4){
+    object-position: -138px -58px;
+    width: 128px;
 }
-main .main-clients .logos>:nth-child(5){
-  object-position: -268px -58px;
-  width: 163px;
+.main-clients .logos img:nth-child(5){
+    object-position: -268px -58px;
+    width: 163px;
 }
-
-
-.mainpage-dark-bg {background: #000;}
 /* END Main Company Block Desktop */
-
-
-
 
 .map-contacts {
     grid-template-columns: 1fr 1fr;
     height: 70vh;
     z-index: 1;
 }
-.map-contacts> .contacts {
+.ymap-container {
+    overflow: hidden;
+    background: url('../../../i.industrial.kz/stat/i/ya_map_psh.png') #fff9e8 no-repeat;
+    background-position: center center;
+    background-size: auto auto;
+}
+#map-yandex {
+    width: 100%;
+    height: 70vh;
+    cursor: pointer;
+}
+/*Индикатор загрузки, который показывается до загрузки карты*/
+.loader {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #000;
+    transition: opacity .3s ease;
+    opacity: 0;
+    background-color: rgba(29, 115, 191, .3);
+}
+.loader:after, .loader:before {
+    box-sizing: border-box;
+}
+.loader.is-active {
+    top: 0;
+    opacity: 1;
+}
+.loader-default:after {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    content: '';
+    -webkit-animation: rotation .3s linear infinite;
+    animation: rotation .3s linear infinite;
+    border: solid 4px #fff;
+    border-left-color: transparent;
+    border-radius: 50%;
+}
+@-webkit-keyframes rotation {
+    from {transform: rotate(0);}
+    to {transform: rotate(359deg);}
+}
+@keyframes rotation {
+    from {transform: rotate(0);}
+    to {transform: rotate(359deg);}
+}
+@-webkit-keyframes blink {
+    from {opacity: .5;}
+    to {opacity: 1;}
+}
+@keyframes blink {
+    from {opacity: .5;}
+    to {opacity: 1;}
+}
+.map-contacts .contacts {
     justify-self: center;
     align-self: center;
 }
 .map-contacts .contacts>*{
-    padding: 5%;
+    width: 100%;
+    padding: 1vmax;
 }
 .map-contacts .contacts h2{
-    font-size: 150%;
+    font-size: 2.5vmax;
 }
-.map-contacts .contacts p a{
-    font-size: 133.33%;
+.map-contacts .contacts p{
+    font-size: 1.5vmax;
 }
-
-.map-contacts .contacts p a:first-child{
-    color: #000;
-}
-.map-contacts .contacts p a:first-child:hover{
+.map-contacts .contacts a{
+    font-size: 2vmax;
     text-decoration: none;
 }
-.map-contacts .contacts p a:first-child:active{
-    color: #417d00;
+
+.map-contacts .contacts a:first-child{
+    color: #000;
+}
+.map-contacts .contacts a:first-child:hover{
+    color: #25d366;
+}
+.map-contacts .contacts a:first-child:active{
+    color: #25d366;
 }
 
 
 footer{
     grid-template-columns: 15% repeat(4, 1fr) 15%;
-background:#111;
-padding-bottom: 90px;
-color:#fff;
--osx-font-smoothing: grayscale;
-z-index: 1;}
+    background:#111;
+    padding-bottom: 90px;
+    color:#fff;
+    -osx-font-smoothing: grayscale;
+    z-index: 1;
+}
 
 footer .catalog-button {grid-column:1/7;}
 footer .catalog-button + div {grid-column:2;}
@@ -561,99 +657,4 @@ footer p{
     font-size: 60%;
     color: #a1a1a1;
     padding: 10px 40px;
-}
-
-
-
-
-
-.ymap-container {
-  overflow: hidden;
-  cursor: pointer;
-  background: url('../../../i.industrial.kz/stat/i/ya_map_psh.png') #fff9e8 no-repeat;
-  background-position: center center;
-  background-size: auto auto;
-}
-
-#map-yandex {
-  width: 100%;
-  height: 70vh;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-/*Индикатор загрузки, который показывается до загрузки карты*/
-.loader {
-  position: absolute;
-  top: -100%;
-  left: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  color: #000;
-  transition: opacity .3s ease;
-  opacity: 0;
-  background-color: rgba(29, 115, 191, .3);
-}
-.loader:after,
-.loader:before {
-  box-sizing: border-box;
-}
-.loader.is-active {
-  top: 0;
-  opacity: 1;
-}
-
-.loader-default:after {
-  position: absolute;
-  top: calc(50% - 10px);
-  left: calc(50% - 10px);
-  width: 20px;
-  height: 20px;
-  content: '';
-  -webkit-animation: rotation .3s linear infinite;
-          animation: rotation .3s linear infinite;
-
-  border: solid 4px #fff;
-  border-left-color: transparent;
-  border-radius: 50%;
-}
-
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
-
-@keyframes rotation {
-  from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
-@-webkit-keyframes blink {
-  from {
-    opacity: .5;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes blink {
-  from {
-    opacity: .5;
-  }
-  to {
-    opacity: 1;
-  }
 }
