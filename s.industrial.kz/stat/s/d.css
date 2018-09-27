@@ -7,6 +7,9 @@
     .mainpage-text {
         grid-template-columns: 15% 1fr 15%;
     }
+    .catalog-category-items {
+        grid-template-columns: 5% repeat(3, 1fr) 5%;
+    }
 }
 
 /*
@@ -77,6 +80,38 @@ for-desktop-only */
     .main-cover form button {
         font-size: 2.5vmax;
     }
+
+    .catalog-category-items {
+        grid-gap: 3vmax;
+        padding: 5vmax 0 2vmax;
+    }
+    .catalog-category-items figcaption {
+        font-size: 1.6vmax;
+        padding: 1vmax;
+    }
+    .catalog-category-items a::nth-child(-3n+4) { /* Each 1 and 4 */
+        grid-column: 2;
+    }
+    .catalog-category-items a:nth-child(3n+2) { /* Each 2 and 5 */
+        grid-column: 3;
+    }
+    .catalog-category-items a:nth-child(3n) { /* Each 3 and 6 */
+        grid-column: 4;
+    }
+    .catalog-category-items aside {
+        grid-column: 1/6;
+        padding: 10vmax 0 6vmax;
+    }
+
+    .catalog-button {
+        padding:40px 10px;
+    }
+    .catalog-button a {
+        font-size: 1.5vmax;
+        max-width: 50vmax;
+        padding: 1.5vmax 2vmax;
+    }
+
     .mainpage-text .article-content{
         column-count: 2;
         column-gap: 3vmax;

@@ -105,6 +105,37 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         font-size: 5vmax;
     }
 
+    .catalog-category-items {
+        grid-template-columns: 5% 1fr 5%;
+        grid-row-gap: 5vmax;
+        padding: 10vmax 0 5vmax;
+    }
+    .catalog-category-items figcaption {
+        font-size: 5vmax;
+        padding: 2.5vmax;
+    }
+    .catalog-category-items a{
+        grid-column: 2;
+    }
+    .catalog-category-items a:nth-child(4),
+    .catalog-category-items a:nth-child(5),
+    .catalog-category-items a:nth-child(6){
+        display: none;
+    }
+    .catalog-category-items aside {
+        grid-column: 1/4;
+        padding: 25vmax 0 15vmax;
+    }
+
+    .catalog-button { /* Not fot first button */
+        padding: 2vmax 0 1vmax;
+    }
+    .catalog-button a {
+        font-size: 4.5vmax;
+        max-width: 90%;
+        padding: 4vmax 3vmax;
+    }
+
     .mainpage-text {
         grid-template-columns: 5% 1fr 5%;
     }
@@ -149,6 +180,12 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     .main-cover > * {
         grid-column: 2;
         z-index: 3;
+    }
+    .catalog-category-items {
+        grid-template-columns: 5% 1fr 5%;
+    }
+    .catalog-category-items a{
+        grid-column: 2;
     }
     .mainpage-text {
         grid-template-columns: 5% 1fr 5%;
@@ -288,17 +325,30 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         font-size: 3.4vmax;
     }
 
-    .catalog-button {
-        text-align: center;
-        padding:10px 10px;
-        z-index: 1;max-width: 85vw;
+    .catalog-category-items {
+        grid-row-gap: 4vmax;
+        padding: 8vmax 0 4vmax;
     }
+    .catalog-category-items figcaption {
+        font-size: 4vmax;
+        padding: 2vmax;
+    }
+    .catalog-category-items a:nth-child(4),
+    .catalog-category-items a:nth-child(5),
+    .catalog-category-items a:nth-child(6){
+        display: none;
+    }
+    .catalog-category-items aside {
+        grid-column: 1/4;
+        padding: 25vmax 0 10vmax;
+    }
+
     .catalog-button a {
-        display: inline-block;
-        color:#000;
-        padding-left: 45px;
-        padding-top: 4px;
+        font-size: 2.8vmax;
+        max-width: 90%;
+        padding: 3.5vmax 2.5vmax;
     }
+
     .map-contacts {
         grid-template-columns: 1fr;
         height: auto;
