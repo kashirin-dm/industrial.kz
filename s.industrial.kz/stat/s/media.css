@@ -1,3 +1,10 @@
+/*
+-----------------------------
+Tablet Style
+-----------------------------
+*/
+
+
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {
     .mainpage-text figcaption {
@@ -124,6 +131,37 @@ for-tablet-portait-only */
         font-size: 2.8vmax;
         max-width: 90%;
         padding: 3.5vmax 2.5vmax;
+    }
+    .main-clients {
+        grid-template-columns: 5% 1fr 5%;
+        height: 100vh;
+    }
+    .main-clients > *{
+        grid-column: 2;
+    }
+    .main-clients h2{
+        font-size: 4vmax;
+        margin-bottom: 2vmax;
+    }
+    .main-clients p{
+        font-size: 2.8vmax;
+    }
+    .main-clients .logos {
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1vmax;
+        padding: 1vmax 0;
+        margin-bottom: 2vmax;
+    }
+    .main-clients .logos > * {
+        height: 34px;
+        padding: 1vmax;
+    }
+
+    .main-clients .catalog-button {
+        width: 100%;
+    }
+    .main-clients .catalog-button a {
+        font-size: 2.5vmax;
     }
 }
 
@@ -294,4 +332,35 @@ for-tablet-landscape-only */
         padding: 0 3vmax 2vmax;
     }
     .mainpage-text ul > li{padding-bottom: .4vmax;}
+    .main-clients {
+        grid-template-columns: 5% 1fr 5%;
+        height: 100vh;
+    }
+    .main-clients > *{
+        grid-column: 2;
+    }
+    .main-clients h2{
+        font-size: 5vmax;
+        margin-bottom: 2vmax;
+    }
+    .main-clients p{
+        font-size: 3.5vmax;
+    }
+    .main-clients .logos {
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1vmax;
+        padding: 3vmax 0;
+        margin-bottom: 2vmax;
+    }
+    .main-clients .logos > * {
+        height: 54px;
+        padding: 2vmax;
+    }
+
+    .main-clients .catalog-button {
+        width: 100%;
+    }
+    .main-clients .catalog-button a {
+        font-size: 2.5vmax;
+    }
 }

@@ -21,12 +21,14 @@ Core Style
     vertical-align: middle;
     background: transparent;
 }
-body > *, main > * {display: grid;}
+body > *,
+main > * {display: grid;}
 script {
     position: static;
     display: none;
 }
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
 }
@@ -223,7 +225,14 @@ a:active {color: #18374d;}
     transform: scale(.97);
 }
 #main-menu .callback:active {transform: scale(.93);}
-#main-menu img:hover, #main-menu .whatsapp:hover, #main-menu .callback:hover, #main-menu img:active, #main-menu nav ul li a:active, #main-menu .whatsapp:active, #main-menu .top-phone a:active, #main-menu .callback:active {transition: all .02s ease-in;}
+#main-menu img:hover,
+#main-menu .whatsapp:hover,
+#main-menu .callback:hover,
+#main-menu img:active,
+#main-menu nav ul li a:active,
+#main-menu .whatsapp:active,
+#main-menu .top-phone a:active,
+#main-menu .callback:active {transition: all .02s ease-in;}
 /* END Top Menu */
 
 
@@ -341,15 +350,24 @@ a:active {color: #18374d;}
     right:0;
     color:#000;
     background: rgba(240,240,240,0);
-background: -moz-linear-gradient(top, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240,240,240,0)), color-stop(50%, rgba(240,240,240,1)), color-stop(100%, rgba(240,240,240,1)));
-background: -webkit-linear-gradient(top, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
-background: -o-linear-gradient(top, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
-background: -ms-linear-gradient(top, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
-background: linear-gradient(to bottom, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0', GradientType=0 );
+    background: -moz-linear-gradient(top, rgba(240,240,240,0) 0%,
+    rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+    background: -webkit-gradient(left top, left bottom,
+        color-stop(0%, rgba(240,240,240,0)),
+        color-stop(50%, rgba(240,240,240,1)),
+        color-stop(100%, rgba(240,240,240,1)));
+    background: -webkit-linear-gradient(top, rgba(240,240,240,0) 0%,
+    rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+    background: -o-linear-gradient(top, rgba(240,240,240,0) 0%,
+    rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+    background: -ms-linear-gradient(top, rgba(240,240,240,0) 0%,
+    rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+    background: linear-gradient(to bottom, rgba(240,240,240,0) 0%,
+    rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0', GradientType=0 );
 }
-.catalog-category-items aside a, .catalog-category-items aside a:active{
+.catalog-category-items aside a,
+.catalog-category-items aside a:active{
     color:var(--accent-clr);
     border-color: var(--accent-clr);
     background: none;
@@ -387,8 +405,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', end
 }
 /* END Catalog Button */
 
-
-
 /* Main Article */
 .mainpage-text {background: #fff;}
 .mainpage-text .article-content{
@@ -417,14 +433,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', end
     word-spacing: 0.1vmax;
     text-align: justify;
 }
-.mainpage-text h2 + p, .mainpage-text h3 + p, .mainpage-text ul + p {
+.mainpage-text h2 + p,
+.mainpage-text h3 + p,
+.mainpage-text ul + p {
     text-indent: 0;
 }
 /* END Main Article */
 
 
 
-/* Main Company Block Desktop */
+/* Main Company Block */
 .main-clients::before { /* Pseudo-class for layers performance */
     will-change: transform; /* For performance */
     content: '';
@@ -442,9 +460,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', end
     z-index: 1;
 }
 .main-clients {
-    grid-template-columns: 15% 1fr 15%;
     width: 100%;
-    height: 80vh;
     align-content: center;
     text-align: center;
     justify-content: center;
@@ -454,53 +470,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', end
     overflow: hidden;
 }
 .main-clients > *{
-    grid-column: 2;
     z-index: 3;
 }
 .main-clients h2{
-    font-size: 2.5vmax;
     line-height: 1;
 }
 .main-clients p{
-    font: 400 1.5vmax 'Circe Rounded', sans-serif;
-    padding: 2vmax 0;
+    font-family: 'Circe Rounded', sans-serif;
+    font-weight: 400;
 }
-
-.main-clients .logos {
-    grid-template-columns: repeat(5,1fr);
-    grid-gap:10px;
-    object-fit: none;
+.main-clients .logos {object-fit: scale-down;
     text-align: center;
-    padding: 1vmax 0;
+    display: inline-grid;
 }
 .main-clients .logos > * {
-    object-fit: none;
     justify-self:center;
     align-self:center;
-    height: 54px;
-    padding:1vmax;
+    object-fit: contain;
+    width: 100%;
 }
-.main-clients .logos img:nth-child(1){
-    object-position: -2px -2px;
-    width: 191px;
-}
-.main-clients .logos img:nth-child(2){
-    object-position: -195px -2px;
-    width: 89px;
-}
-.main-clients .logos img:nth-child(3){
-    object-position: -2px -58px;
-    width: 134px;
-}
-.main-clients .logos img:nth-child(4){
-    object-position: -138px -58px;
-    width: 128px;
-}
-.main-clients .logos img:nth-child(5){
-    object-position: -268px -58px;
-    width: 163px;
-}
-/* END Main Company Block Desktop */
+/* END Main Company Block */
 
 .map-contacts {
     grid-template-columns: 1fr 1fr;
@@ -532,7 +521,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', end
     opacity: 0;
     background-color: rgba(29, 115, 191, .3);
 }
-.loader:after, .loader:before {
+.loader:after,
+.loader:before {
     box-sizing: border-box;
 }
 .loader.is-active {
@@ -570,9 +560,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', end
 }
 .map-contacts .contacts {
     justify-self: center;
-    align-self: center;
+    align-self: center;display:inline-grid;
 }
-.map-contacts .contacts>*{
+.map-contacts .contacts > *
+{
     width: 100%;
     padding: 1vmax;
 }
@@ -596,6 +587,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', end
 .map-contacts .contacts a:first-child:active{
     color: #25d366;
 }
+.yandex-button {align-self: center;}
 
 
 footer{
@@ -622,7 +614,9 @@ footer ul li {
     font-size: 77.78%;
     line-height: 2.4;
 }
-footer a, footer a:hover, footer a:visited{
+footer a,
+footer a:hover,
+footer a:visited{
     color:#fff;
 }
 footer a:active {

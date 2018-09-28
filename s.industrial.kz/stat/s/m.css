@@ -1,4 +1,10 @@
 /*
+-----------------------------
+Mobile Style
+-----------------------------
+*/
+
+/*
 iPhone 5:  portrait 320x460, lanscape 568x320
 iPhone 6:  portrait 375x553, lanscape 667x375
 Mi Note 5: portrait 393x706, lanscape 786x313
@@ -38,7 +44,9 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     #main-menu nav ul li:first-child {
         padding-left: 0;
     }
-    #main-menu nav ul li:nth-child(3), #main-menu nav ul li:nth-child(4), #main-menu nav ul li:nth-child(5){
+    #main-menu nav ul li:nth-child(3),
+    #main-menu nav ul li:nth-child(4),
+    #main-menu nav ul li:nth-child(5){
         display: none;
     }
     #main-menu .whatsapp {
@@ -172,6 +180,28 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     }
     .mainpage-text ul > li{padding-bottom: 3vmax;}
 
+    .main-clients {
+        grid-template-columns: 5% 1fr 5%;
+        height: 100vh;
+    }
+    .main-clients > *{
+        grid-column: 2;
+    }
+    .main-clients h2{
+        font-family: Circe, sans-serif;
+        font-size: 6vmax;
+        margin-bottom: 4vmax;
+    }
+    .main-clients p,
+    .main-clients .logos {
+        display: none;
+    }
+    .main-clients .catalog-button {
+        width: 100%;
+    }
+    .main-clients .catalog-button a {
+        font-size: 3vmax;
+    }
 }
 
 /* for-small-phone-up */
@@ -257,7 +287,8 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     #main-menu nav ul li:first-child {
         padding-left: 0;
     }
-    #main-menu nav ul li:nth-child(4), #main-menu nav ul li:nth-child(5){
+    #main-menu nav ul li:nth-child(4),
+    #main-menu nav ul li:nth-child(5){
         display: none;
     }
     #main-menu .whatsapp {
@@ -347,6 +378,40 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         font-size: 2.8vmax;
         max-width: 90%;
         padding: 3.5vmax 2.5vmax;
+    }
+
+    .main-clients {
+        grid-template-columns: 5% 1fr 5%;
+        height: 80vh;
+    }
+    .main-clients > *{
+        grid-column: 2;
+    }
+    .main-clients h2{
+        font-size: 3.5vmax;
+        margin-bottom: 2vmax;
+    }
+    .main-clients p{
+        display: none;
+    }
+    .main-clients .logos {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1vmax;
+        padding: 1vmax 0;
+        margin-bottom: 2vmax;
+    }
+    .main-clients .logos > * {
+        height: 34px;
+        padding: 1vmax;
+    }
+    .main-clients .logos img:last-child {
+        display: none;
+    }
+    .main-clients .catalog-button {
+        width: 100%;
+    }
+    .main-clients .catalog-button a {
+        font-size: 1.6vmax;
     }
 
     .map-contacts {

@@ -1,3 +1,9 @@
+/*
+-----------------------------
+Desktop Style
+-----------------------------
+*/
+
 /* for-desktop-up */
 @media (min-width: 1200px) {
     .main-cover form {
@@ -146,6 +152,37 @@ for-desktop-only */
         padding: 0 3vmax 2vmax;
     }
     .mainpage-text ul > li{padding-bottom: .4vmax;}
+
+    .main-clients {
+        grid-template-columns: 15% 1fr 15%;
+        height: 70vh;
+    }
+    .main-clients > *{
+        grid-column: 2;
+    }
+    .main-clients h2{
+        font-size: 2.5vmax;
+        margin-bottom: 2vmax;
+    }
+    .main-clients p{
+        font-size: 1.5vmax;
+        margin-bottom: 2vmax;
+    }
+    .main-clients .logos {
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1vmax;
+        padding: 1vmax 0;
+    }
+    .main-clients .logos > * {
+        height: 54px;
+    }
+
+    .main-clients .catalog-button {
+        width: 80%; padding: 3vmax 0 0;
+    }
+    .main-clients .catalog-button a {
+        font-size: 1vmax;
+    }
 }
 
 /*
