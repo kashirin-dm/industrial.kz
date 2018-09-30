@@ -80,7 +80,11 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     #main-menu .callback {
         display: none;
     }
-    .main-cover {grid-template-columns: 5% 1fr 5%;}
+    .main-cover {
+        grid-template-columns: 5% 1fr 5%;
+        background: url(../../../i.industrial.kz/stat/i/cover2-300.webp) center no-repeat;
+        background-size: cover;
+    }
     .main-cover > * {
         grid-column: 2;
         z-index: 3;
@@ -108,11 +112,12 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     .main-cover form input::placeholder {
         font-size: 4.5vmax;
     }
-    .main-cover form button {width: 80%;
+    .main-cover form button
+    {width: 80%;
         height: 9vmax;
         font-size: 5vmax;
+        background-size: 9%;
     }
-
     .catalog-category-items {
         grid-template-columns: 5% 1fr 5%;
         grid-row-gap: 5vmax;
@@ -202,15 +207,99 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     .main-clients .catalog-button a {
         font-size: 3vmax;
     }
+
+    .map-contacts {
+        grid-template-columns: 1fr;
+        height: 80vmax;
+        text-align: center;
+    }
+    .ymap-container {
+        display: none;
+    }
+    .map-contacts .contacts > * {
+        padding: 2vmax 0;
+    }
+    .map-contacts .contacts h2 {
+        font-size: 5vmax;
+    }
+    .map-contacts .contacts p {
+        font-size: 3.5vmax;
+    }
+    .map-contacts .contacts a {
+        font-size: 5vmax;
+    }
+
+    footer{
+        grid-template-columns: 5% 1fr 5%;
+        column-gap: 0;
+        padding-bottom: 15vmax;
+        text-align: center;
+    }
+    footer .catalog-button {
+        grid-column: 2;
+        height: 23vmax;
+    }
+
+    footer .catalog-button a {
+        font-size: 4vmax;
+        max-width: 100%;
+        padding: 3vmax 4vmax;
+    }
+
+    footer div {
+        grid-column: 2;
+    }
+    .copy {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 90vmax;
+        grid-gap: 3vmax;
+        height: auto;
+        grid-row: 5;
+        margin-top: 10vmax;
+        text-align: center;
+        justify-items: center;
+    }
+    .copy p {
+        grid-column: 1/4;
+        font-size: 3vmax;
+    }
+    .copy img {
+        grid-column: 1/4;
+        margin-top: 3vmax;
+    }
+    .icon-youtube,
+    .icon-insta,
+    .icon-vk {
+        width: 10vmax;
+        height: 10vmax;
+        margin-bottom: 2vmax;
+    }
+    footer h3 {
+        font-size: 6vmax;
+        margin-top: 7vmax;
+        margin-bottom: 2vmax;
+    }
+    footer ul li {
+        font-size: 4.5vmax;
+        line-height: 2;
+    }
 }
 
 /* for-small-phone-up */
 @media (min-width: 320px) {
-    .main-cover {grid-template-columns: 5% 1fr 5%;}
+    .main-cover {
+        grid-template-columns: 5% 1fr 5%;
+        background: url(../../../i.industrial.kz/stat/i/cover2-300.webp) center no-repeat;
+        background-size: cover;
+    }
     .main-cover > * {
         grid-column: 2;
         z-index: 3;
     }
+    .main-cover form button {
+        background-size: 9%;
+    }
+
     .catalog-category-items {
         grid-template-columns: 5% 1fr 5%;
     }
@@ -416,22 +505,85 @@ Mi Note 5: portrait 393x706, lanscape 786x313
 
     .map-contacts {
         grid-template-columns: 1fr;
+        height: 140vmax;
+    }
+    .ymap-container {
+        background: url('../../../i.industrial.kz/stat/i/ya_map_psh.png') #fff9e8 no-repeat;
+        height: 70vmax;
+        background-position: center center;
+    }
+    #map-yandex {
+        height: 70vmax;
+    }
+    .map-contacts .contacts {
+        height: 60vmax;
+        padding: 4vmax;
+    }
+    .map-contacts .contacts > * {
+        padding: .5vmax 0;
+    }
+    .map-contacts .contacts h2 {
+        font-size: 3.5vmax;
+    }
+    .map-contacts .contacts p {
+        font-size: 2.5vmax;
+    }
+    .map-contacts .contacts a {
+        font-size: 4vmax;
+    }
+
+    footer{
+        grid-template-columns: 5% 1fr 5%;
+        column-gap: 0;
+        padding-bottom: 15vmax;
+        text-align: center;
+    }
+    footer .catalog-button {
+        grid-column: 2;
+        height: 18vmax;
+    }
+
+    footer .catalog-button a {
+        font-size: 3vmax;
+        max-width: 100%;
+        padding: 3vmax 4vmax;
+    }
+
+    footer div {
+        grid-column: 2;
+    }
+    .copy {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 90vmax;
+        grid-gap: 3vmax;
         height: auto;
+        grid-row: 5;
+        margin-top: 8vmax;
+        text-align: center;
+        justify-items: center;
     }
-    footer:first-child {
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 40px;
+    .copy p {
+        grid-column: 1/4;
+        font-size: 2.3vmax;
     }
-    footer .catalog-button {grid-column:1/3;}
-    footer .catalog-button + div {grid-column:1/3;}
+    .copy img {
+        grid-column: 1/4;
+        margin-top: 2vmax;
+    }
+    .icon-youtube,
+    .icon-insta,
+    .icon-vk {
+        width: 10vmax;
+        height: 10vmax;
+        margin-bottom: 2vmax;
+    }
     footer h3 {
-        font-size: 88.89%;
-        text-transform: uppercase;
-        color:#a1a1a1;
-        margin-bottom:10px;padding:5px 10px;
+        font-size: 5vmax;
+        margin-top: 5vmax;
+        margin-bottom: 1vmax;
     }
     footer ul li {
-        font-size: 77.78%;
-        line-height: 2.4;padding:0 10px;
+        font-size: 3vmax;
+        line-height: 2;
     }
 }

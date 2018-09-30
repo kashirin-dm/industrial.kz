@@ -5,10 +5,22 @@ function main_menu_opacity_bg() {
     if ($(window).scrollTop() <= 40) {
         $('#main-menu').css('background', 'rgba(255,255,255,0)');
         $('#main-menu').css('box-shadow', 'none');
+        $('#main-menu>nav>ul>li>a').css('color', '#fff');
+        $('#main-menu>nav>ul>li>a').css('border-bottom', '1px solid rgba(255, 255, 255, 0.3)');
+        $('.top-phone>*').css('color', '#fff');
+        $('.top-phone>a:hover').css('color', '#25d366');
+        $('.callback').css('color', '#fff');
+        $('.callback').css('border', '3px solid #fff');
     }
     else {
         $('#main-menu').css('background', 'rgba(255,255,255,1)');
         $('#main-menu').css('box-shadow', 'rgba(0, 0, 0, .2) 0px 1px 3px');
+        $('#main-menu>nav>ul>li>a').css('color', '#000');
+        $('#main-menu>nav>ul>li>a').css('border-bottom', '1px solid rgba(0, 0, 0, 0.3)');
+        $('.top-phone>*').css('color', '#000');
+        $('.top-phone>a:hover').css('color', '#25d366');
+        $('.callback').css('color', 'var(--accent-clr)');
+        $('.callback').css('border', '3px solid var(--accent-clr)');
     }
 }
 main_menu_opacity_bg();
