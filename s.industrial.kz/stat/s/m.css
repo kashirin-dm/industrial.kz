@@ -188,6 +188,8 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     .main-clients {
         grid-template-columns: 5% 1fr 5%;
         height: 100vh;
+        background: url(../../../i.industrial.kz/stat/i/main_subcover-small.jpg) center no-repeat fixed #22150f;
+        background-size: cover;
     }
     .main-clients > *{
         grid-column: 2;
@@ -472,6 +474,8 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     .main-clients {
         grid-template-columns: 5% 1fr 5%;
         height: 80vh;
+        background: url(../../../i.industrial.kz/stat/i/main_subcover-mob.jpg) center no-repeat fixed #22150f;
+        background-size: cover;
     }
     .main-clients > *{
         grid-column: 2;

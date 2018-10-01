@@ -13,6 +13,10 @@ Tablet Style
     .main-cover form button {
         background-size: 40%;
     }
+    .main-clients {
+        background: url(../../../i.industrial.kz/stat/i/main_subcover-tab.jpg) center no-repeat fixed #22150f;
+        background-size: cover;
+    }
 }
 
 /*

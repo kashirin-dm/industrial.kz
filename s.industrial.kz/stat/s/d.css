@@ -156,6 +156,8 @@ for-desktop-only */
     .main-clients {
         grid-template-columns: 15% 1fr 15%;
         height: 70vh;
+        background: url(../../../i.industrial.kz/stat/i/main_subcover-desc.jpg) center no-repeat fixed #22150f;
+        background-size: cover;
     }
     .main-clients > *{
         grid-column: 2;
@@ -394,6 +396,8 @@ for-big-desktop-up */
     .main-clients {
         grid-template-columns: 15% 1fr 15%;
         height: 70vh;
+        background: url(../../../i.industrial.kz/stat/i/main_subcover-big-desc.jpg) center no-repeat fixed #22150f;
+        background-size: cover;
     }
     .main-clients > *{
         grid-column: 2;
