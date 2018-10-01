@@ -232,7 +232,7 @@ for-desktop-only */
         grid-column: 1/4;
         font-size: 1vmax;
     }
-    .copy img {
+    .copy div {
         grid-column: 1/4;
     }
     .icon-youtube,
@@ -467,7 +467,7 @@ for-big-desktop-up */
         grid-column: 1/4;
         font-size: .7vmax;
     }
-    .copy img {
+    .copy div {
         grid-column: 1/4;
     }
     .icon-youtube,

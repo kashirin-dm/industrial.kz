@@ -263,7 +263,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-column: 1/4;
         font-size: 3vmax;
     }
-    .copy img {
+    .copy div {
         grid-column: 1/4;
         margin-top: 3vmax;
     }
@@ -566,7 +566,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-column: 1/4;
         font-size: 2.3vmax;
     }
-    .copy img {
+    .copy div {
         grid-column: 1/4;
         margin-top: 2vmax;
     }

@@ -233,7 +233,7 @@ for-tablet-portait-only */
         grid-column: 1/4;
         font-size: 2vmax;
     }
-    .copy img {
+    .copy div {
         grid-column: 1/4;
         margin-top: 2vmax;
     }
@@ -526,7 +526,7 @@ for-tablet-landscape-only */
         grid-column: 1/4;
         font-size: 1.5vmax;
     }
-    .copy img {
+    .copy div {
         grid-column: 1/4;
         margin-top: 2vmax;
         margin-bottom: 8vmax;

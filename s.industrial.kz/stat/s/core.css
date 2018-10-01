@@ -597,6 +597,7 @@ footer{
     -osx-font-smoothing: grayscale;
     z-index: 1;
     font-size: 0;
+    height: auto;
 }
 
 footer .catalog-button {
@@ -616,7 +617,15 @@ footer .catalog-button a:hover {
     grid-row: 2;
     color: var(--f0-clr);
 }
-.copy img {width: 100%;}
+.copy div {
+    display: block;
+    grid-column: 1/4;
+    width: 100%;
+    height: 5vmax;
+    background: url(../../../i.industrial.kz/stat/i/ind-logo-alloy.webp) no-repeat;
+    background-size: contain;
+    background-position: top; justify-content: start;
+}
 
 
 .icon-youtube {
