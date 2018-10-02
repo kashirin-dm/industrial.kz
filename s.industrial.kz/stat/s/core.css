@@ -621,9 +621,10 @@ footer .catalog-button a:hover {
     grid-column: 1/4;
     width: 100%;
     height: 5vmax;
-    background: url(../../../i.industrial.kz/stat/i/ind-logo-alloy.webp) no-repeat;
+    background-repeat: no-repeat;
     background-size: contain;
-    background-position: top; justify-content: start;
+    background-position: top;
+    justify-content: start;
 }
 
 

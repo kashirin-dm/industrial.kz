@@ -28,6 +28,15 @@ $(window).scroll(function() {
     main_menu_opacity_bg();
 });
 
+
+$(function() {
+        $('.lazy').show().lazy({
+          effect: "fadeIn",
+          effectTime: 500,
+          threshold: 0
+        });
+    });
+
 // Yandex Map
 //Переменная для включения/отключения индикатора загрузки
 var spinner = $('.ymap-container').children('.loader');
