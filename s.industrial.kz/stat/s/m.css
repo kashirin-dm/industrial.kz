@@ -3,7 +3,6 @@
 Mobile Style
 -----------------------------
 */
-
 /*
 iPhone 5:  portrait 320x460, lanscape 568x320
 iPhone 6:  portrait 375x553, lanscape 667x375
@@ -13,7 +12,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
 -------------------------- for-super-small-device-only */
 @media (max-width: 319px) {
     #main-menu {
-        grid-template-columns:auto 1fr 10vw 1fr;
+        grid-template-columns: auto 1fr 10vw 1fr;
         grid-template-rows: 16vw;
         column-gap: 3%;
         height: 32vw;
@@ -22,12 +21,14 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         border-radius: 10px;
         grid-auto-rows: 1fr;
     }
+
     .main-menu__logo-wrap {
         grid-column: 2;
         height: 10vw;
         grid-row: 1;
         grid-auto-rows: 1fr;
-        }
+    }
+
     #main-menu nav {
         font-size: 6vw;
         grid-row: 2;
@@ -35,25 +36,31 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-auto-rows: 1fr;
         justify-content: center;
     }
+
     #main-menu nav ul {
         justify-content: center;
     }
+
     #main-menu nav ul li {
         padding: 0 4vw;
     }
+
     #main-menu nav ul li:first-child {
         padding-left: 0;
     }
+
     #main-menu nav ul li:nth-child(3),
     #main-menu nav ul li:nth-child(4),
-    #main-menu nav ul li:nth-child(5){
+    #main-menu nav ul li:nth-child(5) {
         display: none;
     }
+
     #main-menu .whatsapp {
         grid-column: 3;
         height: 10vw;
         width: 100%;
     }
+
     #main-menu .top-phone {
         grid-column: 4/6;
         display: inline-grid;
@@ -68,146 +75,31 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-row: 1;
         margin-top: auto;
     }
-    #main-menu .top-phone span{
+
+    #main-menu .top-phone span {
         display: none;
     }
-    #main-menu .top-phone a{
+
+    #main-menu .top-phone a {
         font-size: 5vw;
         color: #000;
-        justify-self:end;
+        justify-self: end;
         grid-column: 1/2;
     }
+
     #main-menu .callback {
         display: none;
     }
-    .main-cover {
-        grid-template-columns: 5% 1fr 5%;
-        background: url(../../../i.industrial.kz/stat/i/cover2-300.webp) center no-repeat;
-        background-size: cover;
-    }
-    .main-cover > * {
-        grid-column: 2;
-        z-index: 3;
-    }
-    .main-cover h1 {
-        font-size: 6vmax;
-        line-height: 1;
-        margin-bottom: 4vmax;
-        font-weight: 700;
-    }
-    .main-cover p {
-        display: none;
-    }
-    .main-cover form {
-        grid-template-columns: 1fr;
-        grid-row-gap: 2vmax;
-        justify-items:center;
-    }
-    .main-cover form * {height: 10vmax;}
-    .main-cover form input {
-        text-align: center;
-        padding: 0 3vmax;
-        font-size: 4.5vmax;
-    }
-    .main-cover form input::placeholder {
-        font-size: 4.5vmax;
-    }
-    .main-cover form button
-    {width: 80%;
-        height: 9vmax;
-        font-size: 5vmax;
-        background-size: 9%;
-    }
-    .catalog-category-items {
-        grid-template-columns: 5% 1fr 5%;
-        grid-row-gap: 5vmax;
-        padding: 10vmax 0 5vmax;
-    }
-    .catalog-category-items figcaption {
-        font-size: 5vmax;
-        padding: 2.5vmax;
-    }
-    .catalog-category-items a{
-        grid-column: 2;
-    }
-    .catalog-category-items a:nth-child(4),
-    .catalog-category-items a:nth-child(5),
-    .catalog-category-items a:nth-child(6){
-        display: none;
-    }
-    .catalog-category-items aside {
-        grid-column: 1/4;
-        padding: 25vmax 0 15vmax;
-    }
 
-    .catalog-button { /* Not fot first button */
+    .catalog-button {
+        /* Not fot first button */
         padding: 2vmax 0 1vmax;
     }
+
     .catalog-button a {
         font-size: 4.5vmax;
         max-width: 90%;
         padding: 4vmax 3vmax;
-    }
-
-    .mainpage-text {
-        grid-template-columns: 5% 1fr 5%;
-    }
-    .mainpage-text .article-content{
-        column-count: 1;
-        margin-bottom: 6vmax;
-    }
-    .mainpage-text h2 {
-        font-size: 6vmax;
-        font-weight: 700;
-        padding: 4vmax 0;
-    }
-    .mainpage-text figcaption {
-        text-align: center;
-        font-size: 4vmax;
-    }
-    .mainpage-text h3{
-        font-size: 5vmax;
-        font-weight: 700;
-        padding: 3vmax 2vmax .5vmax;
-    }
-    .mainpage-text h4{
-        font-size: 4.5vmax;
-        font-weight: 700;
-        padding: 1vmax 2vmax .2vmax;
-    }
-    .mainpage-text p{
-        font-size: 5vmax;
-        padding: 0 2vmax 4vmax;
-    }
-    .mainpage-text ul {
-        font-size: 4.5vmax;
-        padding: 0 3vmax 4vmax;
-    }
-    .mainpage-text ul > li{padding-bottom: 3vmax;}
-
-    .main-clients {
-        grid-template-columns: 5% 1fr 5%;
-        height: 100vh;
-        background: url(../../../i.industrial.kz/stat/i/main_subcover-small.jpg) center no-repeat fixed #22150f;
-        background-size: cover;
-    }
-    .main-clients > *{
-        grid-column: 2;
-    }
-    .main-clients h2{
-        font-family: Circe, sans-serif;
-        font-size: 6vmax;
-        margin-bottom: 4vmax;
-    }
-    .main-clients p,
-    .main-clients .logos {
-        display: none;
-    }
-    .main-clients .catalog-button {
-        width: 100%;
-    }
-    .main-clients .catalog-button a {
-        font-size: 3vmax;
     }
 
     .map-contacts {
@@ -215,28 +107,34 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         height: 80vmax;
         text-align: center;
     }
+
     .ymap-container {
         display: none;
     }
-    .map-contacts .contacts > * {
+
+    .map-contacts .contacts>* {
         padding: 2vmax 0;
     }
+
     .map-contacts .contacts h2 {
         font-size: 5vmax;
     }
+
     .map-contacts .contacts p {
         font-size: 3.5vmax;
     }
+
     .map-contacts .contacts a {
         font-size: 5vmax;
     }
 
-    footer{
+    footer {
         grid-template-columns: 5% 1fr 5%;
         column-gap: 0;
         padding-bottom: 15vmax;
         text-align: center;
     }
+
     footer .catalog-button {
         grid-column: 2;
         height: 23vmax;
@@ -251,6 +149,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     footer div {
         grid-column: 2;
     }
+
     .copy {
         grid-template-columns: repeat(3, 1fr);
         max-width: 90vmax;
@@ -261,14 +160,17 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         text-align: center;
         justify-items: center;
     }
+
     .copy p {
         grid-column: 1/4;
         font-size: 3vmax;
     }
+
     .copy div {
         grid-column: 1/4;
         margin-top: 3vmax;
     }
+
     .icon-youtube,
     .icon-insta,
     .icon-vk {
@@ -276,11 +178,13 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         height: 10vmax;
         margin-bottom: 2vmax;
     }
+
     footer h3 {
         font-size: 6vmax;
         margin-top: 7vmax;
         margin-bottom: 2vmax;
     }
+
     footer ul li {
         font-size: 4.5vmax;
         line-height: 2;
@@ -288,66 +192,13 @@ Mi Note 5: portrait 393x706, lanscape 786x313
 }
 
 /* for-small-phone-up */
-@media (min-width: 320px) {
-    .main-cover {
-        grid-template-columns: 5% 1fr 5%;
-        background: url(../../../i.industrial.kz/stat/i/cover2-300.webp) center no-repeat;
-        background-size: cover;
-    }
-    .main-cover > * {
-        grid-column: 2;
-        z-index: 3;
-    }
-    .main-cover form button {
-        background-size: 9%;
-    }
+@media (min-width: 320px) {}
 
-    .catalog-category-items {
-        grid-template-columns: 5% 1fr 5%;
-    }
-    .catalog-category-items a{
-        grid-column: 2;
-    }
-    .mainpage-text {
-        grid-template-columns: 5% 1fr 5%;
-    }
-    .mainpage-text .article-content{
-        column-count: 1;
-        margin-bottom: 4vmax;
-    }
-    .mainpage-text h2 {
-        font-size: 4vmax;
-        font-weight: 700;
-    }
-    .mainpage-text figcaption {
-        text-align: center;
-        font-size: 2vmax;
-    }
-    .mainpage-text h3{
-        font-size: 3vmax;
-        font-weight: 700;
-        padding: 3vmax 2vmax .5vmax;
-    }
-    .mainpage-text h4{
-        font-size: 2.4vmax;
-        font-weight: 700;
-        padding: 1vmax 2vmax .2vmax;
-    }
-    .mainpage-text p{
-        font-size: 2.7vmax;
-        padding: 0 2vmax 4vmax;
-    }
-    .mainpage-text ul {
-        font-size: 2.4vmax;
-        padding: 0 3vmax 4vmax;
-    }
-    .mainpage-text ul > li{padding-bottom: 1.4vmax;}
-}
 /*
 -------------------------- for-phone-only */
 @media (min-width: 320px) and (max-width: 599px) {
     #main-menu {
-        grid-template-columns:auto 1fr 9vmin 1fr;
+        grid-template-columns: auto 1fr 9vmin 1fr;
         grid-template-rows: 15vmin;
         column-gap: 3%;
         height: 30vmin;
@@ -356,12 +207,14 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         border-radius: 10px;
         grid-auto-rows: 1fr;
     }
+
     .main-menu__logo-wrap {
         grid-column: 2;
         height: 9vmin;
         grid-row: 1;
         grid-auto-rows: 1fr;
-        }
+    }
+
     #main-menu nav {
         font-size: 4vmin;
         grid-row: 2;
@@ -369,24 +222,30 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-auto-rows: 1fr;
         justify-content: center;
     }
+
     #main-menu nav ul {
         justify-content: center;
     }
+
     #main-menu nav ul li {
         padding: 0 4vmin;
     }
+
     #main-menu nav ul li:first-child {
         padding-left: 0;
     }
+
     #main-menu nav ul li:nth-child(4),
-    #main-menu nav ul li:nth-child(5){
+    #main-menu nav ul li:nth-child(5) {
         display: none;
     }
+
     #main-menu .whatsapp {
         grid-column: 3;
         height: 10vw;
         width: 100%;
     }
+
     #main-menu .top-phone {
         grid-column: 4/6;
         display: inline-grid;
@@ -401,68 +260,20 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-row: 1;
         margin-top: auto;
     }
-    #main-menu .top-phone span{
+
+    #main-menu .top-phone span {
         display: none;
-    }
-    #main-menu .top-phone a{
-        font-size: 5vw;
-        color: #000;
-        justify-self:end;
-        grid-column: 1/2;
-    }
-    #main-menu .callback {
-        display: none;
-    }
-    .main-cover {
-        grid-template-rows: 1fr 1fr;
-    }
-    .main-cover h1 {
-        font-size: 3.4vmax;
-        font-weight: 700;
-        line-height: 1;
-        margin-bottom: 1.5vmax;
-    }
-    .main-cover p {
-        font-size: 2.8vmax;
-        margin-bottom: 2vmax;
-        line-height: 1.1;
-    }
-    .main-cover form {
-        grid-template-columns: 1fr;
-        grid-row-gap: 1vmax;
-        justify-items:center;
-    }
-    .main-cover form * {height: 8vmax;}
-    .main-cover form input {
-        text-align: center;
-        padding: 0 4vmax;
-        font-size: 2.4vmax;
-    }
-    .main-cover form input::placeholder {
-        font-size: 2.4vmax;
-    }
-    .main-cover form button {
-        width: 70%;
-        height: 6vmax;
-        font-size: 3.4vmax;
     }
 
-    .catalog-category-items {
-        grid-row-gap: 4vmax;
-        padding: 8vmax 0 4vmax;
+    #main-menu .top-phone a {
+        font-size: 5vw;
+        color: #000;
+        justify-self: end;
+        grid-column: 1/2;
     }
-    .catalog-category-items figcaption {
-        font-size: 4vmax;
-        padding: 2vmax;
-    }
-    .catalog-category-items a:nth-child(4),
-    .catalog-category-items a:nth-child(5),
-    .catalog-category-items a:nth-child(6){
+
+    #main-menu .callback {
         display: none;
-    }
-    .catalog-category-items aside {
-        grid-column: 1/4;
-        padding: 25vmax 0 10vmax;
     }
 
     .catalog-button a {
@@ -471,77 +282,48 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         padding: 3.5vmax 2.5vmax;
     }
 
-    .main-clients {
-        grid-template-columns: 5% 1fr 5%;
-        height: 80vh;
-        background: url(../../../i.industrial.kz/stat/i/main_subcover-mob.jpg) center no-repeat fixed #22150f;
-        background-size: cover;
-    }
-    .main-clients > *{
-        grid-column: 2;
-    }
-    .main-clients h2{
-        font-size: 3.5vmax;
-        margin-bottom: 2vmax;
-    }
-    .main-clients p{
-        display: none;
-    }
-    .main-clients .logos {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1vmax;
-        padding: 1vmax 0;
-        margin-bottom: 2vmax;
-    }
-    .main-clients .logos > * {
-        height: 34px;
-        padding: 1vmax;
-    }
-    .main-clients .logos img:last-child {
-        display: none;
-    }
-    .main-clients .catalog-button {
-        width: 100%;
-    }
-    .main-clients .catalog-button a {
-        font-size: 1.6vmax;
-    }
-
     .map-contacts {
         grid-template-columns: 1fr;
         height: 140vmax;
     }
+
     .ymap-container {
-        background: url('../../../i.industrial.kz/stat/i/ya_map_psh.png') #fff9e8 no-repeat;
         height: 70vmax;
         background-position: center center;
     }
+
     #map-yandex {
         height: 70vmax;
     }
+
     .map-contacts .contacts {
         height: 60vmax;
         padding: 4vmax;
     }
-    .map-contacts .contacts > * {
+
+    .map-contacts .contacts>* {
         padding: .5vmax 0;
     }
+
     .map-contacts .contacts h2 {
         font-size: 3.5vmax;
     }
+
     .map-contacts .contacts p {
         font-size: 2.5vmax;
     }
+
     .map-contacts .contacts a {
         font-size: 4vmax;
     }
 
-    footer{
+    footer {
         grid-template-columns: 5% 1fr 5%;
         column-gap: 0;
         padding-bottom: 15vmax;
         text-align: center;
     }
+
     footer .catalog-button {
         grid-column: 2;
         height: 18vmax;
@@ -556,6 +338,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     footer div {
         grid-column: 2;
     }
+
     .copy {
         grid-template-columns: repeat(3, 1fr);
         max-width: 90vmax;
@@ -566,14 +349,17 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         text-align: center;
         justify-items: center;
     }
+
     .copy p {
         grid-column: 1/4;
         font-size: 2.3vmax;
     }
+
     .copy div {
         grid-column: 1/4;
         margin-top: 2vmax;
     }
+
     .icon-youtube,
     .icon-insta,
     .icon-vk {
@@ -581,11 +367,13 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         height: 10vmax;
         margin-bottom: 2vmax;
     }
+
     footer h3 {
         font-size: 5vmax;
         margin-top: 5vmax;
         margin-bottom: 1vmax;
     }
+
     footer ul li {
         font-size: 3vmax;
         line-height: 2;

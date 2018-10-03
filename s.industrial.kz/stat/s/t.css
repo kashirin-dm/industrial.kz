@@ -3,21 +3,8 @@
 Tablet Style
 -----------------------------
 */
-
-
 /* for-tablet-portrait-up */
-@media (min-width: 600px) {
-    .mainpage-text figcaption {
-        text-align: right;
-    }
-    .main-cover form button {
-        background-size: 40%;
-    }
-    .main-clients {
-        background: url(../../../i.industrial.kz/stat/i/main_subcover-tab.jpg) center no-repeat fixed #22150f;
-        background-size: cover;
-    }
-}
+@media (min-width: 600px) {}
 
 /*
 -----------------------------
@@ -29,12 +16,14 @@ for-tablet-portait-only */
         height: 20vmin;
         column-gap: 1.8vmin;
     }
+
     .main-menu__logo-wrap {
         grid-column: 2;
         height: 6vmin;
         grid-row: 1;
         grid-auto-rows: 1fr;
-        }
+    }
+
     #main-menu nav {
         grid-row: 2;
         grid-column: 2/6;
@@ -53,12 +42,13 @@ for-tablet-portait-only */
         width: 100%;
         grid-row: 1;
     }
+
     #main-menu .top-phone {
         grid-column: 4;
         display: inline-grid;
         grid-template-columns: 1fr;
         grid-template-rows: 5vmin;
-        height:100%;
+        height: 100%;
         column-gap: 0;
         white-space: normal;
         letter-spacing: -0.5px;
@@ -68,13 +58,15 @@ for-tablet-portait-only */
         grid-row: 1;
         margin-top: auto;
     }
-    #main-menu .top-phone span{
-        font-size:2vmin;
+
+    #main-menu .top-phone span {
+        font-size: 2vmin;
         grid-row: 2;
-        align-self:start;
+        align-self: start;
     }
-    #main-menu .top-phone a{
-        align-self:end;
+
+    #main-menu .top-phone a {
+        align-self: end;
         font-size: 3vmin;
         grid-row: 1;
         color: #000;
@@ -89,122 +81,54 @@ for-tablet-portait-only */
         height: 7vmin;
         line-height: 7vmin;
     }
-    .main-cover h1 {
-        font-size: 5.5vmax;
-        line-height: 1;
-        margin-bottom: 2vmax;
-    }
-    .main-cover p {
-        font-size: 3vmax;
-        margin-bottom: 3vmax;
-        line-height: 1.2;
-    }
-    .main-cover form {
-        grid-template-columns: 7fr 1fr;
-        column-gap: 1vmax;
-    }
-    .main-cover form * {height: 11vmax;}
-    .main-cover form input {
-        grid-column: 1;
-        padding: 0 5vmax;
-        font-size: 3.4vmax;
-    }
-    .main-cover form input::placeholder {
-        font-size: 3.4vmax;
-    }
-    .main-cover form button {
-        grid-column: 2;
-        font-size: 3.5vmax;
-    }
-    .catalog-category-items {
-        grid-row-gap: 4vmax;
-        padding: 8vmax 0 4vmax;
-    }
-    .catalog-category-items figcaption {
-        font-size: 4vmax;
-        padding: 2vmax;
-    }
-    .catalog-category-items a:nth-child(4),
-    .catalog-category-items a:nth-child(5),
-    .catalog-category-items a:nth-child(6){
-        display: none;
-    }
-    .catalog-category-items aside {
-        grid-column: 1/4;
-        padding: 25vmax 0 10vmax;
-    }
 
     .catalog-button a {
         font-size: 2.8vmax;
         max-width: 90%;
         padding: 3.5vmax 2.5vmax;
     }
-    .main-clients {
-        grid-template-columns: 5% 1fr 5%;
-        height: 100vh;
-    }
-    .main-clients > *{
-        grid-column: 2;
-    }
-    .main-clients h2{
-        font-size: 4vmax;
-        margin-bottom: 2vmax;
-    }
-    .main-clients p{
-        font-size: 2.8vmax;
-    }
-    .main-clients .logos {
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 1vmax;
-        padding: 1vmax 0;
-        margin-bottom: 2vmax;
-    }
-    .main-clients .logos > * {
-        height: 34px;
-        padding: 1vmax;
-    }
-
-    .main-clients .catalog-button {
-        width: 100%;
-    }
-    .main-clients .catalog-button a {
-        font-size: 2.5vmax;
-    }
 
     .map-contacts {
         grid-template-columns: 1fr;
         height: 140vmax;
     }
+
     .ymap-container {
-        background: url('../../../i.industrial.kz/stat/i/ya_map_psh.png') #fff9e8 no-repeat;
         height: 70vmax;
         background-position: center center;
     }
+
     #map-yandex {
         height: 70vmax;
     }
+
     .map-contacts .contacts {
         height: 60vmax;
         padding: 4vmax;
     }
-    .map-contacts .contacts > * {
+
+    .map-contacts .contacts>* {
         padding: .5vmax 0;
     }
+
     .map-contacts .contacts h2 {
         font-size: 5vmax;
     }
+
     .map-contacts .contacts p {
         font-size: 3vmax;
     }
+
     .map-contacts .contacts a {
         font-size: 5vmax;
     }
 
-    footer{
+    footer {
         grid-template-columns: 5% 1fr 1fr 5%;
         column-gap: 0;
         padding-bottom: 15vmax;
     }
+
     footer .catalog-button {
         grid-column: 2/4;
         height: 18vmax;
@@ -223,6 +147,7 @@ for-tablet-portait-only */
     footer div:nth-child(2n+2) {
         grid-column: 3;
     }
+
     .copy {
         grid-template-columns: repeat(3, 1fr);
         max-width: 90vmax;
@@ -233,14 +158,17 @@ for-tablet-portait-only */
         text-align: center;
         justify-items: center;
     }
+
     .copy p {
         grid-column: 1/4;
         font-size: 2vmax;
     }
+
     .copy div {
         grid-column: 1/4;
         margin-top: 2vmax;
     }
+
     .icon-youtube,
     .icon-insta,
     .icon-vk {
@@ -248,11 +176,13 @@ for-tablet-portait-only */
         height: 8vmax;
         margin-bottom: 2vmax;
     }
+
     footer h3 {
         font-size: 4vmax;
         margin-top: 5vmax;
         margin-bottom: 1vmax;
     }
+
     footer ul li {
         font-size: 2.4vmax;
         line-height: 2;
@@ -261,15 +191,8 @@ for-tablet-portait-only */
 
 /* for-tablet-landscape-up */
 @media (min-width: 900px) {
-    #main-menu {position: fixed;}
-    .main-cover form input {grid-column: 2;}
-    .main-cover form button {grid-column: 3;}
-    .catalog-category-items {
-        grid-template-columns: 0 1fr 1fr 0;
-    }
-    .main-cover {
-        background: url(../../../i.industrial.kz/stat/i/cover2-500.webp) center no-repeat;
-        background-size: cover;
+    #main-menu {
+        position: fixed;
     }
 }
 
@@ -283,12 +206,14 @@ for-tablet-landscape-only */
         height: 16vmin;
         column-gap: 3vmin;
     }
+
     .main-menu__logo-wrap {
         grid-column: 2;
         height: 6vmin;
         grid-row: 1;
         grid-auto-rows: 1fr;
-        }
+    }
+
     #main-menu nav {
         grid-row: 2;
         grid-column: 2/6;
@@ -296,20 +221,24 @@ for-tablet-landscape-only */
         grid-auto-rows: 1fr;
         justify-content: center;
     }
+
     #main-menu nav ul li {
         padding: 0 5vmin;
     }
+
     #main-menu .whatsapp {
         grid-column: 3;
         height: 6vmin;
-        width: 100%;grid-row: 1;
+        width: 100%;
+        grid-row: 1;
     }
+
     #main-menu .top-phone {
         grid-column: 4;
         display: inline-grid;
         grid-template-columns: 1fr;
         grid-template-rows: 5vmin;
-        height:100%;
+        height: 100%;
         column-gap: 0;
         white-space: normal;
         letter-spacing: -0.5px;
@@ -319,18 +248,21 @@ for-tablet-landscape-only */
         grid-row: 1;
         margin-top: auto;
     }
-    #main-menu .top-phone span{
-        font-size:2vmin;
+
+    #main-menu .top-phone span {
+        font-size: 2vmin;
         grid-row: 2;
-        align-self:start;
+        align-self: start;
     }
-    #main-menu .top-phone a{
-        align-self:end;
+
+    #main-menu .top-phone a {
+        align-self: end;
         font-size: 3vmin;
         grid-row: 1;
         color: #000;
         grid-column: 1/2;
     }
+
     #main-menu .callback {
         grid-column: 5;
         grid-row: 1;
@@ -340,55 +272,6 @@ for-tablet-landscape-only */
         font-size: 2.5vmin;
         line-height: 6vmin;
     }
-    .main-cover h1 {
-        font-size: 5.5vmax;
-        line-height: 1;
-        margin-bottom: 2vmax;
-    }
-    .main-cover p {
-        font-size: 3vmax;
-        margin-bottom: 4vmax;
-        line-height: 1.2;
-    }
-    .main-cover form {
-        grid-template-columns: 5% 7fr 1fr 5%;
-        column-gap: 1vmax;
-    }
-    .main-cover form * {height: 7vmax;}
-    .main-cover form input {
-        padding: 0 4vmax;
-        font-size: 2.6vmax;
-    }
-    .main-cover form input::placeholder {
-        font-size: 2.6vmax;
-    }
-    .main-cover form button {
-        font-size: 2.7vmax;
-    }
-
-    .catalog-category-items {
-        grid-gap: 5vmax;
-        padding: 8vmax 0 1vmax;
-    }
-    .catalog-category-items a:first-child,
-    .catalog-category-items a:nth-child(3n+3) {
-        grid-column: 2;
-    }
-    .catalog-category-items a:nth-child(2n+2) {
-        grid-column: 3;
-    }
-    .catalog-category-items figcaption {
-        font-size: 3.5vmax;
-        padding: 2vmax;
-    }
-    .catalog-category-items a:nth-child(5),
-    .catalog-category-items a:nth-child(6){
-        display: none;
-    }
-    .catalog-category-items aside {
-        grid-column: 1/5;
-        padding: 20vmax 0 8vmax;
-    }
 
     .catalog-button a {
         font-size: 2.8vmax;
@@ -396,104 +279,45 @@ for-tablet-landscape-only */
         padding: 3.5vmax 2.5vmax;
     }
 
-    .mainpage-text .article-content{
-        grid-column: 2;
-        column-count: 2;
-        column-gap: 3vmax;
-        margin-bottom: 4vmax;
-        column-rule: 1px dotted #ccc;
-    }
-    .mainpage-text h2 {
-        font-size: 6vmax;
-        font-weight: 400;
-        padding: 2vmax 0;
-    }
-    .mainpage-text figcaption {
-        font-size: 2vmax;
-        padding-top: .5vmax;
-    }
-    .mainpage-text h3{
-        font-size: 3.5vmax;
-        padding: 0 2vmax .5vmax;
-    }
-    .mainpage-text h4{
-        font-size: 2.3vmax;
-        font-weight: 700;
-        padding: 1vmax 2vmax .2vmax;
-    }
-    .mainpage-text p{
-        font-size: 2.5vmax;
-        padding: 0 2vmax 4vmax;
-    }
-    .mainpage-text ul {
-        font-size: 2.3vmax;
-        padding: 0 3vmax 2vmax;
-    }
-    .mainpage-text ul > li{padding-bottom: .4vmax;}
-    .main-clients {
-        grid-template-columns: 5% 1fr 5%;
-        height: 100vh;
-    }
-    .main-clients > *{
-        grid-column: 2;
-    }
-    .main-clients h2{
-        font-size: 5vmax;
-        margin-bottom: 2vmax;
-    }
-    .main-clients p{
-        font-size: 3.5vmax;
-    }
-    .main-clients .logos {
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 1vmax;
-        padding: 3vmax 0;
-        margin-bottom: 2vmax;
-    }
-    .main-clients .logos > * {
-        height: 54px;
-        padding: 2vmax;
-    }
-
-    .main-clients .catalog-button {
-        width: 100%;
-    }
-    .main-clients .catalog-button a {
-        font-size: 2.5vmax;
-    }
-
     .map-contacts {
         grid-template-columns: 1fr 1fr;
         height: 50vmax;
     }
+
     .ymap-container {
-        background: url('../../../i.industrial.kz/stat/i/ya_map_psh.png') #fff9e8 no-repeat;
         background-position: center center;
     }
+
     #map-yandex {
         height: 50vmax;
     }
+
     .map-contacts .contacts {
         padding: 4vmax;
     }
-    .map-contacts .contacts > * {
+
+    .map-contacts .contacts>* {
         padding: .5vmax 0;
     }
+
     .map-contacts .contacts h2 {
         font-size: 2.3vmax;
     }
+
     .map-contacts .contacts p {
         font-size: 1.5vmax;
     }
+
     .map-contacts .contacts a {
         font-size: 2.3vmax;
     }
 
-    footer{
+    footer {
         grid-template-columns: 5% repeat(3, 1fr) 5%;
         column-gap: 0;
         padding-bottom: 10vmax;
     }
+
     footer .catalog-button {
         grid-column: 2/5;
         height: 14vmax;
@@ -508,12 +332,15 @@ for-tablet-landscape-only */
     footer div:nth-child(3) {
         grid-column: 2;
     }
+
     footer div:nth-child(4) {
         grid-column: 3;
     }
+
     footer div:nth-child(5) {
         grid-column: 4;
     }
+
     .copy {
         grid-column: 2/5;
         grid-template-columns: repeat(3, 1fr);
@@ -526,15 +353,18 @@ for-tablet-landscape-only */
         justify-items: center;
         justify-self: center;
     }
+
     .copy p {
         grid-column: 1/4;
         font-size: 1.5vmax;
     }
+
     .copy div {
         grid-column: 1/4;
         margin-top: 2vmax;
         margin-bottom: 8vmax;
     }
+
     .icon-youtube,
     .icon-insta,
     .icon-vk {
@@ -542,14 +372,15 @@ for-tablet-landscape-only */
         height: 6vmax;
         margin-bottom: 2vmax;
     }
+
     footer h3 {
         font-size: 2.4vmax;
         margin-top: 2vmax;
         margin-bottom: 1vmax;
     }
+
     footer ul li {
         font-size: 1.6vmax;
         line-height: 2;
     }
-
 }
