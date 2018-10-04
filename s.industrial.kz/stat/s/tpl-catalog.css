@@ -1,0 +1,152 @@
+/*
+-----------------------------
+Catalog Style
+-----------------------------
+*/
+/* Catalog Header */
+.catalog-header {
+    grid-template-columns: 15% 1fr 15%;
+    grid-gap: 1.5vmax;
+    padding: 8vmax 0;
+    text-align: center;
+}
+.catalog-header h1,
+.catalog-header form {
+    grid-column: 2;
+}
+
+.catalog-header h1 {
+    font-size: 3vmax;
+}
+
+.catalog-header form {
+    display: grid;
+    grid-template-columns: 20% 9fr 1fr 20%;
+    column-gap: .5vmax;
+    align-self: start;
+}
+
+.catalog-header form * {
+    display: inline-grid;
+    height: 3.7vmax;
+    margin: 0;
+    width: 100%;
+    font-family: 'Circe Rounded', sans-serif;
+    color: #000;
+    white-space: nowrap;
+    background: rgba(255, 255, 255, .6);
+    box-shadow: rgba(0, 0, 0, .2) 0px 1px 5px;
+    border-radius: 100px;
+}
+
+.catalog-header form input {
+    font-weight: 400;
+    padding: 0 1.5vmax;
+    font-size: 1.5vmax;
+    grid-column: 2;
+}
+
+.catalog-header form input::placeholder {
+    content: '';
+    font-family: 'Circe Rounded', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vmax;
+    color: #000;
+}
+
+.catalog-header form input:focus {
+    background: rgba(255, 255, 255, .9);
+}
+
+.catalog-header form input:focus::placeholder {
+    opacity: .3;
+}
+
+.catalog-header form button {
+    font-weight: 700;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path d='M23.809 21.646l-6.205-6.205a9.68 9.68 0 0 0 1.857-5.711C19.46 4.365 15.096 0 9.73 0S0 4.365 0 9.73s4.365 9.73 9.73 9.73a9.68 9.68 0 0 0 5.487-1.698L21.455 24l2.354-2.354zM2.854 9.73c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877-6.877-3.085-6.877-6.877z'/></svg>") rgba(255, 255, 255, .6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    font-size: 2.5vmax;
+}
+
+.catalog-header form button:hover {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path d='M23.809 21.646l-6.205-6.205a9.68 9.68 0 0 0 1.857-5.711C19.46 4.365 15.096 0 9.73 0S0 4.365 0 9.73s4.365 9.73 9.73 9.73a9.68 9.68 0 0 0 5.487-1.698L21.455 24l2.354-2.354zM2.854 9.73c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877-6.877-3.085-6.877-6.877z'/></svg>") rgba(255, 255, 255, .9);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    cursor: pointer;
+    transform: scale(.92);
+    transition: all .02s ease-in;
+}
+
+.catalog-header form button:active {
+    transform: scale(.85);
+    transition: all .02s ease-in;
+}
+
+.catalog-category-items {
+    grid-template-columns: 5% repeat(3, 1fr) 5%;
+    grid-gap: 3vmax;
+}
+.catalog-category-items a {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    transition: all .1s ease-out;
+    box-shadow: rgba(0, 0, 0, .05) 0px 1px 45px;
+    will-change: transform;
+    min-height: 15vmax;
+}
+
+.catalog-category-items a:hover {
+    transform: scale(.98);
+    transition: all .05s ease-in;
+}
+
+.catalog-category-items a:active {
+    transform: scale(.95);
+    transition: all .02s ease-in;
+}
+
+.catalog-category-items img {
+    width: 100%;
+    border-radius: 5px;
+    min-height: 7vmax;
+    background: var(--accent-clr);
+}
+
+.catalog-category-items figure {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.catalog-category-items figcaption {
+    padding: 1vmax;
+}
+.catalog-category-items figcaption h2 {
+    font-size: 1.6vmax;
+}
+.catalog-category-items figcaption p {
+    font-size: 1.1vmax;
+}
+
+.catalog-category-items a:nth-child(3n+1) {
+    /* 1, 4, 7, 10 etc */
+    grid-column: 2;
+}
+
+.catalog-category-items a:nth-child(3n+2) {
+    /* Each 2 and 5 */
+    grid-column: 3;
+}
+
+.catalog-category-items a:nth-child(3n) {
+    /* Each 3 and 6*/
+    grid-column: 4;
+}
