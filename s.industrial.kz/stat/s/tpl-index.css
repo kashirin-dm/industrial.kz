@@ -117,7 +117,7 @@ Index Style
     transition: all .02s ease-in;
 }
 
-.catalog-category-items a {
+.catalog-items a {
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
@@ -129,28 +129,29 @@ Index Style
     will-change: transform;
 }
 
-.catalog-category-items a:hover {
+.catalog-items a:hover {
     transform: scale(.98);
     transition: all .05s ease-in;
 }
 
-.catalog-category-items a:active {
+.catalog-items a:active {
     transform: scale(.95);
     transition: all .02s ease-in;
 }
 
-.catalog-category-items img {
+.catalog-items img {
     width: 100%;
     border-radius: 5px;
+    background-color: var(--accent-clr-20);
 }
 
-.catalog-category-items figure {
+.catalog-items figure {
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.catalog-category-items aside {
+.catalog-items aside {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -174,14 +175,14 @@ Index Style
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#f0f0f0', GradientType=0);
 }
 
-.catalog-category-items aside a,
-.catalog-category-items aside a:active {
+.catalog-items aside a,
+.catalog-items aside a:active {
     color: var(--accent-clr);
     border-color: var(--accent-clr);
     background: none;
 }
 
-.catalog-category-items aside a {
+.catalog-items aside a {
     box-shadow: rgba(0, 0, 0, .2) 0px 1px 5px;
 }
 

@@ -14,7 +14,7 @@ Index Desktop Style
         grid-template-columns: 15% 1fr 15%;
     }
 
-    .catalog-category-items {
+    .catalog-items {
         grid-template-columns: 5% repeat(3, 1fr) 5%;
     }
 }
@@ -51,32 +51,32 @@ for-desktop-only */
         font-size: 2.5vmax;
     }
 
-    .catalog-category-items {
+    .catalog-items {
         grid-gap: 3vmax;
         padding: 5vmax 0 2vmax;
     }
 
-    .catalog-category-items figcaption {
+    .catalog-items figcaption {
         font-size: 1.6vmax;
         padding: 1vmax;
     }
 
-    .catalog-category-items a::nth-child(-3n+4) {
+    .catalog-items a::nth-child(-3n+4) {
         /* Each 1 and 4 */
         grid-column: 2;
     }
 
-    .catalog-category-items a:nth-child(3n+2) {
+    .catalog-items a:nth-child(3n+2) {
         /* Each 2 and 5 */
         grid-column: 3;
     }
 
-    .catalog-category-items a:nth-child(3n) {
+    .catalog-items a:nth-child(3n) {
         /* Each 3 and 6 */
         grid-column: 4;
     }
 
-    .catalog-category-items aside {
+    .catalog-items aside {
         grid-column: 1/6;
         padding: 10vmax 0 6vmax;
     }
@@ -205,32 +205,32 @@ for-big-desktop-up */
         font-size: 1.7vmax;
     }
 
-    .catalog-category-items {
+    .catalog-items {
         grid-gap: 3vmax;
         padding: 5vmax 0 2vmax;
     }
 
-    .catalog-category-items figcaption {
+    .catalog-items figcaption {
         font-size: 1.6vmax;
         padding: 1vmax;
     }
 
-    .catalog-category-items a::nth-child(-3n+4) {
+    .catalog-items a::nth-child(-3n+4) {
         /* Each 1 and 4 */
         grid-column: 2;
     }
 
-    .catalog-category-items a:nth-child(3n+2) {
+    .catalog-items a:nth-child(3n+2) {
         /* Each 2 and 5 */
         grid-column: 3;
     }
 
-    .catalog-category-items a:nth-child(3n) {
+    .catalog-items a:nth-child(3n) {
         /* Each 3 and 6 */
         grid-column: 4;
     }
 
-    .catalog-category-items aside {
+    .catalog-items aside {
         grid-column: 1/6;
         padding: 10vmax 0 6vmax;
     }

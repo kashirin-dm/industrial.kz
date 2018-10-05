@@ -11,6 +11,7 @@ Catalog Style
     text-align: center;
 }
 .catalog-header h1,
+.catalog-header p,
 .catalog-header form {
     grid-column: 2;
 }
@@ -86,11 +87,14 @@ Catalog Style
     transition: all .02s ease-in;
 }
 
-.catalog-category-items {
+
+
+.catalog-items {
     grid-template-columns: 5% repeat(3, 1fr) 5%;
     grid-gap: 3vmax;
+    padding-bottom: 6vmax;
 }
-.catalog-category-items a {
+.catalog-items a {
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
@@ -103,50 +107,181 @@ Catalog Style
     min-height: 15vmax;
 }
 
-.catalog-category-items a:hover {
+.catalog-items a:hover {
     transform: scale(.98);
     transition: all .05s ease-in;
 }
 
-.catalog-category-items a:active {
+.catalog-items a:active {
     transform: scale(.95);
     transition: all .02s ease-in;
 }
 
-.catalog-category-items img {
+.catalog-items img {
     width: 100%;
     border-radius: 5px;
     min-height: 7vmax;
-    background: var(--accent-clr);
+    background-color: var(--accent-clr-20);
 }
 
-.catalog-category-items figure {
+.catalog-items figure {
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.catalog-category-items figcaption {
+.catalog-items figcaption {
     padding: 1vmax;
 }
-.catalog-category-items figcaption h2 {
+.catalog-items figcaption h2 {
     font-size: 1.6vmax;
 }
-.catalog-category-items figcaption p {
+.catalog-items figcaption p {
     font-size: 1.1vmax;
 }
 
-.catalog-category-items a:nth-child(3n+1) {
-    /* 1, 4, 7, 10 etc */
+.catalog-items a:nth-child(3n+1) {
+    /* each 1 */
     grid-column: 2;
 }
 
-.catalog-category-items a:nth-child(3n+2) {
-    /* Each 2 and 5 */
+.catalog-items a:nth-child(3n+2) {
+    /* each 2 */
     grid-column: 3;
 }
 
-.catalog-category-items a:nth-child(3n) {
-    /* Each 3 and 6*/
+.catalog-items a:nth-child(3n) {
+    /* each 3*/
     grid-column: 4;
+}
+
+
+
+.catalog-products {
+    grid-template-columns: 2.5vw repeat(6, 1fr) 2.5vw;
+    grid-gap: 1.5vmax;
+}
+.catalog-products figcaption {
+    display: grid;
+}
+.catalog-products figcaption h2 {
+    font-weight: 700;
+    font-size: 1.3vmax;
+    line-height: 1;
+    align-self:start;
+}
+.catalog-products figcaption p {
+    font-size: 1vmax;
+    align-self:end;
+}
+
+.catalog-products figcaption span {
+    font-weight: 700;
+    color:var(--accent-clr);
+    font-size: 1vmax;
+    align-self:end;
+}
+
+.catalog-products a:nth-child(6n+1) {
+    /* each 1 */
+    grid-column: 2;
+}
+
+.catalog-products a:nth-child(6n+2) {
+    /* each 2 */
+    grid-column: 3;
+}
+
+.catalog-products a:nth-child(6n+3) {
+    /* each 3 */
+    grid-column: 4;
+}
+
+.catalog-products a:nth-child(6n+4) {
+    /* each 4 */
+    grid-column: 5;
+}
+
+.catalog-products a:nth-child(6n+5) {
+    /* each 4 */
+    grid-column: 6;
+}
+
+.catalog-products a:nth-child(6n) {
+    /* each 5*/
+    grid-column: 7;
+}
+
+
+
+
+
+.catalog-text {
+    background: #fff;
+    grid-template-columns: 15% 1fr 15%;
+}
+
+.catalog-text .article-content {
+    grid-column: 2;
+    column-gap: 3vmax;
+    hyphens: initial;
+    orphans: 3;
+    column-count: 2;
+    column-gap: 3vmax;
+    margin-bottom: 4vmax;
+    column-rule: 1px dotted #ccc;
+}
+
+.catalog-text h2 {
+    column-span: all;
+    text-align: center;
+    font-size: 2.8vmax;
+    font-weight: 400;
+    padding: 2vmax 0;
+}
+
+.catalog-text img {
+    width: 100%;
+    height: auto;
+}
+
+.catalog-text figcaption {
+    font-style: italic;
+    font-size: 1vmax;
+    padding-top: .5vmax;
+}
+
+.catalog-text h4 {
+    font-weight: 700;
+    font-size: 1.2vmax;
+    font-weight: 700;
+    padding: 1vmax 2vmax .2vmax;
+}
+
+.catalog-text p {
+    text-indent: 6%;
+    word-spacing: 0.1vmax;
+    text-align: justify;
+    font-size: 1.3vmax;
+    padding: 0 2vmax 3vmax;
+}
+
+.catalog-text h2+p,
+.catalog-text h3+p,
+.catalog-text ul+p {
+    text-indent: 0;
+}
+.catalog-text ul>li {
+    padding-bottom: .4vmax;
+}
+
+.catalog-text h3 {
+    font-size: 1.7vmax;
+    font-weight: 400;
+    padding: 0 2vmax .5vmax;
+}
+
+.mainpage-text ul {
+    font-size: 1.2vmax;
+    padding: 0 3vmax 2vmax;
 }

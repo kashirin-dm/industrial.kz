@@ -55,28 +55,28 @@ Index Mobile Style
         background-size: 9%;
     }
 
-    .catalog-category-items {
+    .catalog-items {
         grid-template-columns: 5% 1fr 5%;
         grid-row-gap: 5vmax;
         padding: 10vmax 0 5vmax;
     }
 
-    .catalog-category-items figcaption {
+    .catalog-items figcaption {
         font-size: 5vmax;
         padding: 2.5vmax;
     }
 
-    .catalog-category-items a {
+    .catalog-items a {
         grid-column: 2;
     }
 
-    .catalog-category-items a:nth-child(4),
-    .catalog-category-items a:nth-child(5),
-    .catalog-category-items a:nth-child(6) {
+    .catalog-items a:nth-child(4),
+    .catalog-items a:nth-child(5),
+    .catalog-items a:nth-child(6) {
         display: none;
     }
 
-    .catalog-category-items aside {
+    .catalog-items aside {
         grid-column: 1/4;
         padding: 25vmax 0 15vmax;
     }
@@ -175,11 +175,11 @@ Index Mobile Style
         background-size: 9%;
     }
 
-    .catalog-category-items {
+    .catalog-items {
         grid-template-columns: 5% 1fr 5%;
     }
 
-    .catalog-category-items a {
+    .catalog-items a {
         grid-column: 2;
     }
 
@@ -275,23 +275,23 @@ Index Mobile Style
         font-size: 3.4vmax;
     }
 
-    .catalog-category-items {
+    .catalog-items {
         grid-row-gap: 4vmax;
         padding: 8vmax 0 4vmax;
     }
 
-    .catalog-category-items figcaption {
+    .catalog-items figcaption {
         font-size: 4vmax;
         padding: 2vmax;
     }
 
-    .catalog-category-items a:nth-child(4),
-    .catalog-category-items a:nth-child(5),
-    .catalog-category-items a:nth-child(6) {
+    .catalog-items a:nth-child(4),
+    .catalog-items a:nth-child(5),
+    .catalog-items a:nth-child(6) {
         display: none;
     }
 
-    .catalog-category-items aside {
+    .catalog-items aside {
         grid-column: 1/4;
         padding: 25vmax 0 10vmax;
     }

@@ -6,7 +6,7 @@ Core Style
 /* Variables*/
 :root {
     --accent-clr: #1d73bf;
-    --second-clr: #295776;
+    --accent-clr-20: #d2e3f2;
     --f0-clr: #f0f0f0;
 }
 
@@ -125,12 +125,6 @@ a:active {
     color: #18374d;
 }
 
-.container {
-    width: 60%;
-    margin: 0 auto;
-    padding: 0 0.74%;
-}
-
 /* END Reset, Start & Base Style */
 /* Top Main Menu */
 #main-menu {
@@ -215,6 +209,10 @@ a:active {
     box-sizing: border-box;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     color: #000;
+}
+#main-menu nav ul li .active {
+    color: var(--accent-clr);
+    border-bottom: 1px solid rgba(29, 115, 191, 0.3);
 }
 
 #main-menu nav ul li a:hover {
