@@ -1,0 +1,18 @@
+/*
+-----------------------------
+Cart Mobile Style
+-----------------------------
+*/
+/*
+-------------------------- for-super-small-device-only */
+@media (max-width: 319px) {
+}
+
+/* for-small-phone-up */
+@media (min-width: 320px) {
+}
+
+/*
+-------------------------- for-phone-only */
+@media (min-width: 320px) and (max-width: 599px) {
+}

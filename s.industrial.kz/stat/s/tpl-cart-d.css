@@ -1,0 +1,20 @@
+/*
+-----------------------------
+Cart Desktop Style
+-----------------------------
+*/
+/* for-desktop-up */
+@media (min-width: 1200px) {
+}
+
+/*
+-----------------------------
+for-desktop-only */
+@media (min-width: 1200px) and (max-width: 1799px) {
+}
+
+/*
+-----------------------------
+for-big-desktop-up */
+@media (min-width: 1800px) {
+}
