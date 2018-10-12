@@ -24,7 +24,25 @@ $(function() {
           threshold: 0
         });
     });
-
+$(function() {
+    $('.slider-for').slick({
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     arrows: false,
+     fade: true,
+     lazyLoad: 'ondemand',
+     asNavFor: '.slider-nav'
+   });
+   $('.slider-nav').slick({
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     lazyLoad: 'ondemand',
+     asNavFor: '.slider-for',
+     dots: true,
+     centerMode: true,
+     focusOnSelect: true
+   });
+});
 
 // Yandex Map
 //Переменная для включения/отключения индикатора загрузки
