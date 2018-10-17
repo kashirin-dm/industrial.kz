@@ -515,3 +515,25 @@ table td:hover {
 .attention span {
     font-weight: 700;
 }
+
+.cart-blue-block {
+    grid-template-columns: 4vmax 1fr 4vmax;
+    background: var(--accent-clr-20);
+    text-align: center;
+    padding: 6vmax 0;
+}
+.cart-blue-block > * {
+    grid-column: 2;
+}
+
+.cart-blue-block h4 {
+    font-family: 'Circe Rounded', sans-serif;
+    font-size: 2.2vmax;
+    font-weight: 400;
+    margin-bottom: 1vmax;
+}
+
+
+.slider-reviews {
+    margin-bottom: 4vmax;
+}
