@@ -45,10 +45,12 @@ $(function() {
 });
 
 $(function() {
-    $('.slider-reviews').slick({
+    $('.cart-slider-reviews').slick({
       centerMode: true,
       centerPadding: '60px',
       slidesToShow: 3,
+      variableWidth: true,
+      infinite: true,
       responsive: [
         {
           breakpoint: 768,
@@ -66,6 +68,36 @@ $(function() {
             centerMode: true,
             centerPadding: '40px',
             slidesToShow: 1
+          }
+        }
+      ]
+    });
+});
+
+$(function() {
+    $('.cart-slider-clients').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 6,
+      variableWidth: true,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 6
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
           }
         }
       ]
