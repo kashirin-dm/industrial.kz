@@ -1,0 +1,154 @@
+/*
+-----------------------------
+Pages Style
+-----------------------------
+*/
+/* Page Header */
+.page-header {
+    grid-template-columns: 15% 1fr 15%;
+    grid-gap: 1.5vmax;
+    padding: 8vmax 0;
+    text-align: center;
+}
+.page-header header {
+    grid-column: 2;
+}
+.page-header h1,
+.page-header p,
+.page-header aside {
+    grid-column: 2;
+}
+.page-header h1 {
+    font-size: 3vmax;
+}
+.page-header ul {
+    list-style: none;
+    font-size: 1.2vmax;
+}
+.page-header ul li {
+    display: inline-block;
+    padding: 0 1vmax;
+    border-right: 1px solid #000;
+    line-height: 1vmax;
+}
+.page-header ul li a {
+    margin-left: -.3vmax;
+}
+.page-header ul li a:first-of-type {
+    margin-left: 0;
+}
+.page-header ul li:last-of-type {
+    border: none;
+}
+
+.page-header figure {
+    display: inline-grid;
+    font-size: 3vmax;
+    padding: 2vmax;
+    line-height: 1;
+}
+.page-header figure b {
+    font-weight: 400;
+}
+.page-header figure span {
+    font-size: 2vmax;
+}
+.page-header figure figcaption {
+    grid-row: 2;
+    font-size: 1.2vmax;
+}
+
+
+.catalog-text {
+    background: #fff;
+    grid-template-columns: 15% 1fr 15%;
+}
+.catalog-text__one-column {
+    grid-template-columns: 25% 1fr 25%;
+}
+.catalog-text .article-content {
+    grid-column: 2;
+    column-gap: 3vmax;
+    hyphens: initial;
+    orphans: 3;
+    column-count: 2;
+    margin-bottom: 4vmax;
+    column-rule: 1px dotted #ccc;
+}
+.catalog-text .article-content__one-column {
+    column-count: 1;
+}
+.catalog-text h2 {
+    column-span: all;
+    text-align: center;
+    font-size: 2.8vmax;
+    font-weight: 400;
+    padding: 2vmax 0;
+}
+
+.catalog-text img {
+    width: 100%;
+    height: auto;
+}
+
+.catalog-text figcaption {
+    font-style: italic;
+    font-size: 1vmax;
+    padding-top: .5vmax;
+}
+
+.catalog-text h4 {
+    font-weight: 700;
+    font-size: 1.2vmax;
+    font-weight: 700;
+    padding: 1vmax 2vmax .2vmax;
+}
+
+.catalog-text p {
+    text-indent: 6%;
+    word-spacing: 0.1vmax;
+    text-align: justify;
+    font-size: 1.3vmax;
+    padding: 0 2vmax 3vmax;
+}
+
+.catalog-text h2+p,
+.catalog-text h3+p,
+.catalog-text ul+p {
+    text-indent: 0;
+}
+.catalog-text ul>li {
+    padding-bottom: .4vmax;
+}
+
+.catalog-text h3 {
+    font-size: 1.7vmax;
+    font-weight: 400;
+    padding: 0 2vmax .5vmax;
+}
+
+.how-to-buy-grid {
+    grid-template-columns: 4vmax 1fr 4vmax;
+}
+.how-to-buy__how-block {
+    grid-column: 2;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4vmax;
+}
+
+.how-to-buy__how-block h3{
+    grid-column: 1;
+    font-size: 3vmax;
+}
+
+.how-to-buy__how-block p{
+    grid-column: 2;
+    font-size: 1.5vmax;
+    margin-bottom: 2vmax;
+}
+
+.how-to-buy__how-requisites {
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+}

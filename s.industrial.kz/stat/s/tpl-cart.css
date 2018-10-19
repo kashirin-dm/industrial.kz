@@ -587,36 +587,78 @@ article .cart-bage-sale-off a {
     grid-template-columns: 4vmax 1fr 4vmax;
 }
 
+.other-products h3{
+    font-size: 2.2vmax;
+    grid-column: 1/8;
+    text-align: center;
+}
+
 .other-products > * {
     display: inline-grid;
     grid-column: 2;
-    padding: 6vmax 0;
+    padding: 4vmax 0;
+}
+.other-products aside {
     grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.5vmax;
+}
+.other-products aside a {
+    display: inline-grid;
+    min-height: 15vmax;
+    overflow: hidden;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    transition: all .1s ease-out;
+    box-shadow: rgba(0, 0, 0, .05) 0px 1px 45px;
+    will-change: transform;
+    font-size: 1.2vmax;
+    font-weight: 700;
+    background-color: #fff;
+}
+.other-products a:hover {
+    transform: scale(.98);
+    transition: all .05s ease-in;
 }
 
-.other-products aside a:nth-child(6n+1) {
+.other-products a:active {
+    transform: scale(.95);
+    transition: all .02s ease-in;
+}
+.other-products aside a img{
+    width: 100%;
+    border-radius: 5px;
+    min-height: 10vmax;
+    background-color: var(--accent-clr-20);
+}
+
+.other-products aside a figcaption {
+    padding: .8vmax 0;
+}
+.other-products aside a:nth-of-type(6n+1) {
     /* each 1 */
+    grid-column: 1;
+}
+.other-products aside a:nth-of-type(6n+2) {
+    /* each 2 */
     grid-column: 2;
 }
-.other-products aside a:nth-child(6n+2) {
-    /* each 2 */
+.other-products aside a:nth-of-type(6n+3) {
+    /* each 3 */
     grid-column: 3;
 }
-.other-products aside a:nth-child(6n+3) {
-    /* each 3 */
+.other-products aside a:nth-of-type(6n+4) {
+    /* each 4 */
     grid-column: 4;
 }
-.other-products aside a:nth-child(6n+4) {
+.other-products aside a:nth-of-type(6n+5) {
     /* each 4 */
     grid-column: 5;
 }
-.other-products aside a:nth-child(6n+5) {
-    /* each 4 */
-    grid-column: 6;
-}
-.other-products aside a:nth-child(6n) {
+.other-products aside a:nth-of-type(6n) {
     /* each 5*/
-    grid-column: 7;
+    grid-column: 6;
 }
 
 .cart-linked-product {}
