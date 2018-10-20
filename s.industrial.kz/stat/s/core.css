@@ -17,7 +17,7 @@ Core Style
     padding: 0;
     border: 0;
     outline: none;
-    vertical-align: middle;
+    vertical-align: baseline;
     background: transparent;
 }
 
