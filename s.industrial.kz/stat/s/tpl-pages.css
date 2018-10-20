@@ -237,3 +237,101 @@ Pages Style
     z-index: 500;
     transition: all .2s ease .5s;
 }
+
+
+.big-clients-list {
+    grid-template-columns: 25% 1fr 25%;
+
+}
+
+.big-clients-list h2,
+.clients-list h2 {
+    grid-column: 2;
+    text-align: center;
+    font-size: 2vmax;
+
+}
+
+.big-clients-list h3 {
+    font-size: 1.5vmax;
+
+}
+
+.big-clients-list figure {
+    grid-column: 2;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vmax;
+
+}
+.big-clients-list figure > * {
+    display: inline-grid;
+    align-self: center;
+}
+.big-clients-list figure img {
+    grid-column: 1;
+    width: 100%;
+    max-width: 15vmax;
+
+}
+
+.big-clients-list figure figcaption {
+    grid-column: 2;
+
+}
+
+.clients-list {
+    grid-template-columns: 10vw 1fr 10vw;
+    background-color: #fff;
+    padding: 4vmax 0;
+
+}
+.clients-list p {
+    grid-column: 2;
+    text-align: center;
+    font-size: 1.3vmax;
+
+}
+
+.clients-list div {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap:1vmax;
+
+}
+
+.clients-list img {
+    width: 100%;
+    background-color: var(--accent-clr-20);
+    min-height: 2vmax;
+}
+.clients-list img:nth-of-type(6n+1) {
+    /* each 1 */
+    grid-column: 1;
+}
+
+.clients-list img:nth-of-type(6n+2) {
+    /* each 2 */
+    grid-column: 2;
+}
+
+.clients-list img:nth-of-type(6n+3) {
+    /* each 3 */
+    grid-column: 3;
+}
+
+.clients-list img:nth-of-type(6n+4) {
+    /* each 4 */
+    grid-column: 4;
+}
+
+.clients-list img:nth-of-type(6n+5) {
+    /* each 4 */
+    grid-column: 5;
+}
+
+.clients-list img:nth-of-type(6n) {
+    /* each 5*/
+    grid-column: 6;
+}
