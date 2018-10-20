@@ -23,6 +23,10 @@ Index Desktop Style
 -----------------------------
 for-desktop-only */
 @media (min-width: 1200px) and (max-width: 1799px) {
+    .main-cover {
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_600.webp) center no-repeat;
+        background-size: cover;
+    }
     .main-cover h1 {
         font-size: 5vmax;
         line-height: 1;
@@ -172,7 +176,7 @@ for-big-desktop-up */
 @media (min-width: 1800px) {
     .main-cover {
         grid-template-columns: 15% 1fr 15%;
-        background: url(../../../i.industrial.kz/stat/i/cover2-800.webp) center no-repeat;
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_800.webp) center no-repeat;
         background-size: cover;
     }
 

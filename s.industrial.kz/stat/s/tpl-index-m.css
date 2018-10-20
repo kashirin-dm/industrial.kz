@@ -8,7 +8,7 @@ Index Mobile Style
 @media (max-width: 319px) {
     .main-cover {
         grid-template-columns: 5% 1fr 5%;
-        background: url(../../../i.industrial.kz/stat/i/cover2-300.webp) center no-repeat;
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_320.webp) center no-repeat;
         background-size: cover;
     }
 
@@ -162,7 +162,7 @@ Index Mobile Style
 @media (min-width: 320px) {
     .main-cover {
         grid-template-columns: 5% 1fr 5%;
-        background: url(../../../i.industrial.kz/stat/i/cover2-300.webp) center no-repeat;
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_320.webp) center no-repeat;
         background-size: cover;
     }
 

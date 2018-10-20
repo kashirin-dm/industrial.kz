@@ -23,6 +23,10 @@ Index Tablet Style
 -----------------------------
 for-tablet-portait-only */
 @media (min-width: 600px) and (max-width: 899px) {
+    .main-cover {
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_480.webp) center no-repeat;
+        background-size: cover;
+    }
     .main-cover h1 {
         font-size: 5.5vmax;
         line-height: 1;
@@ -134,7 +138,7 @@ for-tablet-portait-only */
     }
 
     .main-cover {
-        background: url(../../../i.industrial.kz/stat/i/cover2-500.webp) center no-repeat;
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_600.webp) center no-repeat;
         background-size: cover;
     }
 }
