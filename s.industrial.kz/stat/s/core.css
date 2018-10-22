@@ -127,7 +127,7 @@ a:active {
 
 /* END Reset, Start & Base Style */
 /* Top Main Menu */
-#main-menu {
+.main-menu {
     /* ID for performance because it is a unique element */
     will-change: transform;
     /* For performance */
@@ -144,11 +144,11 @@ a:active {
     animation-name: maincover-fade-content;
 }
 
-#main-menu>* {
+.main-menu > * {
     display: inline-grid;
 }
 
-#main-menu a {
+.main-menu a {
     text-decoration: none;
 }
 
@@ -162,7 +162,7 @@ a:active {
     /*CHECK IT*/
 }
 
-#main-menu img {
+.main-menu img {
     height: 100%;
     align-self: center;
     justify-content: start;
@@ -171,62 +171,62 @@ a:active {
     /*CHECK IT*/
 }
 
-#main-menu img:hover {
+.main-menu img:hover {
     transform: scale(.96);
 }
 
-#main-menu img:active {
+.main-menu img:active {
     transform: scale(.91);
 }
 
 /* Navigation */
-#main-menu nav {
+.main-menu nav {
     font-weight: 700;
     justify-content: start;
 }
 
-#main-menu nav ul {
+.main-menu nav ul {
     list-style: none;
     display: block;
     width: 100%;
     align-items: center;
 }
 
-#main-menu nav ul li {
+.main-menu nav ul li {
     display: inline-block;
 }
 
-#main-menu nav ul li:first-child {
+.main-menu nav ul li:first-child {
     padding-left: 0;
 }
 
-#main-menu nav ul li:last-child {
+.main-menu nav ul li:last-child {
     padding-right: 0;
 }
 
-#main-menu nav ul li a {
+.main-menu nav ul li a {
     display: inline-block;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     color: #000;
 }
-#main-menu nav ul li .active {
+.main-menu nav ul li .active {
     color: var(--accent-clr);
     border-bottom: 1px solid rgba(29, 115, 191, 0.3);
 }
 
-#main-menu nav ul li a:hover {
+.main-menu nav ul li a:hover {
     color: var(--accent-clr);
     text-decoration: none;
     border-bottom: 1px solid rgba(29, 115, 191, 0.3);
 }
 
-#main-menu nav ul li a:active {
+.main-menu nav ul li a:active {
     transform: scale(.95);
 }
 
 /* WhatsApp Button */
-#main-menu .whatsapp {
+.main-menu .whatsapp {
     display: inline-grid;
     justify-self: end;
     height: 55%;
@@ -235,43 +235,43 @@ a:active {
     background-size: cover;
 }
 
-#main-menu .whatsapp:hover {
+.main-menu .whatsapp:hover {
     transform: scale(.93);
 }
 
-#main-menu .whatsapp:active {
+.main-menu .whatsapp:active {
     transform: scale(.84);
 }
 
 /* Phone Block */
-#main-menu .top-phone {
+.main-menu .top-phone {
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 6px;
 }
 
-#main-menu .top-phone a {
+.main-menu .top-phone a {
     line-height: 1;
     color: #000;
 }
 
-#main-menu .top-phone a:hover {
+.main-menu .top-phone a:hover {
     text-decoration: none;
     color: #25d366;
 }
 
-#main-menu .top-phone a:active {
+.main-menu .top-phone a:active {
     transform: scale(.95);
 }
 
-#main-menu .top-phone span {
+.main-menu .top-phone span {
     line-height: 1.2;
     font-weight: 700;
 }
 
 /* Callback Button */
-#main-menu .callback {
+.main-menu .callback {
     box-sizing: border-box;
     border: 3px solid var(--accent-clr);
     border-radius: 100px;
@@ -286,24 +286,37 @@ a:active {
     box-shadow: rgba(0, 0, 0, .2) 0px 1px 5px;
 }
 
-#main-menu .callback:hover {
+.main-menu .callback:hover {
     text-decoration: none;
     transform: scale(.97);
 }
 
-#main-menu .callback:active {
+.main-menu .callback:active {
     transform: scale(.93);
 }
 
-#main-menu img:hover,
-#main-menu .whatsapp:hover,
-#main-menu .callback:hover,
-#main-menu img:active,
-#main-menu nav ul li a:active,
-#main-menu .whatsapp:active,
-#main-menu .top-phone a:active,
-#main-menu .callback:active {
+.main-menu img:hover,
+.main-menu .whatsapp:hover,
+.main-menu .callback:hover,
+.main-menu img:active,
+.main-menu nav ul li a:active,
+.main-menu .whatsapp:active,
+.main-menu .top-phone a:active,
+.main-menu .callback:active {
     transition: all .02s ease-in;
+}
+
+.main-menu-white nav ul li a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+.main-menu-white .top-phone a,
+.main-menu-white .top-phone span {
+    color: #fff;
+}
+.main-menu-white .callback {
+    border: 3px solid #fff;
+    color: #fff;
 }
 
 /* END Top Menu */

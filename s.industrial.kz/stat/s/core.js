@@ -3,12 +3,12 @@
 Анимания происходит через CSS */
 function main_menu_opacity_bg() {
     if ($(window).scrollTop() <= 40) {
-        $('#main-menu').css('background', 'rgba(255,255,255,0)');
-        $('#main-menu').css('box-shadow', 'none');
+        $('.main-menu').css({'background': 'rgba(255,255,255,0)', 'box-shadow': 'none'});
+        $('.main-menu').addClass('main-menu-white');
     }
     else {
-        $('#main-menu').css('background', 'rgba(255,255,255,1)');
-        $('#main-menu').css('box-shadow', 'rgba(0, 0, 0, .2) 0px 1px 3px');
+        $('.main-menu').css({'background': 'rgba(255,255,255,1)', 'box-shadow': 'rgba(0, 0, 0, .2) 0px 1px 3px'});
+        $('.main-menu').removeClass('main-menu-white');
     }
 }
 main_menu_opacity_bg();
