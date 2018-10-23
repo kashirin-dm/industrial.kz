@@ -10,6 +10,58 @@ Core Style
     --f0-clr: #f0f0f0;
 }
 
+::selection {
+    background: var(--accent-clr);
+    color: #fff;
+}
+
+/* Fonts */
+/* Text Font */
+@font-face {
+    font-family: Circe;
+    src: url('../f/circe-r.eot');
+    src: url('../f/circe-r.woff2') format('woff2'),
+        url('../f/circe-r.woff') format('woff'),
+        url('../f/circe-r.ttf') format('truetype'),
+        url('../f/circe-r.eot?#iefix') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Circe;
+    src: url('../f/circe-b.eot');
+    src: url('../f/circe-b.woff2') format('woff2'),
+        url('../f/circe-b.woff') format('woff'),
+        url('../f/circe-b.ttf') format('truetype'),
+        url('../f/circe-b.eot?#iefix') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Headers Font */
+@font-face {
+    font-family: 'Circe Rounded';
+    src: url('../f/circerounded-r.eot');
+    src: url('../f/circerounded-r.woff2') format('woff2'),
+        url('../f/circerounded-r.woff') format('woff'),
+        url('../f/circerounded-r.ttf') format('truetype'),
+        url('../f/circerounded-r.eot?#iefix') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe Rounded';
+    src: url('../f/circerounded-alt-b.eot');
+    src: url('../f/circerounded-alt-b.woff2') format('woff2'),
+        url('../f/circerounded-rcircerounded-alt-b.woff') format('woff'),
+        url('../f/circerounded-alt-b.ttf') format('truetype'),
+        url('../f/circerounded-alt-b.eot?#iefix') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* Reset, Start & Base Style */
 * {
     position: relative;
@@ -21,8 +73,8 @@ Core Style
     background: transparent;
 }
 
-body>*,
-main>* {
+body > *,
+main > * {
     display: grid;
 }
 
@@ -51,58 +103,6 @@ noscript iframe {
     visibility: hidden;
 }
 
-/* Fonts */
-/* Text Font */
-@font-face {
-    font-family: Circe;
-    src: url('../f/circe-r.eot');
-    src: url('../f/circe-r.woff2') format('woff2'),
-        url('../f/circe-r.woff') format('woff'),
-        url('../f/circe-r.ttf') format('truetype'),
-        url('../f/circe-r.eot?#iefix') format('embedded-opentype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Circe;
-    src: url('../f/circe-b.eot');
-    src: url('../f/circe-b.woff2') format('woff2'),
-        url('../f/circe-b.woff') format('woff'),
-        url('../f/circe-b.ttf') format('truetype'),
-        url('../f/circe-b.eot?#iefix') format('embedded-opentype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-/* Headers Font*/
-@font-face {
-    font-family: 'Circe Rounded';
-    src: url('../f/circerounded-r.eot');
-    src: url('../f/circerounded-r.woff2') format('woff2'),
-        url('../f/circerounded-r.woff') format('woff'),
-        url('../f/circerounded-r.ttf') format('truetype'),
-        url('../f/circerounded-r.eot?#iefix') format('embedded-opentype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Circe Rounded';
-    src: url('../f/circerounded-alt-b.eot');
-    src: url('../f/circerounded-alt-b.woff2') format('woff2'),
-        url('../f/circerounded-rcircerounded-alt-b.woff') format('woff'),
-        url('../f/circerounded-alt-b.ttf') format('truetype'),
-        url('../f/circerounded-alt-b.eot?#iefix') format('embedded-opentype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-::selection {
-    background: var(--accent-clr);
-    color: #fff;
-}
-
 h1, h2, h3 {
     font: 400 18px 'Circe Rounded', sans-serif;
 }
@@ -121,14 +121,8 @@ a:hover {
     text-decoration: underline;
 }
 
-a:active {
-    color: #18374d;
-}
-
-/* END Reset, Start & Base Style */
 /* Top Main Menu */
 .main-menu {
-    /* ID for performance because it is a unique element */
     will-change: transform;
     /* For performance */
     font-family: 'Circe Rounded', sans-serif;
@@ -140,8 +134,6 @@ a:active {
     border-radius: 10px;
     letter-spacing: -0.5px;
     transition: background-color .2s ease-in-out;
-    animation-duration: 2s;
-    animation-name: maincover-fade-content;
 }
 
 .main-menu > * {
@@ -165,23 +157,6 @@ a:active {
 }
 
 .main-menu__logo-wrap:active {
-    transform: scale(.91);
-}
-
-.main-menu img {
-    height: 100%;
-    align-self: center;
-    justify-content: start;
-    /*CHECK IT*/
-    justify-self: start;
-    /*CHECK IT*/
-}
-
-.main-menu img:hover {
-    transform: scale(.96);
-}
-
-.main-menu img:active {
     transform: scale(.91);
 }
 
@@ -232,7 +207,7 @@ a:active {
 }
 
 /* WhatsApp Button */
-.main-menu .whatsapp {
+.whatsapp {
     display: inline-grid;
     justify-self: end;
     height: 55%;
@@ -241,43 +216,43 @@ a:active {
     background-size: cover;
 }
 
-.main-menu .whatsapp:hover {
+.whatsapp:hover {
     transform: scale(.93);
 }
 
-.main-menu .whatsapp:active {
+.whatsapp:active {
     transform: scale(.84);
 }
 
 /* Phone Block */
-.main-menu .top-phone {
+.top-phone {
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 6px;
 }
 
-.main-menu .top-phone a {
+.top-phone a {
     line-height: 1;
     color: #000;
 }
 
-.main-menu .top-phone a:hover {
+.top-phone a:hover {
     text-decoration: none;
     color: #25d366;
 }
 
-.main-menu .top-phone a:active {
+.top-phone a:active {
     transform: scale(.95);
 }
 
-.main-menu .top-phone span {
+.top-phone span {
     line-height: 1.2;
     font-weight: 700;
 }
 
 /* Callback Button */
-.main-menu .callback {
+.callback {
     box-sizing: border-box;
     border: 3px solid var(--accent-clr);
     border-radius: 100px;
@@ -292,23 +267,21 @@ a:active {
     box-shadow: rgba(0, 0, 0, .2) 0px 1px 5px;
 }
 
-.main-menu .callback:hover {
+.callback:hover {
     text-decoration: none;
     transform: scale(.97);
 }
 
-.main-menu .callback:active {
+.callback:active {
     transform: scale(.93);
 }
 
-.main-menu img:hover,
-.main-menu .whatsapp:hover,
-.main-menu .callback:hover,
-.main-menu img:active,
+.whatsapp:hover,
+.callback:hover,
 .main-menu nav ul li a:active,
-.main-menu .whatsapp:active,
-.main-menu .top-phone a:active,
-.main-menu .callback:active {
+.whatsapp:active,
+.top-phone a:active,
+.callback:active {
     transition: all .02s ease-in;
 }
 
