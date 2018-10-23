@@ -10,7 +10,7 @@ Tablet Style
 -----------------------------
 for-tablet-portait-only */
 @media (min-width: 600px) and (max-width: 899px) {
-    #main-menu {
+    .main-menu {
         grid-template-columns: 1% 1fr 7vmin auto 1fr 1%;
         grid-template-rows: 10vmin;
         height: 20vmin;
@@ -24,7 +24,7 @@ for-tablet-portait-only */
         grid-auto-rows: 1fr;
     }
 
-    #main-menu nav {
+    .main-menu nav {
         grid-row: 2;
         grid-column: 2/6;
         font-size: 3vmin;
@@ -32,18 +32,18 @@ for-tablet-portait-only */
         justify-content: center;
     }
 
-    #main-menu nav ul li {
+    .main-menu nav ul li {
         padding: 0 1.4vmin;
     }
 
-    #main-menu .whatsapp {
+    .main-menu .whatsapp {
         grid-column: 3;
         height: 7vmin;
         width: 100%;
         grid-row: 1;
     }
 
-    #main-menu .top-phone {
+    .main-menu .top-phone {
         grid-column: 4;
         display: inline-grid;
         grid-template-columns: 1fr;
@@ -59,13 +59,13 @@ for-tablet-portait-only */
         margin-top: auto;
     }
 
-    #main-menu .top-phone span {
+    .main-menu .top-phone span {
         font-size: 2vmin;
         grid-row: 2;
         align-self: start;
     }
 
-    #main-menu .top-phone a {
+    .main-menu .top-phone a {
         align-self: end;
         font-size: 3vmin;
         grid-row: 1;
@@ -73,7 +73,7 @@ for-tablet-portait-only */
         grid-column: 1/2;
     }
 
-    #main-menu .callback {
+    .main-menu .callback {
         grid-column: 5;
         grid-row: 1;
         width: 100%;
@@ -191,7 +191,7 @@ for-tablet-portait-only */
 
 /* for-tablet-landscape-up */
 @media (min-width: 900px) {
-    #main-menu {
+    .main-menu {
         position: fixed;
     }
 }
@@ -200,7 +200,7 @@ for-tablet-portait-only */
 -----------------------------
 for-tablet-landscape-only */
 @media (min-width: 900px) and (max-width: 1199px) {
-    #main-menu {
+    .main-menu {
         grid-template-columns: 3vmin 1fr 6vmin auto 1fr 3vmin;
         grid-template-rows: 8vmin;
         height: 16vmin;
@@ -214,7 +214,7 @@ for-tablet-landscape-only */
         grid-auto-rows: 1fr;
     }
 
-    #main-menu nav {
+    .main-menu nav {
         grid-row: 2;
         grid-column: 2/6;
         font-size: 2.5vmin;
@@ -222,18 +222,18 @@ for-tablet-landscape-only */
         justify-content: center;
     }
 
-    #main-menu nav ul li {
+    .main-menu nav ul li {
         padding: 0 5vmin;
     }
 
-    #main-menu .whatsapp {
+    .main-menu .whatsapp {
         grid-column: 3;
         height: 6vmin;
         width: 100%;
         grid-row: 1;
     }
 
-    #main-menu .top-phone {
+    .main-menu .top-phone {
         grid-column: 4;
         display: inline-grid;
         grid-template-columns: 1fr;
@@ -249,13 +249,13 @@ for-tablet-landscape-only */
         margin-top: auto;
     }
 
-    #main-menu .top-phone span {
+    .main-menu .top-phone span {
         font-size: 2vmin;
         grid-row: 2;
         align-self: start;
     }
 
-    #main-menu .top-phone a {
+    .main-menu .top-phone a {
         align-self: end;
         font-size: 3vmin;
         grid-row: 1;
@@ -263,7 +263,7 @@ for-tablet-landscape-only */
         grid-column: 1/2;
     }
 
-    #main-menu .callback {
+    .main-menu .callback {
         grid-column: 5;
         grid-row: 1;
         width: 100%;

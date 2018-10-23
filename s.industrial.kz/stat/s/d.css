@@ -10,7 +10,7 @@ Desktop Style
 -----------------------------
 for-desktop-only */
 @media (min-width: 1200px) and (max-width: 1799px) {
-    #main-menu {
+    .main-menu {
         width: 98%;
         grid-template-columns: 1vw 10.24vw 3fr 2.5vw auto 14vw 1vw;
         grid-template-rows: 4.37vw;
@@ -26,37 +26,37 @@ for-desktop-only */
         grid-auto-rows: 1fr;
     }
 
-    #main-menu nav {
+    .main-menu nav {
         font-size: 1.3vw;
         grid-row: 1;
         grid-column: 3;
         grid-auto-rows: 1fr;
     }
 
-    #main-menu nav ul li {
+    .main-menu nav ul li {
         padding: 0 0.8vw;
     }
 
-    #main-menu .whatsapp {
+    .main-menu .whatsapp {
         grid-column: 4;
         height: 2.5vw;
         width: 100%;
     }
 
-    #main-menu .top-phone span {
+    .main-menu .top-phone span {
         font-size: .86vw;
     }
 
-    #main-menu .top-phone a {
+    .main-menu .top-phone a {
         font-size: 1.3vw;
     }
 
-    #main-menu .callback {
+    .main-menu .callback {
         width: 162px;
         line-height: 42px;
     }
 
-    #main-menu .callback {
+    .main-menu .callback {
         width: 100%;
         height: 3vw;
         font-size: 1.2vw;
@@ -161,7 +161,7 @@ for-desktop-only */
 -----------------------------
 for-big-desktop-up */
 @media (min-width: 1800px) {
-    #main-menu {
+    .main-menu {
         width: 98%;
         grid-template-columns: 10vw 8.3vw 3fr 2.2vw auto 10vw 10vw;
         grid-template-rows: 3.6vw;
@@ -177,37 +177,37 @@ for-big-desktop-up */
         grid-row: 1;
     }
 
-    #main-menu nav {
+    .main-menu nav {
         font-size: 0.96vw;
         grid-row: 1;
         grid-column: 3;
         grid-auto-rows: 1fr;
     }
 
-    #main-menu nav ul li {
+    .main-menu nav ul li {
         padding: 0 0.8vw;
     }
 
-    #main-menu .whatsapp {
+    .main-menu .whatsapp {
         grid-column: 4;
         height: 2.2vw;
         width: 100%;
     }
 
-    #main-menu .top-phone span {
+    .main-menu .top-phone span {
         font-size: .7vw;
     }
 
-    #main-menu .top-phone a {
+    .main-menu .top-phone a {
         font-size: 1.1vw;
     }
 
-    #main-menu .callback {
+    .main-menu .callback {
         width: 162px;
         line-height: 42px;
     }
 
-    #main-menu .callback {
+    .main-menu .callback {
         width: 100%;
         height: 2.4vw;
         font-size: .9vw;

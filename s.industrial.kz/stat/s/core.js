@@ -1,19 +1,25 @@
-/* Функция ловит события скролла и передает прозрачность верхнему меню,
-когда позиция ниже 40px.
-Анимания происходит через CSS */
-function main_menu_opacity_bg() {
+/*
+Function catch scroll and replace classes and styles for main-menu
+when vertical scroll position over 40px or 0px
+*/
+function main_menu_effects() {
     if ($(window).scrollTop() <= 40) {
         $('.main-menu').css({'background': 'rgba(255,255,255,0)', 'box-shadow': 'none'});
-        $('.main-menu').addClass('main-menu-white');
+        // only for index.html. MODx parser include class .main-menu__black-cover, then this code can work
+        $('.main-menu__black-cover').addClass('main-menu-white');
+        $('.main-menu__black-cover>.main-menu__logo-wrap').addClass('main-menu__logo-wrap__white-logo');
+
     }
     else {
         $('.main-menu').css({'background': 'rgba(255,255,255,1)', 'box-shadow': 'rgba(0, 0, 0, .2) 0px 1px 3px'});
-        $('.main-menu').removeClass('main-menu-white');
+        // only for index.html
+        $('.main-menu__black-cover').removeClass('main-menu-white');
+        $('.main-menu__black-cover>.main-menu__logo-wrap').removeClass('main-menu__logo-wrap__white-logo');
     }
 }
-main_menu_opacity_bg();
+main_menu_effects();
 $(window).scroll(function() {
-    main_menu_opacity_bg();
+    main_menu_effects();
 });
 
 //Ленивая загрузка
