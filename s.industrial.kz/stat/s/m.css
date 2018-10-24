@@ -22,7 +22,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-auto-rows: 1fr;
     }
 
-    .main-menu__logo-wrap {
+    .main-menu__logo {
         grid-column: 2;
         height: 10vw;
         grid-row: 1;
@@ -208,7 +208,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-auto-rows: 1fr;
     }
 
-    .main-menu__logo-wrap {
+    .main-menu__logo {
         grid-column: 2;
         height: 9vmin;
         grid-row: 1;

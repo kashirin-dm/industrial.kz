@@ -19,7 +19,7 @@ for-desktop-only */
         margin: .8% 0 0 1%;
     }
 
-    .main-menu__logo-wrap {
+    .main-menu__logo {
         grid-column: 2;
         height: 3vw;
         grid-row: 1;
@@ -170,7 +170,7 @@ for-big-desktop-up */
         margin: .8% 0 0 1%;
     }
 
-    .main-menu__logo-wrap {
+    .main-menu__logo {
         justify-content: center;
         grid-column: 2;
         height: 2.4vw;

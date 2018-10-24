@@ -17,7 +17,7 @@ for-tablet-portait-only */
         column-gap: 1.8vmin;
     }
 
-    .main-menu__logo-wrap {
+    .main-menu__logo {
         grid-column: 2;
         height: 6vmin;
         grid-row: 1;
@@ -207,7 +207,7 @@ for-tablet-landscape-only */
         column-gap: 3vmin;
     }
 
-    .main-menu__logo-wrap {
+    .main-menu__logo {
         grid-column: 2;
         height: 6vmin;
         grid-row: 1;

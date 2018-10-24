@@ -1,28 +1,47 @@
 /*
-Function catch scroll and replace classes and styles for main-menu
-when vertical scroll position over 40px or 0px
+Function catch scroll and replace classes for main-menu
+when vertical scroll position over 40px or 0px only for big screen
 */
-function main_menu_effects() {
-    if ($(window).scrollTop() <= 40) {
-        $('.main-menu').css({'background': 'rgba(255,255,255,0)', 'box-shadow': 'none'});
-        // only for index.html. MODx parser include class .main-menu__black-cover, then this code can work
-        $('.main-menu__black-cover').addClass('main-menu-white');
-        $('.main-menu__black-cover>.main-menu__logo-wrap').addClass('main-menu__logo-wrap__white-logo');
-
+function mainMenuEffects() {
+    // Check screen size
+    if ($(window).width() > 900) {
+        // Function for catch scroll if screen size over 900px
+            if ($(window).scrollTop() <= 40) {
+                $('.main-menu').removeClass('js__main-menu__add-bg');
+                $('.main-menu').addClass('js__main-menu__remove-bg'); //remove white bg
+                // only for index.html. MODx parser include class .main-menu__black-cover
+                $('.js__main-menu__black-cover').addClass('js__main-menu-white'); // White text
+                $('.js__main-menu__black-cover').removeClass('js__main-menu-black');
+                $('.js__main-menu__black-cover>.main-menu__logo').addClass('js__main-menu__white-logo');
+            }
+            else {
+                $('.main-menu').addClass('js__main-menu__add-bg'); //add white bg
+                $('.main-menu').removeClass('js__main-menu__remove-bg');
+                // only for index.html
+                $('.js__main-menu__black-cover').removeClass('js__main-menu-white');
+                $('.js__main-menu__black-cover').addClass('js__main-menu-black'); // Black Text
+                $('.js__main-menu__black-cover>.main-menu__logo').removeClass('js__main-menu__white-logo');
+            };
     }
     else {
-        $('.main-menu').css({'background': 'rgba(255,255,255,1)', 'box-shadow': 'rgba(0, 0, 0, .2) 0px 1px 3px'});
+        // No catch scroll
+        $('.main-menu').addClass('js__main-menu__add-bg'); //add white bg
+        $('.main-menu').removeClass('js__main-menu__remove-bg');
         // only for index.html
-        $('.main-menu__black-cover').removeClass('main-menu-white');
-        $('.main-menu__black-cover>.main-menu__logo-wrap').removeClass('main-menu__logo-wrap__white-logo');
-    }
-}
-main_menu_effects();
+        $('.js__main-menu__black-cover').removeClass('js__main-menu-white');
+        $('.js__main-menu__black-cover').addClass('js__main-menu-black'); // Black Text
+        $('.js__main-menu__black-cover>.main-menu__logo').removeClass('js__main-menu__white-logo');
+    };
+};
+mainMenuEffects();
 $(window).scroll(function() {
-    main_menu_effects();
+    mainMenuEffects(); //Call when scroll
+});
+$(window).resize(function() {
+    mainMenuEffects(); //Call when screen resize
 });
 
-//Ленивая загрузка
+//Lazy Load
 $(function() {
         $('.lazy').show().lazy({
           effect: "fadeIn",
