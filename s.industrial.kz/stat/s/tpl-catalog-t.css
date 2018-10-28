@@ -1,0 +1,41 @@
+/*
+-----------------------------
+Pages Tablet Style
+-----------------------------
+*/
+/* for-tablet-portrait-up */
+@media (min-width: 600px) {
+    .catalog-products h2,
+    .catalog-products span {font-size: 3vw;}
+    .catalog-products p {font-size: 2.5vw;}
+}
+
+/*
+-----------------------------
+for-tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+}
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+    .catalog-products {
+        grid-template-columns: 2vw repeat(4, 1fr) 2vw;
+        grid-column-gap: 1vw;
+        grid-row-gap: 2vw;
+    }
+
+    .catalog-products a:nth-of-type(4n+1) {/* each 1 */ grid-column: 2;}
+    .catalog-products a:nth-of-type(4n+2) {/* each 2 */ grid-column: 3;}
+    .catalog-products a:nth-of-type(4n+3) {/* each 3 */ grid-column: 4;}
+    .catalog-products a:nth-of-type(4n) {/* each 5*/ grid-column: 5;}
+    .catalog-products figcaption {padding: 1vmax;}
+    .catalog-products h2,
+    .catalog-products span {font-size: 1.8vw;}
+    .catalog-products p {font-size: 1.5vw;}
+}
+
+/*
+-----------------------------
+for-tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+}

@@ -6,30 +6,24 @@ function mainMenuEffects() {
     // Check screen size
     if ($(window).width() > 900) {
         // Function for catch scroll if screen size over 900px
-            if ($(window).scrollTop() <= 40) {
-                $('.main-menu').removeClass('js__main-menu__add-bg');
-                $('.main-menu').addClass('js__main-menu__remove-bg'); //remove white bg
-                // only for index.html. MODx parser include class .main-menu__black-cover
-                $('.js__main-menu__black-cover').addClass('js__main-menu-white'); // White text
-                $('.js__main-menu__black-cover').removeClass('js__main-menu-black');
-                $('.js__main-menu__black-cover>.main-menu__logo').addClass('js__main-menu__white-logo');
-            }
-            else {
-                $('.main-menu').addClass('js__main-menu__add-bg'); //add white bg
-                $('.main-menu').removeClass('js__main-menu__remove-bg');
-                // only for index.html
-                $('.js__main-menu__black-cover').removeClass('js__main-menu-white');
-                $('.js__main-menu__black-cover').addClass('js__main-menu-black'); // Black Text
-                $('.js__main-menu__black-cover>.main-menu__logo').removeClass('js__main-menu__white-logo');
-            };
+        if ($(window).scrollTop() <= 40) {
+            $('.main-menu').removeClass('js__main-menu__add-bg');
+            // only for index.html. MODx parser include class .main-menu__black-cover
+            $('.js__main-menu__black-cover').addClass('js__main-menu-white'); // White text
+            $('.js__main-menu__black-cover>.main-menu__logo').addClass('js__main-menu__white-logo'); // White logo
+        }
+        else {
+            $('.main-menu').addClass('js__main-menu__add-bg'); //add white bg
+            // only for index.html
+            $('.js__main-menu__black-cover').removeClass('js__main-menu-white');
+            $('.js__main-menu__black-cover>.main-menu__logo').removeClass('js__main-menu__white-logo');
+        };
     }
     else {
         // No catch scroll
         $('.main-menu').addClass('js__main-menu__add-bg'); //add white bg
-        $('.main-menu').removeClass('js__main-menu__remove-bg');
         // only for index.html
         $('.js__main-menu__black-cover').removeClass('js__main-menu-white');
-        $('.js__main-menu__black-cover').addClass('js__main-menu-black'); // Black Text
         $('.js__main-menu__black-cover>.main-menu__logo').removeClass('js__main-menu__white-logo');
     };
 };

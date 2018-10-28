@@ -5,290 +5,115 @@ Index Tablet Style
 */
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {
-    .mainpage-text figcaption {
-        text-align: right;
+    /* Main Cover */
+    .main-cover h1 {
+        font-weight: 400;
+        font-size: 4vmax;
+        margin: 10% 0 2vmax 0;
     }
-
-    .main-cover form button {
-        background-size: 40%;
+    .main-cover p {
+        font-size: 3vmax;
+        line-height: 1.2;
+        margin-bottom: 3vmax;
     }
+    /* Cover Search */
+    .main-cover form {column-gap: 1vmax;}
+    .main-cover form button,
+    .main-cover form button:hover {background-size: 40%;}
 
+    /* Main Company Block */
     .main-clients {
+        height: 100vh;
         background: url(../../../i.industrial.kz/stat/i/main_subcover-tab.jpg) center no-repeat fixed #22150f;
         background-size: cover;
     }
+    .main-clients .logos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .main-clients .catalog-button a {font-size: 2.5vmax;}
 }
 
 /*
 -----------------------------
 for-tablet-portait-only */
 @media (min-width: 600px) and (max-width: 899px) {
+    /* Main Cover */
     .main-cover {
         background: url(../../../i.industrial.kz/stat/i/covers/cover_480.webp) center no-repeat;
         background-size: cover;
     }
-    .main-cover h1 {
-        font-size: 5.5vmax;
-        line-height: 1;
-        margin-bottom: 2vmax;
-    }
+    /* Cover Search*/
+    .main-cover form {grid-template-columns: 10% 1fr 9vmax 10%;}
 
-    .main-cover p {
-        font-size: 3vmax;
-        margin-bottom: 3vmax;
-        line-height: 1.2;
-    }
-
-    .main-cover form {
-        grid-template-columns: 7fr 1fr;
-        column-gap: 1vmax;
-    }
-
-    .main-cover form * {
-        height: 11vmax;
-    }
-
+    .main-cover form * {height: 9vmax;}
     .main-cover form input {
-        grid-column: 1;
-        padding: 0 5vmax;
-        font-size: 3.4vmax;
-    }
-
-    .main-cover form input::placeholder {
-        font-size: 3.4vmax;
-    }
-
-    .main-cover form button {
         grid-column: 2;
-        font-size: 3.5vmax;
+        padding: 0 4.2vmax;
+        font-size: 3.2vmax;
     }
+    .main-cover form input::placeholder {font-size: 3.2vmax;}
 
-    .catalog-items {
-        grid-row-gap: 4vmax;
-        padding: 8vmax 0 4vmax;
-    }
+    .main-cover form button {grid-column: 3;}
 
-    .catalog-items figcaption {
-        font-size: 4vmax;
-        padding: 2vmax;
-    }
-
-    .catalog-items a:nth-child(4),
-    .catalog-items a:nth-child(5),
-    .catalog-items a:nth-child(6) {
-        display: none;
-    }
 
     .catalog-items aside {
         grid-column: 1/4;
         padding: 25vmax 0 10vmax;
     }
 
-    .main-clients {
-        grid-template-columns: 5% 1fr 5%;
-        height: 100vh;
-    }
-
-    .main-clients>* {
-        grid-column: 2;
-    }
-
-    .main-clients h2 {
-        font-size: 4vmax;
-        margin-bottom: 2vmax;
-    }
-
-    .main-clients p {
-        font-size: 2.8vmax;
-    }
-
-    .main-clients .logos {
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 1vmax;
-        padding: 1vmax 0;
-        margin-bottom: 2vmax;
-    }
-
-    .main-clients .logos>* {
+    /* Main Company Block */
+    .main-clients h2 {font-size: 4vmax;}
+    .main-clients p {font-size: 2.8vmax;}
+    .main-clients .logos {padding: 1vmax 0;}
+    .main-clients .logos > * {
         height: 34px;
         padding: 1vmax;
-    }
-
-    .main-clients .catalog-button {
-        width: 100%;
-    }
-
-    .main-clients .catalog-button a {
-        font-size: 2.5vmax;
     }
 }
 
 /* for-tablet-landscape-up */
 @media (min-width: 900px) {
-    .main-cover form input {
-        grid-column: 2;
-    }
-
-    .main-cover form button {
-        grid-column: 3;
-    }
-
-    .catalog-items {
-        grid-template-columns: 0 1fr 1fr 0;
-    }
-
+    /* Main Cover */
     .main-cover {
         background: url(../../../i.industrial.kz/stat/i/covers/cover_600.webp) center no-repeat;
         background-size: cover;
     }
+    .main-cover p {
+        font-size: 2.5vmax;
+        margin-bottom: 4vmax;
+    }
+    /* Cover Search */
+    .main-cover form input {grid-column: 2;}
+    .main-cover form button {grid-column: 3;}
 }
 
 /*
 -----------------------------
 for-tablet-landscape-only */
 @media (min-width: 900px) and (max-width: 1199px) {
-    .main-cover h1 {
-        font-size: 5.5vmax;
-        line-height: 1;
-        margin-bottom: 2vmax;
-    }
-
-    .main-cover p {
-        font-size: 3vmax;
-        margin-bottom: 4vmax;
-        line-height: 1.2;
-    }
-
-    .main-cover form {
-        grid-template-columns: 5% 7fr 1fr 5%;
-        column-gap: 1vmax;
-    }
-
-    .main-cover form * {
-        height: 7vmax;
-    }
-
+    /* Main Cover */
+    .main-cover h1 {margin-top: 25%;}
+    /* Cover Search */
+    .main-cover form {grid-template-columns: 10% 1fr 7vmax 10%;}
+    .main-cover form * {height: 7vmax;}
     .main-cover form input {
         padding: 0 4vmax;
         font-size: 2.6vmax;
     }
-
-    .main-cover form input::placeholder {
-        font-size: 2.6vmax;
-    }
-
-    .main-cover form button {
-        font-size: 2.7vmax;
-    }
-
-    .catalog-items {
-        grid-gap: 5vmax;
-        padding: 8vmax 0 1vmax;
-    }
-
-    .catalog-items a:first-child,
-    .catalog-items a:nth-child(3n+3) {
-        grid-column: 2;
-    }
-
-    .catalog-items a:nth-child(2n+2) {
-        grid-column: 3;
-    }
-
-    .catalog-items figcaption {
-        font-size: 3.5vmax;
-        padding: 2vmax;
-    }
-
-    .catalog-items a:nth-child(5),
-    .catalog-items a:nth-child(6) {
-        display: none;
-    }
+    .main-cover form input::placeholder {font-size: 2.6vmax;}
 
     .catalog-items aside {
         grid-column: 1/5;
         padding: 20vmax 0 8vmax;
     }
 
-    .mainpage-text .article-content {
-        grid-column: 2;
-        column-count: 2;
-        column-gap: 3vmax;
-        margin-bottom: 4vmax;
-        column-rule: 1px dotted #ccc;
-    }
-
-    .mainpage-text h2 {
-        font-size: 6vmax;
-        font-weight: 400;
-        padding: 2vmax 0;
-    }
-
-    .mainpage-text figcaption {
-        font-size: 2vmax;
-        padding-top: .5vmax;
-    }
-
-    .mainpage-text h3 {
-        font-size: 3.5vmax;
-        padding: 0 2vmax .5vmax;
-    }
-
-    .mainpage-text h4 {
-        font-size: 2.3vmax;
-        font-weight: 700;
-        padding: 1vmax 2vmax .2vmax;
-    }
-
-    .mainpage-text p {
-        font-size: 2.5vmax;
-        padding: 0 2vmax 4vmax;
-    }
-
-    .mainpage-text ul {
-        font-size: 2.3vmax;
-        padding: 0 3vmax 2vmax;
-    }
-
-    .mainpage-text ul>li {
-        padding-bottom: .4vmax;
-    }
-
-    .main-clients {
-        grid-template-columns: 5% 1fr 5%;
-        height: 100vh;
-    }
-
-    .main-clients>* {
-        grid-column: 2;
-    }
-
-    .main-clients h2 {
-        font-size: 5vmax;
-        margin-bottom: 2vmax;
-    }
-
-    .main-clients p {
-        font-size: 3.5vmax;
-    }
-
-    .main-clients .logos {
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 1vmax;
-        padding: 3vmax 0;
-        margin-bottom: 2vmax;
-    }
-
-    .main-clients .logos>* {
+    /* Main Company Block */
+    .main-clients h2 {font-size: 4vmax;}
+    .main-clients p {font-size: 2.5vmax;}
+    .main-clients .logos {padding: 3vmax 0;}
+    .main-clients .logos > * {
         height: 54px;
         padding: 2vmax;
-    }
-
-    .main-clients .catalog-button {
-        width: 100%;
-    }
-
-    .main-clients .catalog-button a {
-        font-size: 2.5vmax;
     }
 }

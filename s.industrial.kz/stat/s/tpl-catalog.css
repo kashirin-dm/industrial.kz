@@ -86,136 +86,15 @@ Catalog Style
     transform: scale(.85);
     transition: all .02s ease-in;
 }
-
-
-
-.catalog-items {
-    grid-template-columns: 5% repeat(3, 1fr) 5%;
-    grid-gap: 3vmax;
-    padding-bottom: 6vmax;
-}
-.catalog-items a {
-    background: #fff;
-    border-radius: 5px;
-    overflow: hidden;
-    color: #000;
-    text-decoration: none;
-    text-align: center;
-    transition: all .1s ease-out;
-    box-shadow: rgba(0, 0, 0, .05) 0px 1px 45px;
-    will-change: transform;
-    min-height: 15vmax;
-}
-
-.catalog-items a:hover {
-    transform: scale(.98);
-    transition: all .05s ease-in;
-}
-
-.catalog-items a:active {
-    transform: scale(.95);
-    transition: all .02s ease-in;
-}
-
-.catalog-items img {
-    width: 100%;
-    border-radius: 5px;
-    min-height: 7vmax;
-    background-color: var(--accent-clr-20);
-}
-
-.catalog-items figure {
-    background: #fff;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.catalog-items figcaption {
-    padding: 1vmax;
-}
-.catalog-items figcaption h2 {
-    font-size: 1.6vmax;
-}
-.catalog-items figcaption p {
-    font-size: 1.1vmax;
-}
-
-.catalog-items a:nth-child(3n+1) {
-    /* each 1 */
-    grid-column: 2;
-}
-
-.catalog-items a:nth-child(3n+2) {
-    /* each 2 */
-    grid-column: 3;
-}
-
-.catalog-items a:nth-child(3n) {
-    /* each 3*/
-    grid-column: 4;
-}
-
-
-
-.catalog-products {
-    grid-template-columns: 2.5vw repeat(6, 1fr) 2.5vw;
-    grid-gap: 1.5vmax;
-}
-.catalog-products figcaption {
-    display: grid;
-}
-.catalog-products figcaption h2 {
+.catalog-products h2 {
     font-weight: 700;
-    font-size: 1.3vmax;
     line-height: 1;
-    align-self:start;
 }
-.catalog-products figcaption p {
-    font-size: 1vmax;
-    align-self:end;
-}
-
-.catalog-products figcaption span {
+.catalog-products span {
+    margin-top: 2vmax;
     font-weight: 700;
     color:var(--accent-clr);
-    font-size: 1vmax;
-    align-self:end;
 }
-
-.catalog-products a:nth-child(6n+1) {
-    /* each 1 */
-    grid-column: 2;
-}
-
-.catalog-products a:nth-child(6n+2) {
-    /* each 2 */
-    grid-column: 3;
-}
-
-.catalog-products a:nth-child(6n+3) {
-    /* each 3 */
-    grid-column: 4;
-}
-
-.catalog-products a:nth-child(6n+4) {
-    /* each 4 */
-    grid-column: 5;
-}
-
-.catalog-products a:nth-child(6n+5) {
-    /* each 4 */
-    grid-column: 6;
-}
-
-.catalog-products a:nth-child(6n) {
-    /* each 5*/
-    grid-column: 7;
-}
-
-
-
-
-
 .catalog-text {
     background: #fff;
     grid-template-columns: 15% 1fr 15%;

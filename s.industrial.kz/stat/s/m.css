@@ -11,85 +11,23 @@ Mi Note 5: portrait 393x706, lanscape 786x313
 /*
 -------------------------- for-super-small-device-only */
 @media (max-width: 319px) {
-    .main-menu {
-        grid-template-columns: auto 1fr 10vw 1fr;
-        grid-template-rows: 16vw;
-        column-gap: 3%;
-        height: 32vw;
-        width: 99%;
-        margin: .5% 0 0 .5%;
-        border-radius: 10px;
-        grid-auto-rows: 1fr;
-    }
-
-    .main-menu__logo {
-        grid-column: 2;
-        height: 10vw;
-        grid-row: 1;
-        grid-auto-rows: 1fr;
-    }
-
-    .main-menu nav {
-        font-size: 6vw;
-        grid-row: 2;
-        grid-column: 1/7;
-        grid-auto-rows: 1fr;
-        justify-content: center;
-    }
-
-    .main-menu nav ul {
-        justify-content: center;
-    }
-
-    .main-menu nav ul li {
-        padding: 0 4vw;
-    }
-
-    .main-menu nav ul li:first-child {
-        padding-left: 0;
-    }
-
+    /* Main Menu */
     .main-menu nav ul li:nth-child(3),
     .main-menu nav ul li:nth-child(4),
     .main-menu nav ul li:nth-child(5) {
         display: none;
     }
 
-    .main-menu .whatsapp {
-        grid-column: 3;
-        height: 10vw;
-        width: 100%;
+    /* Catalog */
+    .catalog-items {
+        grid-template-columns: 5% 1fr 5%;
+        grid-row-gap: 5vmax;
+        padding: 10vmax 0;
     }
-
-    .main-menu .top-phone {
-        grid-column: 4/6;
-        display: inline-grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 16vmin;
-        column-gap: 0;
-        white-space: normal;
-        letter-spacing: -0.5px;
-        align-items: center;
-        align-self: center;
-        text-align: left;
-        grid-row: 1;
-        margin-top: auto;
-    }
-
-    .main-menu .top-phone span {
-        display: none;
-    }
-
-    .main-menu .top-phone a {
-        font-size: 5vw;
-        color: #000;
-        justify-self: end;
-        grid-column: 1/2;
-    }
-
-    .main-menu .callback {
-        display: none;
-    }
+    .catalog-items a {grid-column: 2;}
+    .catalog-categories figcaption {font-size: 6vw;}
+    .catalog-items h2 {font-size:4.5vmax;}
+    .catalog-items p {font-size: 3.5vmax;}
 
     .catalog-button {
         /* Not fot first button */
@@ -108,48 +46,28 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         text-align: center;
     }
 
-    .ymap-container {
-        display: none;
-    }
+    .ymap-container {display: none;}
+    .map-contacts .contacts>* {padding: 2vmax 0;}
 
-    .map-contacts .contacts>* {
-        padding: 2vmax 0;
-    }
-
-    .map-contacts .contacts h2 {
-        font-size: 5vmax;
-    }
-
-    .map-contacts .contacts p {
-        font-size: 3.5vmax;
-    }
-
-    .map-contacts .contacts a {
-        font-size: 5vmax;
-    }
-
+    .map-contacts .contacts h2 {font-size: 5vmax;}
+    .map-contacts .contacts p {font-size: 3.5vmax;}
+    .map-contacts .contacts a {font-size: 5vmax;}
     footer {
         grid-template-columns: 5% 1fr 5%;
         column-gap: 0;
         padding-bottom: 15vmax;
         text-align: center;
     }
-
     footer .catalog-button {
         grid-column: 2;
         height: 23vmax;
     }
-
     footer .catalog-button a {
         font-size: 4vmax;
         max-width: 100%;
         padding: 3vmax 4vmax;
     }
-
-    footer div {
-        grid-column: 2;
-    }
-
+    footer div {grid-column: 2;}
     .copy {
         grid-template-columns: repeat(3, 1fr);
         max-width: 90vmax;
@@ -160,17 +78,14 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         text-align: center;
         justify-items: center;
     }
-
     .copy p {
         grid-column: 1/4;
         font-size: 3vmax;
     }
-
     .copy div {
         grid-column: 1/4;
         margin-top: 3vmax;
     }
-
     .icon-youtube,
     .icon-insta,
     .icon-vk {
@@ -178,13 +93,11 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         height: 10vmax;
         margin-bottom: 2vmax;
     }
-
     footer h3 {
         font-size: 6vmax;
         margin-top: 7vmax;
         margin-bottom: 2vmax;
     }
-
     footer ul li {
         font-size: 4.5vmax;
         line-height: 2;
@@ -192,89 +105,63 @@ Mi Note 5: portrait 393x706, lanscape 786x313
 }
 
 /* for-small-phone-up */
-@media (min-width: 320px) {}
+@media (min-width: 320px) {
+    .catalog-items {
+        grid-template-columns: 0 1fr 1fr 0;
+        grid-column-gap: 2vw;
+        grid-row-gap: 4vw;
+        padding: 5vmax 0;
+    }
+    .catalog-items a:nth-of-type(odd) {grid-column: 2;}
+    .catalog-items a:nth-of-type(even) {grid-column: 3;}
+    .catalog-categories figcaption {font-size: 4vw;}
+    .catalog-items h2 {font-size: 4.5vw;}
+    .catalog-items p {font-size: 3.5vw;}
 
+    /* Article */
+    .article {grid-template-columns: 5% 1fr 5%;}
+    .article .article-content {
+        column-count: 1;
+        margin-bottom: 4vmax;
+    }
+    .article h2 {
+        font-size: 4vmax;
+        font-weight: 700;
+    }
+    .article figcaption {
+        text-align: center;
+        font-size: 2.5vmax;
+    }
+    .article h3 {
+        font-size: 3.5vmax;
+        font-weight: 700;
+        padding: 3vmax 2vmax 1vmax;
+    }
+    .article h4 {
+        font-size: 3vmax;
+        font-weight: 700;
+        padding: 1vmax 2vmax .2vmax;
+    }
+    .article p {
+        font-size: 3.5vmax;
+        padding: 0 2vmax 4vmax;
+    }
+    .article ul {
+        font-size: 3vmax;
+        padding: 0 3vmax 4vmax;
+    }
+    .article ul > li {padding-bottom: 1.4vmax;}
+}
 /*
 -------------------------- for-phone-only */
 @media (min-width: 320px) and (max-width: 599px) {
-    .main-menu {
-        grid-template-columns: auto 1fr 9vmin 1fr;
-        grid-template-rows: 15vmin;
-        column-gap: 3%;
-        height: 30vmin;
-        width: 99%;
-        margin: .5% 0 0 .5%;
-        border-radius: 10px;
-        grid-auto-rows: 1fr;
-    }
-
-    .main-menu__logo {
-        grid-column: 2;
-        height: 9vmin;
-        grid-row: 1;
-        grid-auto-rows: 1fr;
-    }
-
-    .main-menu nav {
-        font-size: 4vmin;
-        grid-row: 2;
-        grid-column: 1/7;
-        grid-auto-rows: 1fr;
-        justify-content: center;
-    }
-
-    .main-menu nav ul {
-        justify-content: center;
-    }
-
-    .main-menu nav ul li {
-        padding: 0 4vmin;
-    }
-
-    .main-menu nav ul li:first-child {
-        padding-left: 0;
-    }
-
+    /*Main Menu*/
     .main-menu nav ul li:nth-child(4),
     .main-menu nav ul li:nth-child(5) {
         display: none;
     }
-
-    .main-menu .whatsapp {
-        grid-column: 3;
-        height: 10vw;
-        width: 100%;
-    }
-
-    .main-menu .top-phone {
-        grid-column: 4/6;
-        display: inline-grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 16vmin;
-        column-gap: 0;
-        white-space: normal;
-        letter-spacing: -0.5px;
-        align-items: center;
-        align-self: center;
-        text-align: left;
-        grid-row: 1;
-        margin-top: auto;
-    }
-
-    .main-menu .top-phone span {
-        display: none;
-    }
-
-    .main-menu .top-phone a {
-        font-size: 5vw;
-        color: #000;
-        justify-self: end;
-        grid-column: 1/2;
-    }
-
-    .main-menu .callback {
-        display: none;
-    }
+    .main-menu nav {font-size: 4.5vw;}
+    .main-menu nav ul li {padding: 0 3vw;}
 
     .catalog-button a {
         font-size: 2.8vmax;
@@ -292,30 +179,15 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         background-position: center center;
     }
 
-    #map-yandex {
-        height: 70vmax;
-    }
-
+    #map-yandex {height: 70vmax;}
     .map-contacts .contacts {
         height: 60vmax;
         padding: 4vmax;
     }
-
-    .map-contacts .contacts>* {
-        padding: .5vmax 0;
-    }
-
-    .map-contacts .contacts h2 {
-        font-size: 3.5vmax;
-    }
-
-    .map-contacts .contacts p {
-        font-size: 2.5vmax;
-    }
-
-    .map-contacts .contacts a {
-        font-size: 4vmax;
-    }
+    .map-contacts .contacts > * {padding: .5vmax 0;}
+    .map-contacts .contacts h2 {font-size: 3.5vmax;}
+    .map-contacts .contacts p {font-size: 2.5vmax;}
+    .map-contacts .contacts a {font-size: 4vmax;}
 
     footer {
         grid-template-columns: 5% 1fr 5%;
@@ -335,9 +207,7 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         padding: 3vmax 4vmax;
     }
 
-    footer div {
-        grid-column: 2;
-    }
+    footer div {grid-column: 2;}
 
     .copy {
         grid-template-columns: repeat(3, 1fr);

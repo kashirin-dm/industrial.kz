@@ -6,10 +6,16 @@ Catalog Mobile Style
 /*
 -------------------------- for-super-small-device-only */
 @media (max-width: 319px) {
+    .catalog-products h2 {font-size: 6vw;}
+    .catalog-products p {font-size: 5vw;}
+    .catalog-products span {font-size: 5vw;}
 }
 
 /* for-small-phone-up */
 @media (min-width: 320px) {
+    .catalog-products h2,
+    .catalog-products span {font-size: 4vw;}
+    .catalog-products p {font-size: 3.5vw;}
 }
 
 /*
