@@ -10,9 +10,19 @@ Pages Mobile Style
 
 /* for-small-phone-up */
 @media (min-width: 320px) {
+    .page-header {padding-bottom: 4vmax;}
+
+    .page-header figure {font-size: 7vmax;}
+    .page-header figure span {font-size: 4vmax;}
+    .page-header figure figcaption {font-size: 2.6vmax;}
 }
 
 /*
 -------------------------- for-phone-only */
 @media (min-width: 320px) and (max-width: 599px) {
+    .page-header ul {font-size: 5.5vw;}
+    .page-header ul li {
+        padding: 0 3.6vw;
+        line-height: 4.6vw;
+    }
 }

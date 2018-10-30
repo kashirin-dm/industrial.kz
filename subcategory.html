@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="HandheldFriendly" content="True"><!-- ~~~MOBILE INCLUDE~~~ -->
     <!-- ~~~ CHECK IT ~~~ -->
-    <title>Subcatrgory, 70 symbols</title>
+    <title>Subcategory, 70 symbols</title>
     <meta name="description" content="Page description text, 160 symbols">
     <meta name="owner" content="Industrial Energy JSC">
     <meta name="address" content="Казахстан, г. Алматы, Райымбека 496А">
@@ -71,7 +71,13 @@
     <link rel="stylesheet" href="s.industrial.kz/stat/s/t.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/d.css"><!-- ~~~DESKTOP INCLUDE~~~ -->
 
-    <!-- Index Style -->
+    <!-- Header Style -->
+    <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-pages-header.css">
+    <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-pages-header-m.css">
+    <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-pages-header-t.css">
+    <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-pages-header-d.css">
+
+    <!-- Catalog Style -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-catalog.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-catalog-m.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-catalog-t.css">
@@ -113,14 +119,14 @@
 
 
 
-    <section class="catalog-header">
-        <header></header>
+    <section class="page-header">
+        <header>
             <h1>Каталог: Литьё из цветного металла</h1>
             <p>Мы предлагаем профессиональные услуги по выплавке изделий, слитков и чушек из любого цветмета в соответствии со стандартами и с быстрой доставкой по Алматы и Казахстану</p>
         </header>
-        <form action="catalog.html" method="post">
-            <input type="search" name="mainsearch" placeholder="Поиск по каталогу компании" autocomplete="off">
-            <button type="submit" name="catalogsearchsubmit"></button>
+        <form action="catalog.html" method="post" class="form-search">
+            <input type="search" name="mainsearch" placeholder="Поиск по каталогу" autocomplete="off">
+            <button type="submit" name="mainsearchsubmit"></button>
         </form>
     </section>
 
@@ -323,8 +329,8 @@
 
     <!-- Footer -->
     <footer>
-        <aside class="catalog-button">
-            <a href="#">Смотреть каталог</a>
+        <aside class="button-wrapper">
+            <a href="#" class="button">Смотреть каталог</a>
         </aside>
         <div class="copy">
             <a href="#" class="icon-youtube" rel="nofollow" title="Перейти в наш канал на YouTube" target="_blank"></a>

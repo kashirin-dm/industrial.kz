@@ -71,7 +71,13 @@
     <link rel="stylesheet" href="s.industrial.kz/stat/s/t.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/d.css"><!-- ~~~DESKTOP INCLUDE~~~ -->
 
-    <!-- Index Style -->
+    <!-- Header Style -->
+    <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-pages-header.css">
+    <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-pages-header-m.css">
+    <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-pages-header-t.css">
+    <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-pages-header-d.css">
+
+    <!-- Catalog Style -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-catalog.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-catalog-m.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-catalog-t.css">
@@ -113,14 +119,14 @@
 
 
 
-    <section class="catalog-header">
-        <header></header>
+    <section class="page-header">
+        <header>
             <h1>Каталог Материалов</h1>
             <p>В нашем каталоге Вы найдете рентгенозащитное оборудование для больниц и клиник, чистые металлы, сплавы, сортамент, припои, химию и многое другое с быстрой доставкой по Алматы и Казахстану</p>
         </header>
-        <form action="catalog.html" method="post">
-            <input type="search" name="mainsearch" placeholder="Поиск по каталогу компании" autocomplete="off">
-            <button type="submit" name="catalogsearchsubmit"></button>
+        <form action="catalog.html" method="post" class="form-search">
+            <input type="search" name="mainsearch" placeholder="Поиск по каталогу" autocomplete="off">
+            <button type="submit" name="mainsearchsubmit"></button>
         </form>
     </section>
 
@@ -482,8 +488,8 @@
 
     <!-- Footer -->
     <footer>
-        <aside class="catalog-button">
-            <a href="#">Смотреть каталог</a>
+        <aside class="button-wrapper">
+            <a href="#" class="button">Смотреть каталог</a>
         </aside>
         <div class="copy">
             <a href="#" class="icon-youtube" rel="nofollow" title="Перейти в наш канал на YouTube" target="_blank"></a>

@@ -24,6 +24,14 @@ Tablet Style
         display: inline-grid;
         grid-row: 1;
     }
+
+    /* Search Form */
+    .form-search input {grid-column: 2;}
+    .form-search button {grid-column: 3;}
+    .form-search {column-gap: 1vmax;}
+    .form-search button,
+    .form-search button:hover {background-size: 40%;}
+
     .catalog-categories figcaption {
         font-size: 3vw;
         font-weight: 400;
@@ -35,6 +43,12 @@ Tablet Style
     .article figcaption {text-align: right;}
     .article p {text-align: justify;}
     .article h3 {text-align: center;}
+
+    /* Footer */
+    .copy {
+        grid-row: 3;
+        margin-top: 5vmax;
+    }
 }
 
 /*
@@ -66,92 +80,34 @@ for-tablet-portait-only */
         font-size: 100%;
     }
 
-    .catalog-button a {
-        font-size: 2.8vmax;
-        max-width: 90%;
-        padding: 3.5vmax 2.5vmax;
-    }
+    /* Contacts and Map Block */
+    .contacts h2 {font-size: 5vw;}
+    .contacts p {font-size: 3vw;}
+    .contacts a {font-size: 5vw;}
 
-    .map-contacts {
-        grid-template-columns: 1fr;
-        height: 140vmax;
-    }
-
-    .ymap-container {
-        height: 70vmax;
-        background-position: center center;
-    }
-
-    #map-yandex {height: 70vmax;}
-
-    .map-contacts .contacts {
-        height: 60vmax;
-        padding: 4vmax;
-    }
-
-    .map-contacts .contacts>* {padding: .5vmax 0;}
-    .map-contacts .contacts h2 {font-size: 5vmax;}
-    .map-contacts .contacts p {font-size: 3vmax;}
-    .map-contacts .contacts a {font-size: 5vmax;}
-
-    footer {
-        grid-template-columns: 5% 1fr 1fr 5%;
-        column-gap: 0;
-        padding-bottom: 15vmax;
-    }
-
-    footer .catalog-button {
-        grid-column: 2/4;
-        height: 18vmax;
-    }
-
-    footer .catalog-button a {
-        font-size: 3vmax;
-        max-width: 100%;
-        padding: 3vmax 4vmax;
-    }
-
-    footer div {grid-column: 2;}
+    /* Footer */
+    footer {grid-template-columns: 5% 1fr 1fr 5%;}
+    footer aside {grid-column: 2/4;}
     footer div:nth-child(2n+2) {grid-column: 3;}
-
     .copy {
         grid-template-columns: repeat(3, 1fr);
-        max-width: 90vmax;
         grid-gap: 2vmax;
-        height: auto;
-        grid-row: 3;
-        margin-top: 5vmax;
-        text-align: center;
-        justify-items: center;
     }
-
-    .copy p {
-        grid-column: 1/4;
-        font-size: 2vmax;
-    }
-
-    .copy div {
-        grid-column: 1/4;
-        margin-top: 2vmax;
-    }
-
+    .copy p {font-size: 2vmax;}
     .icon-youtube,
     .icon-insta,
     .icon-vk {
         width: 8vmax;
         height: 8vmax;
-        margin-bottom: 2vmax;
     }
+    footer h3 {font-size: 4vmax;}
+    footer ul li {font-size: 2.7vmax;}
 
-    footer h3 {
-        font-size: 4vmax;
-        margin-top: 5vmax;
-        margin-bottom: 1vmax;
-    }
-
-    footer ul li {
-        font-size: 2.4vmax;
-        line-height: 2;
+    /* Button Link <a> */
+    .button {
+        font-size: 3vw;
+        padding: 4vw;
+        margin: 4vw 0;
     }
 }
 
@@ -163,6 +119,7 @@ for-tablet-portait-only */
         width: 98%;
         margin: 1vw 1vw 0;
     }
+
     .catalog-categories {grid-template-columns: 1vw repeat(3, 1fr) 1vw;}
     .catalog-categories a:nth-of-type(3n+1) {/* each 1 */ grid-column: 2;}
     .catalog-categories a:nth-of-type(3n+2) {/* each 2 */ grid-column: 3;}
@@ -192,6 +149,14 @@ for-tablet-portait-only */
         padding-bottom: 1vmax;
     }
     .article ul {padding: 0 3vmax 2vmax;}
+
+    /* Contacts and Map Block */
+    .map-contacts {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    .contacts {width: 80%;}
+    .contacts p {font-size: 1.9vmax;}
 }
 
 /*
@@ -220,12 +185,6 @@ for-tablet-landscape-only */
         line-height: calc(3.5vw - 6px);
     }
 
-    .catalog-button a {
-        font-size: 2.8vmax;
-        max-width: 90%;
-        padding: 3.5vmax 2.5vmax;
-    }
-
     /* Article */
     .article h2 {font-size: 5vmax;}
     .article h3 {font-size: 3.5vmax;}
@@ -234,82 +193,46 @@ for-tablet-landscape-only */
     .article ul {font-size: 2.3vmax;}
     .article ul > li {padding-bottom: .4vmax;}
 
-    .map-contacts {
-        grid-template-columns: 1fr 1fr;
-        height: 50vmax;
-    }
-
-    .ymap-container {background-position: center center;}
-
+    /* Contacts and Map Block */
+    .map-contacts {height: 50vmax;}
+    .ymap-container {height: 50vmax;}
     #map-yandex {height: 50vmax;}
+    .contacts h2 {font-size: 2.4vmax;}
+    .contacts a {font-size: 2.4vmax;}
 
-    .map-contacts .contacts {padding: 4vmax;}
-    .map-contacts .contacts>* {padding: .5vmax 0;}
-    .map-contacts .contacts h2 {font-size: 2.3vmax;}
-    .map-contacts .contacts p {font-size: 1.5vmax;}
-    .map-contacts .contacts a {font-size: 2.3vmax;}
-
+    /* Footer */
     footer {
         grid-template-columns: 5% repeat(3, 1fr) 5%;
-        column-gap: 0;
         padding-bottom: 10vmax;
     }
-
-    footer .catalog-button {
-        grid-column: 2/5;
-        height: 14vmax;
-    }
-
-    footer .catalog-button a {
-        font-size: 2vmax;
-        max-width: 100%;
-        padding: 2vmax 3vmax;
-    }
-
+    footer aside {grid-column: 2/5;}
     footer div:nth-child(3) {grid-column: 2;}
     footer div:nth-child(4) {grid-column: 3;}
     footer div:nth-child(5) {grid-column: 4;}
-
     .copy {
         grid-column: 2/5;
         grid-template-columns: repeat(3, 1fr);
         max-width: 50vmax;
         grid-gap: 0;
-        height: auto;
-        grid-row: 3;
-        margin-top: 5vmax;
-        text-align: center;
-        justify-items: center;
-        justify-self: center;
     }
-
-    .copy p {
-        grid-column: 1/4;
-        font-size: 1.5vmax;
-    }
-
-    .copy div {
-        grid-column: 1/4;
-        margin-top: 2vmax;
-        margin-bottom: 8vmax;
-    }
-
+    .copy p {font-size: 1.5vmax;}
+    .copy div {margin-bottom: 8vmax;}
     .icon-youtube,
     .icon-insta,
     .icon-vk {
         width: 6vmax;
         height: 6vmax;
-        margin-bottom: 2vmax;
     }
-
     footer h3 {
         font-size: 2.4vmax;
         margin-top: 2vmax;
-        margin-bottom: 1vmax;
     }
+    footer ul li {font-size: 1.8vmax;}
 
-    footer ul li {
-        font-size: 1.6vmax;
-        line-height: 2;
+    /* Button Link <a> */
+    .button {
+        font-size: 2vw;
+        padding: 3vw;
+        margin: 3vw 0;
     }
 }

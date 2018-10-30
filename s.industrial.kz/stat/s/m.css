@@ -4,11 +4,6 @@ Mobile Style
 -----------------------------
 */
 /*
-iPhone 5:  portrait 320x460, lanscape 568x320
-iPhone 6:  portrait 375x553, lanscape 667x375
-Mi Note 5: portrait 393x706, lanscape 786x313
-*/
-/*
 -------------------------- for-super-small-device-only */
 @media (max-width: 319px) {
     /* Main Menu */
@@ -24,84 +19,19 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-row-gap: 5vmax;
         padding: 10vmax 0;
     }
-    .catalog-items a {grid-column: 2;}
+    .catalog-items > a {grid-column: 2;}
     .catalog-categories figcaption {font-size: 6vw;}
     .catalog-items h2 {font-size:4.5vmax;}
     .catalog-items p {font-size: 3.5vmax;}
 
-    .catalog-button {
-        /* Not fot first button */
-        padding: 2vmax 0 1vmax;
-    }
-
-    .catalog-button a {
-        font-size: 4.5vmax;
-        max-width: 90%;
-        padding: 4vmax 3vmax;
-    }
-
-    .map-contacts {
-        grid-template-columns: 1fr;
-        height: 80vmax;
-        text-align: center;
-    }
-
-    .ymap-container {display: none;}
-    .map-contacts .contacts>* {padding: 2vmax 0;}
-
-    .map-contacts .contacts h2 {font-size: 5vmax;}
-    .map-contacts .contacts p {font-size: 3.5vmax;}
-    .map-contacts .contacts a {font-size: 5vmax;}
-    footer {
-        grid-template-columns: 5% 1fr 5%;
-        column-gap: 0;
-        padding-bottom: 15vmax;
-        text-align: center;
-    }
-    footer .catalog-button {
-        grid-column: 2;
-        height: 23vmax;
-    }
-    footer .catalog-button a {
-        font-size: 4vmax;
-        max-width: 100%;
-        padding: 3vmax 4vmax;
-    }
-    footer div {grid-column: 2;}
-    .copy {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 90vmax;
-        grid-gap: 3vmax;
-        height: auto;
-        grid-row: 5;
-        margin-top: 10vmax;
-        text-align: center;
+    /* Search Form */
+    .form-search {
+        grid-row-gap: 2vmax;
         justify-items: center;
     }
-    .copy p {
-        grid-column: 1/4;
-        font-size: 3vmax;
-    }
-    .copy div {
-        grid-column: 1/4;
-        margin-top: 3vmax;
-    }
-    .icon-youtube,
-    .icon-insta,
-    .icon-vk {
-        width: 10vmax;
-        height: 10vmax;
-        margin-bottom: 2vmax;
-    }
-    footer h3 {
-        font-size: 6vmax;
-        margin-top: 7vmax;
-        margin-bottom: 2vmax;
-    }
-    footer ul li {
-        font-size: 4.5vmax;
-        line-height: 2;
-    }
+
+    .form-search input {text-align: center;}
+    .form-search button {width: 80%;}
 }
 
 /* for-small-phone-up */
@@ -112,8 +42,8 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         grid-row-gap: 4vw;
         padding: 5vmax 0;
     }
-    .catalog-items a:nth-of-type(odd) {grid-column: 2;}
-    .catalog-items a:nth-of-type(even) {grid-column: 3;}
+    .catalog-items > a:nth-of-type(odd) {grid-column: 2;}
+    .catalog-items > a:nth-of-type(even) {grid-column: 3;}
     .catalog-categories figcaption {font-size: 4vw;}
     .catalog-items h2 {font-size: 4.5vw;}
     .catalog-items p {font-size: 3.5vw;}
@@ -151,6 +81,42 @@ Mi Note 5: portrait 393x706, lanscape 786x313
         padding: 0 3vmax 4vmax;
     }
     .article ul > li {padding-bottom: 1.4vmax;}
+
+    /* Contacts and Map Block */
+    .map-contacts {height: 110vmax;}
+    #map-yandex {height: 60vmax;}
+    .ymap-container {
+        display: grid !important;
+        height: 60vmax;
+    }
+    .contacts {padding: 4vmax;}
+    .contacts > * {padding: .5vmax 0;}
+
+    /* Footer */
+    footer {
+        padding-bottom: 15vmax;
+        column-gap: 0;
+    }
+    .copy {
+        max-width: 90vmax;
+        height: auto;
+        text-align: center;
+        justify-items: center;
+        justify-self: center;
+    }
+    .copy p {grid-column: 1/4;}
+    .copy div {
+        grid-column: 1/4;
+        margin-top: 2vmax;
+    }
+    .icon-youtube,
+    .icon-insta,
+    .icon-vk {
+        margin-bottom: 2vmax;
+    }
+    footer div {grid-column: 2;}
+    footer h3 {margin-top: 5vmax 0 1vmax;}
+    footer ul li {line-height: 2;}
 }
 /*
 -------------------------- for-phone-only */
@@ -163,89 +129,44 @@ Mi Note 5: portrait 393x706, lanscape 786x313
     .main-menu nav {font-size: 4.5vw;}
     .main-menu nav ul li {padding: 0 3vw;}
 
-    .catalog-button a {
-        font-size: 2.8vmax;
-        max-width: 90%;
-        padding: 3.5vmax 2.5vmax;
-    }
+    /* Contacts and Map Block */
+    .contacts h2 {font-size: 3vmax;}
+    .contacts p {font-size: 2.3vmax;}
+    .contacts a {font-size: 3.5vmax;}
 
-    .map-contacts {
-        grid-template-columns: 1fr;
-        height: 140vmax;
-    }
-
-    .ymap-container {
-        height: 70vmax;
-        background-position: center center;
-    }
-
-    #map-yandex {height: 70vmax;}
-    .map-contacts .contacts {
-        height: 60vmax;
-        padding: 4vmax;
-    }
-    .map-contacts .contacts > * {padding: .5vmax 0;}
-    .map-contacts .contacts h2 {font-size: 3.5vmax;}
-    .map-contacts .contacts p {font-size: 2.5vmax;}
-    .map-contacts .contacts a {font-size: 4vmax;}
-
-    footer {
-        grid-template-columns: 5% 1fr 5%;
-        column-gap: 0;
-        padding-bottom: 15vmax;
-        text-align: center;
-    }
-
-    footer .catalog-button {
-        grid-column: 2;
-        height: 18vmax;
-    }
-
-    footer .catalog-button a {
-        font-size: 3vmax;
-        max-width: 100%;
-        padding: 3vmax 4vmax;
-    }
-
-    footer div {grid-column: 2;}
-
-    .copy {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 90vmax;
-        grid-gap: 3vmax;
-        height: auto;
-        grid-row: 5;
-        margin-top: 8vmax;
-        text-align: center;
+    /* Search Form */
+    .form-search {
+        grid-row-gap: 1vmax;
         justify-items: center;
     }
+    .form-search input {text-align: center;}
+    .form-search button {width: 40%;}
 
-    .copy p {
-        grid-column: 1/4;
-        font-size: 2.3vmax;
+    /* Footer */
+    footer {
+        grid-template-columns: 5% 1fr 5%;
+        text-align: center;
     }
-
-    .copy div {
-        grid-column: 1/4;
-        margin-top: 2vmax;
+    .copy {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3vmax;
+        grid-row: 5;
+        margin-top: 8vmax;
     }
-
+    .copy p {font-size: 2.3vmax;}
     .icon-youtube,
     .icon-insta,
     .icon-vk {
         width: 10vmax;
         height: 10vmax;
-        margin-bottom: 2vmax;
     }
+    footer h3 {font-size: 4vmax;}
+    footer ul li {font-size: 3vmax;}
 
-    footer h3 {
-        font-size: 5vmax;
-        margin-top: 5vmax;
-        margin-bottom: 1vmax;
-    }
-
-    footer ul li {
-        font-size: 3vmax;
-        line-height: 2;
+    /* Button Link <a> */
+    .button {
+        font-size: 5vw;
+        padding: 7vw;
+        margin: 7vw 0;
     }
 }

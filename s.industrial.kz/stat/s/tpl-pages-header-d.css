@@ -1,0 +1,29 @@
+/*
+-----------------------------
+Desktop Header for pages and catalog pages
+-----------------------------
+*/
+@media (min-width: 1200px) {
+    .page-header {padding-top: 8vmax;}
+    .page-header p {max-width: 70%;}
+    .page-header .form-search {grid-template-columns: 30% 9fr 3vmax 30%;}
+}
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .page-header .form-search input {
+        height: 3vmax;
+        padding: 0 1.5vmax;
+        font-size: 1.4vmax;
+    }
+    .page-header .form-search input::placeholder {font-size: 1.4vmax;}
+    .page-header .form-search button {height: 3vmax;}
+}
+@media (min-width: 1800px) {
+    .page-header p {font-size: 1vmax;}
+    .page-header .form-search input {
+        height: 3vmax;
+        padding: 0 1.5vmax;
+        font-size: 1.2vmax;
+    }
+    .page-header .form-search input::placeholder {font-size: 1.2vmax;}
+    .page-header .form-search button {height: 3vmax;}
+}

@@ -1,0 +1,35 @@
+/*
+-----------------------------
+Tablet Header for pages and catalog pages
+-----------------------------
+*/
+@media (min-width: 600px) {
+    .page-header h1 {font-size: 3.8vmax;}
+    .page-header p {font-size: 2.8vmax;}
+    .page-header .form-search {grid-template-columns: 10% 9fr 4vmax 10%;}
+    .page-header .form-search input {max-width: 100%;}
+}
+@media (min-width: 600px) and (max-width: 899px) {
+    .page-header .form-search input {
+        height: 4vmax;
+        padding: 0 2vmax;
+        font-size: 1.8vmax;
+    }
+    .page-header .form-search input::placeholder {font-size: 1.8vmax;}
+    .page-header .form-search button {height: 4vmax;}
+}
+@media (min-width: 900px) {
+    .page-header {padding-top: 13vmax;}
+    .page-header h1 {font-size: 2.5vmax;}
+    .page-header p {font-size: 1.4vmax;}
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+    .page-header .form-search {grid-template-columns: 20% 9fr 4vmax 20%;}
+    .page-header .form-search input {
+        height: 4vmax;
+        padding: 0 2vmax;
+        font-size: 1.5vmax;
+    }
+    .page-header .form-search input::placeholder {font-size: 1.5vmax;}
+    .page-header .form-search button {height: 4vmax;}
+}

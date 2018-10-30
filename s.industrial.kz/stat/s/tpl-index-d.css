@@ -6,10 +6,9 @@ Index Desktop Style
 /* for-desktop-up */
 @media (min-width: 1200px) {
     /* Main Cover */
-    /* Cover Search */
     .main-cover p {line-height: 1.75;}
-    .main-cover form {grid-template-columns: 20% 1fr 5vmax 20%;}
-
+    /* Search Form */
+    .main-cover .form-search {grid-template-columns: 20% 1fr 5vmax 20%;}
     /* Main Company Block */
     .main-clients {
         grid-template-columns: 15% 1fr 15%;
@@ -24,11 +23,6 @@ Index Desktop Style
     }
     .main-clients .logos {padding: 1vmax 0;}
     .main-clients .logos > * {height: 54px;}
-    .main-clients .catalog-button {
-        width: 80%;
-        padding: 3vmax 0 0;
-     }
-    .main-clients .catalog-button a {font-size: 1vmax;}
 }
 
 /*
@@ -45,14 +39,14 @@ for-desktop-only */
         margin: 20% 0 1vmax 0;
     }
     .main-cover p {font-size: 2vmax;}
-    /* Cover Search */
-    .main-cover form * {height: 5vmax;}
-    .main-cover form input {
+    /* Search Form */
+    .main-cover .form-search input {
+        height: 5vmax;
         padding: 0 2.3vmax;
         font-size: 2vmax;
     }
-    .main-cover form input::placeholder {font-size: 2vmax;}
-
+    .main-cover .form-search input::placeholder {font-size: 2vmax;}
+    .main-cover .form-search button {height: 5vmax;}
     .catalog-items aside {
         grid-column: 1/6;
         padding: 10vmax 0 6vmax;
@@ -69,7 +63,6 @@ for-big-desktop-up */
         background: url(../../../i.industrial.kz/stat/i/covers/cover_800.webp) center no-repeat;
         background-size: cover;
     }
-
     .main-cover h1 {
         font-size: 3vmax;
         margin: 25% 0 .5vmax 0;
@@ -78,15 +71,15 @@ for-big-desktop-up */
         font-size: 1.6vmax;
         margin-bottom: 2vmax;
     }
-    /* Cover Search */
-    .main-cover form {grid-template-columns: 20% 1fr 4vmax 20%;}
-    .main-cover form * {height: 4vmax;}
-    .main-cover form input {
+    /* Search Form */
+    .main-cover .form-search {grid-template-columns: 20% 1fr 4vmax 20%;}
+    .main-cover .form-search input {
+        height: 4vmax;
         padding: 0 1.9vmax;
         font-size: 1.5vmax;
     }
-    .main-cover form input::placeholder {font-size: 1.5vmax;}
-
+    .main-cover .form-search input::placeholder {font-size: 1.5vmax;}
+    .main-cover .form-search button {height: 4vmax;}
     .catalog-items aside {
         grid-column: 1/6;
         padding: 10vmax 0 6vmax;

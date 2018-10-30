@@ -1,0 +1,20 @@
+/*
+-----------------------------
+Header for pages and catalog pages
+-----------------------------
+*/
+.page-header {
+    grid-template-columns: 1% 1fr 1%;
+    text-align: center;
+    grid-gap: 1.5vmax;
+    padding-top: 8vmax;
+}
+.page-header header,
+.page-header .form-search {
+    grid-column: 2;
+}
+.page-header h1 {font-size: 5vmax;}
+.page-header p {
+    margin: auto;
+    display: none;
+}

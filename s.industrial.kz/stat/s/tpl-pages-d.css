@@ -5,16 +5,111 @@ Pages Desktop Style
 */
 /* for-desktop-up */
 @media (min-width: 1200px) {
+    .page-header {padding-bottom: 6vmax;}
+    .article__one-column {grid-template-columns: 25% 1fr 25%;}
 }
 
 /*
 -----------------------------
 for-desktop-only */
 @media (min-width: 1200px) and (max-width: 1799px) {
+    .page-header ul {font-size: 1.2vmax;}
+    .page-header ul li {
+        padding: 0 1vw;
+        line-height: 1vw;
+    }
+
+    .how-to-buy__grid {grid-template-columns: 3vw 1fr 3vw;}
+    .how-to-buy__white-bg {background-color: #fff;}
+    .how-to-buy__grid h2 {
+        font-size: 2.5vmax;
+        margin: 4vmax 0 2vmax;
+    }
+    .how-to-buy__how-block,
+    .how-to-buy__requisites {
+        grid-column-gap: 4vmax;
+    }
+    .how-to-buy__how-block {margin-bottom: 4vmax;}
+    .how-to-buy__how-block h3 {font-size: 3vmax;}
+    .how-to-buy__how-block p {
+        font-size: 1.5vmax;
+        margin-bottom: 1vmax;
+    }
+    .how-to-buy__requisites {margin-bottom: 4vmax;}
+    .how-to-buy__requisites h3 {
+        font-size: 3vmax;
+        margin-bottom: 1vmax;
+    }
+    .how-to-buy__requisites h4 {font-size: 1.6vmax;}
+    .how-to-buy__requisites p {
+        font-size: 1.2vmax;
+        margin-bottom: 1vmax;
+    }
+    .how-to-buy__requisites span {
+        height: 2vmax;
+        font-size: 1.2vmax;
+    }
+    .how-to-buy__requisites span svg {height: 2vmax;}
+    .how-to-buy__requisites span a {
+        line-height: 2vmax;
+        padding-left: .8vmax;
+    }
 }
 
 /*
 -----------------------------
 for-big-desktop-up */
 @media (min-width: 1800px) {
+    .page-header ul {font-size: 1vmax;}
+    .page-header ul li {
+        padding: 0 .8vw;
+        line-height: .8vw;
+    }
+
+
+
+
+    .how-to-buy__grid {grid-template-columns: 12vw 1fr 12vw;}
+    .how-to-buy__white-bg {background-color: #fff;}
+    .how-to-buy__grid h2 {
+        font-size: 2.5vmax;
+        margin: 4vmax 0 2vmax;
+    }
+    .how-to-buy__how-block,
+    .how-to-buy__requisites {
+        grid-column-gap: 4vmax;
+    }
+    .how-to-buy__how-block {margin-bottom: 4vmax;}
+    .how-to-buy__how-block h3 {font-size: 2vmax;}
+    .how-to-buy__how-block p {
+        font-size: 1.2vmax;
+        margin-bottom: 1vmax;
+    }
+    .how-to-buy__requisites {margin-bottom: 4vmax;}
+    .how-to-buy__requisites h3 {
+        font-size: 2vmax;
+        margin-bottom: 1vmax;
+    }
+    .how-to-buy__requisites h4 {font-size: 1.2vmax;}
+    .how-to-buy__requisites p {
+        font-size: 1vmax;
+        margin-bottom: 1vmax;
+    }
+    .how-to-buy__requisites span {
+        height: 1.5vmax;
+        font-size: 1vmax;
+    }
+    .how-to-buy__requisites span svg {height: 1.5vmax;}
+    .how-to-buy__requisites span a {
+        line-height: 1.5vmax;
+        padding-left: .5vmax;
+    }
+
+
+
+
+
+
+
+
 }

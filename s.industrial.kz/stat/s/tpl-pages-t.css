@@ -5,20 +5,37 @@ Pages Tablet Style
 */
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {
+    .article__one-column {grid-template-columns: 2% 1fr 2%;}
 }
 
 /*
 -----------------------------
 for-tablet-portait-only */
 @media (min-width: 600px) and (max-width: 899px) {
+    .page-header ul {font-size: 2.9vw;}
+    .page-header ul li {
+        padding: 0 2.6vw;
+        line-height: 2.6vw;
+    }
 }
 
 /* for-tablet-landscape-up */
 @media (min-width: 900px) {
+    .page-header {padding-bottom: 6vmax;}
+    .article__one-column {grid-template-columns: 10% 1fr 10%;}
+
+    .page-header figure {font-size: 3vmax;}
+    .page-header figure span {font-size: 2vmax;}
+    .page-header figure figcaption {font-size: 1.2vmax;}
 }
 
 /*
 -----------------------------
 for-tablet-landscape-only */
 @media (min-width: 900px) and (max-width: 1199px) {
+    .page-header ul {font-size: 1.9vw;}
+    .page-header ul li {
+        padding: 0 1.6vw;
+        line-height: 1.6vw;
+    }
 }

@@ -43,6 +43,7 @@ $(function() {
           threshold: 0
         });
     });
+    
 $(function() {
     $('.slider-for').slick({
      slidesToShow: 1,

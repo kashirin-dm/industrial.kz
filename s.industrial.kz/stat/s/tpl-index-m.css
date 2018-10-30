@@ -17,27 +17,15 @@ Index Mobile Style
         margin-bottom: 4vmax;
         line-height: 1;
     }
-    /* Cover Search Form*/
-    .main-cover form {
-        grid-template-columns: 1fr;
-        grid-row-gap: 2vmax;
-        justify-items: center;
-    }
-
-    .main-cover form * {height: 10vmax;}
-
-    .main-cover form input {
-        text-align: center;
+    /* Search Form */
+    .main-cover .form-search {grid-template-columns: 1fr;}
+    .main-cover .form-search input {
+        height: 10vmax;
         padding: 0 3vmax;
         font-size: 4.5vmax;
     }
-
-    .main-cover form input::placeholder {font-size: 4.5vmax;}
-
-    .main-cover form button {
-        width: 80%;
-        height: 9vmax;
-    }
+    .main-cover .form-search input::placeholder {font-size: 4.5vmax;}
+    .main-cover .form-search button {height: 9vmax;}
     .catalog-items aside {
         grid-column: 1/4;
         padding: 25vmax 0 15vmax;
@@ -57,6 +45,15 @@ Index Mobile Style
         display: inline-grid;
         margin-bottom: 2vmax;
     }
+    /* Search Form */
+    .main-cover .form-search input {
+        height: 8.5vmax;
+        padding: 0 2vmax;
+        font-size: 3vmax;
+        max-width: 90%;
+    }
+    .main-cover .form-search input::placeholder {font-size: 3vmax;}
+    .main-cover .form-search button {height: 6.5vmax;}
 }
 
 /*
@@ -77,28 +74,8 @@ Index Mobile Style
         font-size: 2.3vmax;
         line-height: 1.1;
     }
-    /* Cover Search*/
-    .main-cover form {
-        grid-template-columns: 1fr;
-        grid-row-gap: 1vmax;
-        justify-items: center;
-    }
-    .main-cover form * {height: 8.5vmax;}
-
-    .main-cover form input {
-        text-align: center;
-        padding: 0 2vmax;
-        font-size: 3vmax;
-        max-width: 90%;
-    }
-
-    .main-cover form input::placeholder {font-size: 3vmax;}
-
-    .main-cover form button {
-        width: 40%;
-        height: 6.5vmax;
-    }
-
+    /* Search Form */
+    .main-cover .form-search {grid-template-columns: 1fr;}
     .catalog-items aside {
         grid-column: 1/4;
         padding: 25vmax 0 10vmax;
@@ -120,9 +97,6 @@ Index Mobile Style
         height: 34px;
         padding: 1vmax;
     }
-    .main-clients p {
-        display: inline-block;
-    }
+    .main-clients p {display: inline-block;}
     .main-clients .logos img:last-child {display: none;}
-    .main-clients .catalog-button a {font-size: 1.6vmax;}
 }

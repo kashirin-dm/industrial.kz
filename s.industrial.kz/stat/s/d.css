@@ -39,6 +39,39 @@ Desktop Style
     }
     .article h3 {font-weight: 400;}
     .article ul > li {padding-bottom: .4vmax;}
+
+    /* Contacts and Map Block */
+    .map-contacts {height: 50vh;}
+    .ymap-container {height: 50vh;}
+    #map-yandex {height: 50vh;}
+    .contacts {padding: 0;}
+    .contacts > * {padding: 1vmax;}
+    .contacts h2 {font-size: 2.2vmax;}
+    .contacts a {font-size: 1.8vmax;}
+    .contacts p {font-size: 1.5vmax;}
+
+    /* Footer */
+    footer {
+        column-gap: 2vw;
+        text-align: left;
+    }
+    .copy {
+        text-align: left;
+        grid-row: 2;
+        grid-column: 2;
+        height: 0;
+        margin-top: 0;
+        justify-self: start;
+        justify-items: start;
+    }
+    .copy div {margin-top: 0;}
+    footer aside {grid-column: 2/6;}
+    footer > div {grid-row: 2;}
+    footer > div:nth-of-type(2) {grid-column: 3;}
+    footer > div:nth-of-type(3) {grid-column: 4;}
+    footer > div:nth-of-type(4) {grid-column: 5;}
+    footer ul li {line-height: 2.5;}
+    footer h3 {margin-top: 0;}
 }
 
 /*
@@ -76,75 +109,31 @@ for-desktop-only */
     }
     .article ul {font-size: 1.7vmax;}
 
-    .catalog-button {padding: 40px 10px;}
-
-    .catalog-button a {
-        font-size: 1.5vmax;
-        max-width: 50vmax;
-        padding: 1.5vmax 2vmax;
-    }
-
-    .map-contacts {
-        grid-template-columns: 1fr 1fr;
-        height: 70vh;
-    }
-
-    .ymap-container {background-position: center center;}
-
-    #map-yandex {height: 70vh;}
-    .map-contacts .contacts>* {padding: 1vmax;}
-    .map-contacts .contacts h2 {font-size: 2.5vmax;}
-    .map-contacts .contacts p {font-size: 1.5vmax;}
-    .map-contacts .contacts a {font-size: 2vmax;}
-
+    /* Footer */
     footer {
-        grid-template-columns: 1.8vw repeat(4, 1fr) 1.8vw;
-        column-gap: 2vw;
+        grid-template-columns: 1vw repeat(4, 1fr) 1vw;
         padding-bottom: 15vmin;
     }
-
-    footer .catalog-button {
-        grid-column: 1/7;
-        height: 8vh;
-    }
-
-    footer .catalog-button a {
-        font-size: 1.3vmax;
-        max-width: 100%;
-        padding: 1.5vmax 2.5vmax;
-    }
-
-    footer .copy {grid-column: 2;}
-
     .copy {
         grid-template-columns: repeat(4, 1fr);
         max-width: 20vmax;
         grid-gap: 1.2vmax;
-        height: 0;
     }
-
-    .copy p {
-        grid-column: 1/4;
-        font-size: 1vmax;
-    }
-
-    .copy div {grid-column: 1/4;}
-
+    .copy p {font-size: 1vmax;}
     .icon-youtube,
     .icon-insta,
     .icon-vk {
         width: 3vmax;
         height: 3vmax;
     }
+    footer h3 {font-size: 1.5vmax;}
+    footer ul li {font-size: 1vmax;}
 
-    footer h3 {
-        font-size: 1.5vmax;
-        margin-bottom: 1vmax;
-    }
-
-    footer ul li {
-        font-size: 1vmax;
-        line-height: 2.5
+    /* Button Link <a> */
+    .button {
+        font-size: 1.2vw;
+        padding: 1.7vw;
+        margin: 2vw 0;
     }
 }
 
@@ -171,6 +160,7 @@ for-big-desktop-up */
         font-size: .9vw;
         line-height: calc(2.4vw - 6px);
     }
+
     .catalog-categories {grid-template-columns: 10vw repeat(3, 1fr) 10vw;}
     .catalog-categories figcaption {
         padding: 1vmax;
@@ -193,64 +183,40 @@ for-big-desktop-up */
     }
     .article ul {font-size: 1vmax;}
 
-
-    .catalog-button {padding: 40px 10px;}
-    .catalog-button a {
-        font-size: 1vmax;
-        max-width: 50vmax;
-        padding: 1.2vmax 1.5vmax;
-    }
-    .map-contacts {
-        grid-template-columns: 1fr 1fr;
-        height: 70vh;
-    }
-
+    /* Contacts and Map Block */
+    .map-contacts {height: 70vh;}
+    .ymap-container {height: 70vh;}
     #map-yandex {height: 70vh;}
-    .map-contacts .contacts > * {padding: 1vmax;}
-    .map-contacts .contacts h2 {font-size: 2.5vmax;}
-    .map-contacts .contacts p {font-size: 1.5vmax;}
-    .map-contacts .contacts a {font-size: 2vmax;}
+    .contacts > * {padding: 1vmax;}
+    .contacts h2 {font-size: 1.8vmax;}
+    .contacts a {font-size: 1.4vmax;}
+    .contacts p {font-size: 1.2vmax;}
 
+    /* Footer */
     footer {
         grid-template-columns: 10vw repeat(4, 1fr) 10vw;
-        column-gap: 2vw;
         padding-bottom: 4vmax;
     }
-
-    footer .catalog-button {
-        grid-column: 1/7;
-        height: 10vh;
-    }
-
-    footer .copy {grid-column: 2;}
-
     .copy {
         grid-template-columns: repeat(3, 1fr) 2fr;
         max-width: 3vmax;
         grid-gap: 1.5vmax;
-        height: 0;
     }
-
-    .copy p {
-        grid-column: 1/4;
-        font-size: .7vmax;
-    }
-    .copy div {grid-column: 1/4;}
-
+    .copy p {font-size: .7vmax;}
     .icon-youtube,
     .icon-insta,
     .icon-vk {
         width: 2.5vmax;
         height: 2.5vmax;
+        margin: 0;
     }
+    footer h3 {font-size: 1vmax; margin-bottom: 1vmax;}
+    footer ul li {font-size: .8vmax;}
 
-    footer h3 {
-        font-size: 1vmax;
-        margin-bottom: 1vmax;
-    }
-
-    footer ul li {
-        font-size: .8vmax;
-        line-height: 2.5
+    /* Button Link <a> */
+    .button {
+        font-size: 1vw;
+        padding: 1.3vw;
+        margin: 2vw 0;
     }
 }
