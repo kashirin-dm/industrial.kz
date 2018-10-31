@@ -5,6 +5,25 @@ Cart Tablet Style
 */
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {
+    /* Breadcrumbs */
+    .breadcrumbs {
+        grid-template-columns: 3vw 1fr 3vw;
+        padding: 5vw 0 4vw;
+    }
+    .breadcrumbs ul li {font-size: 2.4vw;}
+
+    /* Cart Lead */
+    .cart-lead {
+        grid-template-columns: 0 1fr 0;
+        grid-gap: 3vw;
+    }
+    /* Cart Lead Article */
+    .cart-lead h1 {font-size: 4.8vw;}
+    .cart-lead p {font-size: 3.5vw;}
+
+
+
+    .cart-lead div {grid-column: 2;}
 }
 
 /*
@@ -15,6 +34,18 @@ for-tablet-portait-only */
 
 /* for-tablet-landscape-up */
 @media (min-width: 900px) {
+    /* Breadcrumbs */
+    .breadcrumbs {padding: 14vw 0 2vw;}
+    .breadcrumbs ul li {font-size: 1.4vw;}
+
+    /* Cart Lead */
+    .cart-lead {grid-template-columns: 0 1fr 1fr 0;}
+    /* Cart Lead Article */
+    .cart-lead h1 {font-size: 2.4vmax;}
+    .cart-lead p {font-size: 1.7vmax;}
+
+    .cart-lead div {grid-column: 3;}
+
 }
 
 /*

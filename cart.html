@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-KZ" prefix="og: http://ogp.me/ns#">
 
-<!-- Head and footer added Slick css and js-->
 <head>
     <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,9 +8,7 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" sizes="16x16 32x32" href="i.industrial.kz/stat/i/ic/favicon.ico">
     <![endif]-->
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <!-- ~~~ CHECK IT ~~~ -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="HandheldFriendly" content="True"><!-- ~~~MOBILE INCLUDE~~~ -->
     <!-- ~~~ CHECK IT ~~~ -->
     <title>Cart, 70 symbols</title>
@@ -22,7 +19,6 @@
 
     <!-- Important Links -->
     <!-- <base href="https://industrial.kz/"> DELETE THIS COMMENT-->
-    <!-- ~~~ CHECK IT ~~~ -->
     <link rel="canonical" href="https://this.page/">
 
     <!-- Icons -->
@@ -32,9 +28,9 @@
     <link rel="mask-icon" color="#1d73bf" href="i.industrial.kz/stat/i/ic/safari-pinned-tab.svg">
     <link rel="manifest" href="i.industrial.kz/stat/i/ic/site.webmanifest">
     <meta name="msapplication-config" content="i.industrial.kz/stat/i/ic/browserconfig.xml">
-    <meta name="application-name" content="Industrial.kz">
+    <meta name="application-name" content="Industrial">
     <meta name="theme-color" content="#f0f0f0">
-    <meta name="apple-mobile-web-app-title" content="Industrial.kz">
+    <meta name="apple-mobile-web-app-title" content="Industrial">
     <meta name="apple-mobile-web-app-status-bar-style" content="#1d73bf">
 
     <!-- Open Graph -->
@@ -75,7 +71,7 @@
     <link rel="stylesheet" href="s.industrial.kz/stat/s/t.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/d.css"><!-- ~~~DESKTOP INCLUDE~~~ -->
 
-    <!-- Index Style -->
+    <!-- Cart Style -->
     <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-cart.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-cart-m.css">
     <link rel="stylesheet" href="s.industrial.kz/stat/s/tpl-cart-t.css">
@@ -90,10 +86,8 @@
      End GTM (noscript) -->
 
     <!-- Header navigation -->
-    <header id="main-menu">
-        <a href="#" class="main-menu__logo-wrap">
-            <img src="i.industrial.kz/stat/i/ind_logo.svg" alt="Логотип Industrial" title="Перейти на главную страницу Industrial">
-        </a>
+    <header class="main-menu js__main-menu__black-cover">
+        <a href="#" class="main-menu__logo" title="Перейти на главную страницу Industrial"></a>
         <nav>
             <ul>
                 <li><a href="#" class="active">Каталог</a></li>
@@ -105,15 +99,13 @@
             </ul>
         </nav>
         <a href="//wa.me/777712345678" class="whatsapp"></a>
-        <div class="top-phone">
+        <div class="main-menu__phone">
             <a href="tel:+77273565227" title="Позвонить по телефону или Skype">+7 (727) 356-52-27</a>
             <span>Звоните с 8 до 17 по будням</span>
         </div>
         <a href="#" class="callback">Заказать звонок</a>
     </header>
-
     <!--
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     TEMPLATE BLOCK
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -121,7 +113,7 @@
 
     <aside class="breadcrumbs">
         <ul>
-            <li>Вы здесь:</li>
+            <li><b>Вы здесь:</b></li>
             <li><a href="#">Главная</a></li>
             <li> → </li>
             <li><a href="#">Каталог</a></li>
@@ -134,10 +126,12 @@
     <main>
         <section class="cart-lead">
             <article>
+                <!--
                 <aside class="cart-bage-sale-off">
-                    <h3>Простите, товар снят с продажи.</h3>
-                    <p>Но Вы можете почитать информацию о нём или посетить наш <a href="#">каталог.</a></p>
+                    <h3>Простите, товар снят с продажи</h3>
+                    <p>Но Вы можете почитать информацию о нём или посетить наш <a href="#">каталог</a></p>
                 </aside>
+                -->
                 <h1>Висмут Ви00, Ви1, Ви2</h1>
                 <figure>
                     <span class="cart-delivery">Бесплатная и быстрая доставка по Алматы при заказе от 30 000 тенге</span>
@@ -492,8 +486,8 @@
 
     <!-- Footer -->
     <footer>
-        <aside class="catalog-button">
-            <a href="#">Смотреть каталог</a>
+        <aside class="button-wrapper">
+            <a href="#" class="button">Смотреть каталог</a>
         </aside>
         <div class="copy">
             <a href="#" class="icon-youtube" rel="nofollow" title="Перейти в наш канал на YouTube" target="_blank"></a>
@@ -538,9 +532,9 @@
         </div>
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-    <script src="s.industrial.kz/stat/s/core.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
     <script src="s.industrial.kz/stat/s/core.js" defer></script>
 </body>
+
 </html>

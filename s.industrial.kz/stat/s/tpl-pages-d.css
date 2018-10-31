@@ -7,6 +7,23 @@ Pages Desktop Style
 @media (min-width: 1200px) {
     .page-header {padding-bottom: 6vmax;}
     .article__one-column {grid-template-columns: 25% 1fr 25%;}
+    .blue-papers {grid-template-columns: 0vmax repeat(4, 1fr) 0vmax;}
+    .blue-papers img:nth-of-type(4n+1) {grid-column: 2;}
+    .blue-papers img:nth-of-type(4n+2) {grid-column: 3;}
+    .blue-papers img:nth-of-type(4n+3) {grid-column: 4;}
+    .blue-papers img:nth-of-type(4n) {grid-column: 5;}
+
+    .big-clients-list {grid-template-columns: 15% 1fr 15%;}
+
+
+
+    .clients-list div {grid-template-columns: repeat(6, 1fr);}
+    .clients-list img:nth-of-type(6n+1) {/* each 1 */grid-column: 1;}
+    .clients-list img:nth-of-type(6n+2) {/* each 2 */grid-column: 2;}
+    .clients-list img:nth-of-type(6n+3) {/* each 3 */grid-column: 3;}
+    .clients-list img:nth-of-type(6n+4) {/* each 4 */grid-column: 4;}
+    .clients-list img:nth-of-type(6n+5) {/* each 5 */grid-column: 5;}
+    .clients-list img:nth-of-type(6n) {/* each 6*/grid-column: 6;}
 }
 
 /*
@@ -106,10 +123,19 @@ for-big-desktop-up */
     }
 
 
+    .big-clients-list {grid-template-columns: 25% 1fr 25%;}
+    .big-clients-list h2,
+    .clients-list h2 {
+        font-size: 2vmax;
+    }
+    .big-clients-list h3 {font-size: 1.5vmax;}
+    .big-clients-list figure {font-size: 1vmax;}
 
 
 
 
+    .clients-list {grid-template-columns: 11vw 1fr 11vw;}
+    .clients-list p {font-size: 1.3vmax;}
 
 
 }

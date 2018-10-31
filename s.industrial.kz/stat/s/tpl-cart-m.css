@@ -10,6 +10,12 @@ Cart Mobile Style
 
 /* for-small-phone-up */
 @media (min-width: 320px) {
+    /* Breadcrumbs */
+    .breadcrumbs {
+        grid-template-columns: 3vw 1fr 3vw;
+        padding: 5vw 0 4vw;
+    }
+    .breadcrumbs ul li {font-size: 3.4vw;}
 }
 
 /*
