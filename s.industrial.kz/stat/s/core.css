@@ -663,3 +663,51 @@ footer div a:active {transform: scale(.95);}
     color: var(--accent-clr) !important;
     border-color: var(--accent-clr);
 }
+
+
+/* Some products */
+.some-items__white-bg {background-color: #fff;}
+.some-items h3 {text-align: center;}
+.some-items > * {
+    display: inline-grid;
+    grid-column: 2;
+}
+.some-items > * {
+    display: inline-grid;
+    grid-column: 2;
+}
+.some-items aside {
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 3vw;
+
+}
+.some-items > aside + aside {padding-top: 0;}
+.some-items aside a {
+    display: inline-grid;
+    min-height: 8vmax;
+    overflow: hidden;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    transition: all .1s ease-out;
+    box-shadow: rgba(0, 0, 0, .05) 0px 1px 45px;
+    will-change: transform;
+    font-weight: 700;
+    background-color: #fff;
+}
+.some-items a:hover {
+    transform: scale(.98);
+    transition: all .05s ease-in;
+}
+.some-items a:active {
+    transform: scale(.95);
+    transition: all .02s ease-in;
+}
+.some-items aside a img {
+    display: grid;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 5vmax;
+    background-color: var(--accent-clr-20);
+}

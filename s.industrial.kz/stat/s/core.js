@@ -8,12 +8,12 @@ function mainMenuEffects() {
         // Function for catch scroll if screen size over 900px
         if ($(window).scrollTop() <= 40) {
             $('.main-menu').removeClass('js__main-menu__add-bg');
-            // only for index.html. MODx parser include class .main-menu__black-cover
+            // Only for index.html. MODx parser include class .main-menu__black-cover
             $('.js__main-menu__black-cover').addClass('js__main-menu-white'); // White text
             $('.js__main-menu__black-cover>.main-menu__logo').addClass('js__main-menu__white-logo'); // White logo
         }
         else {
-            $('.main-menu').addClass('js__main-menu__add-bg'); //add white bg
+            $('.main-menu').addClass('js__main-menu__add-bg'); // White bg
             // only for index.html
             $('.js__main-menu__black-cover').removeClass('js__main-menu-white');
             $('.js__main-menu__black-cover>.main-menu__logo').removeClass('js__main-menu__white-logo');
@@ -21,7 +21,7 @@ function mainMenuEffects() {
     }
     else {
         // No catch scroll
-        $('.main-menu').addClass('js__main-menu__add-bg'); //add white bg
+        $('.main-menu').addClass('js__main-menu__add-bg'); // White bg
         // only for index.html
         $('.js__main-menu__black-cover').removeClass('js__main-menu-white');
         $('.js__main-menu__black-cover>.main-menu__logo').removeClass('js__main-menu__white-logo');
@@ -29,13 +29,15 @@ function mainMenuEffects() {
 };
 mainMenuEffects();
 $(window).scroll(function() {
-    mainMenuEffects(); //Call when scroll
+    mainMenuEffects(); // Call when scroll
 });
 $(window).resize(function() {
-    mainMenuEffects(); //Call when screen resize
+    mainMenuEffects(); // Call when screen resize
 });
 
-//Lazy Load
+//
+
+// Lazy Load
 $(function() {
         $('.lazy').show().lazy({
           effect: "fadeIn",
@@ -43,133 +45,57 @@ $(function() {
           threshold: 0
         });
     });
-    
-$(function() {
-    $('.slider-for').slick({
-     slidesToShow: 1,
-     slidesToScroll: 1,
-     arrows: false,
-     fade: true,
-     lazyLoad: 'ondemand',
-     asNavFor: '.slider-nav'
-   });
-   $('.slider-nav').slick({
-     slidesToShow: 3,
-     slidesToScroll: 1,
-     lazyLoad: 'ondemand',
-     asNavFor: '.slider-for',
-     dots: true,
-     centerMode: true,
-     focusOnSelect: true
-   });
-});
 
-$(function() {
-    $('.cart-slider-reviews').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      variableWidth: true,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-});
+//
 
-$(function() {
-    $('.cart-slider-clients').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 6,
-      variableWidth: true,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 6
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        }
-      ]
-    });
-});
 // Yandex Map
-//Переменная для включения/отключения индикатора загрузки
+// Variable to enable / disable load indicator
 var spinner = $('.ymap-container').children('.loader');
-//Переменная для определения была ли хоть раз загружена Яндекс.Карта (чтобы избежать повторной загрузки при наведении)
+// Variable to determine if Yandex.Map has been loaded at least once (to avoid reloading when hovering)
 var check_if_load = false;
-//Необходимые переменные для того, чтобы задать координаты на Яндекс.Карте
+// Necessary variables in order to set coordinates on Yandex.Map
 var myMapInd;
-//Функция создания карты сайта и затем вставки ее в блок с идентификатором "map-yandex"
+// Function of creating a map and then inserting it into a block with ID "map-yandex"
 function init () {
   var myMapInd = new ymaps.Map("map-yandex", {
     size: [500, 450],
     scrollZoom: false,
-    center: [43.246995397273324, 76.84481159814969], // координаты центра на карте
-    zoom: 17 // коэффициент приближения карты
+    center: [43.246995397273324, 76.84481159814969], // Coordinates of the center on the map
+    zoom: 17 // Map proximity ratio
   });
   myMapInd.behaviors.disable('scrollZoom')
-// Метка для Industrial
+
+// Label for Industrial
 var IndPoint = new ymaps.GeoObject({
     geometry: {
         type: "Point",
-        coordinates: [43.24650913525486, 76.84619025358344] // координаты Ind
+        coordinates: [43.24650913525486, 76.84619025358344] // Ind coordinates
     },
     properties: {iconCaption: 'Компания «Industrial»'}
 },
 {preset: 'islands#nightFactoryIcon'});
-myMapInd.geoObjects.add(IndPoint); // помещаем метку Ind на карту
+myMapInd.geoObjects.add(IndPoint); // Put Ind label on the map
 // Метка для магазина Voltman
 var VoltPoint = new ymaps.GeoObject({
     geometry: {
         type: "Point",
-        coordinates: [43.248056325289234, 76.84388355383086] // координаты Volt
+        coordinates: [43.248056325289234, 76.84388355383086] // Volt coordinates
     },
     properties: {iconCaption: 'Магазин «Voltman»'}
 },
 {preset: 'islands#blackDotIcon'});
-myMapInd.geoObjects.add(VoltPoint); // помещаем метку Volt на карту
+myMapInd.geoObjects.add(VoltPoint); // Put Volt label on the map
 // Метка для Жигер
 var ZigerPoint = new ymaps.GeoObject({
     geometry: {
         type: "Point",
-        coordinates: [43.247797515824054, 76.84404985078815] // координаты Жигер
+        coordinates: [43.247797515824054, 76.84404985078815] // Zhiger coordinates
     },
     properties: {iconCaption: 'Въезд на территорию «Жигер»'}
 },
 {preset: 'islands#grayCircleDotIcon'});
-myMapInd.geoObjects.add(ZigerPoint); // помещаем метку Жигер на карту
-// Линия на Райымбека
+myMapInd.geoObjects.add(ZigerPoint); // Put Zhiger label on the map
+// Line on Raimbek
 var RaimbekLine = new ymaps.GeoObject({
     geometry: {
         type: "LineString",
@@ -177,12 +103,12 @@ var RaimbekLine = new ymaps.GeoObject({
         [43.24758808767567, 76.84205687947725],
         [43.24823119600801, 76.84347308583713],
         [43.24781552920892, 76.84381104417301]
-    ] // координаты линии
+    ] // line coordinates
     },
 },
 { strokeColor: '#1e98ffe6', strokeWidth: 5});
-myMapInd.geoObjects.add(RaimbekLine); // помещаем линию на карту
-// Линия на территории Жигер
+myMapInd.geoObjects.add(RaimbekLine); // Put the line on the map
+// Line on the territory of Zhiger
 var ZigerLine = new ymaps.GeoObject({
     geometry: {
         type: "LineString",
@@ -195,12 +121,12 @@ var ZigerLine = new ymaps.GeoObject({
         [43.24669480708935, 76.84580937990296],
         [43.24631050167092, 76.84583620199314],
         [43.24634971664171, 76.84614197382085]
-    ] // координаты линии
+    ] // line coordinates
     },
 },
 {strokeColor: '#0e4779e6', strokeWidth: 3});
-myMapInd.geoObjects.add(ZigerLine); // помещаем линию на карту
-// Прямоугольник КПП Жигер
+myMapInd.geoObjects.add(ZigerLine); // Put the line on the map
+// Rectangle Gearbox Zhiger
 var ZigerPoly = new ymaps.GeoObject({
        geometry: {
            type: "Polygon",
@@ -212,7 +138,7 @@ var ZigerPoly = new ymaps.GeoObject({
                    [43.24760714030901, 76.84374944337975],
                    [43.24770909695606, 76.8436797059455]
                ]
-           ] // координаты прямоугольника
+           ] // Rectangle coordinates
        }
    }, {
        fillColor: '#ed4543e6',
@@ -220,8 +146,8 @@ var ZigerPoly = new ymaps.GeoObject({
        strokeWidth: 5
    });
 
-myMapInd.geoObjects.add(ZigerPoly); // помещаем прямоугольник на карту
-// Прямоугольник КПП Жигер
+myMapInd.geoObjects.add(ZigerPoly); // Put a rectangle on the map
+// Rectangle Gearbox Zhiger
 var ZigerPoly = new ymaps.GeoObject({
        geometry: {
            type: "Polygon",
@@ -233,7 +159,7 @@ var ZigerPoly = new ymaps.GeoObject({
                    [43.24760714030901, 76.84374944337975],
                    [43.24770909695606, 76.8436797059455]
                ]
-           ] // координаты прямоугольника
+           ] // Rectangle coordinates
        }
    }, {
        fillColor: '#ed454399',
@@ -241,8 +167,8 @@ var ZigerPoly = new ymaps.GeoObject({
        strokeWidth: 5
    });
 
-myMapInd.geoObjects.add(ZigerPoly); // помещаем прямоугольник на карту
-// Прямоугольник Территории Ind
+myMapInd.geoObjects.add(ZigerPoly); // Put a rectangle on the map
+// Rectangle Territory Ind
 var IndPoly = new ymaps.GeoObject({
        geometry: {
            type: "Polygon",
@@ -254,26 +180,26 @@ var IndPoly = new ymaps.GeoObject({
                    [43.24671912121668, 76.84624926218167],
                    [43.246632848827026, 76.84595421919002]
                ]
-           ] // координаты прямоугольника
+           ] // Rectangle coordinates
        }
    }, {
        fillColor: '#0e477933',
        strokeColor: '#0e477980',
        strokeWidth: 5
    });
-myMapInd.geoObjects.add(IndPoly); // помещаем прямоугольник на карту
+myMapInd.geoObjects.add(IndPoly); // Put a rectangle on the map
 
-  // Получаем первый экземпляр коллекции слоев, потом первый слой коллекции
+  // We get the first copy of the collection of layers, then the first layer of the collection
   var layer = myMapInd.layers.get(0).get(0);
 
-  // Решение по callback-у для определния полной загрузки карты
+  // Callback solution to determine full map load
   waitForTilesLoad(layer).then(function() {
-    // Скрываем индикатор загрузки после полной загрузки карты
+    // Hide download indicator after full map load
     spinner.removeClass('is-active');
   });
 }
 
-// Функция для определения полной загрузки карты (на самом деле проверяется загрузка тайлов)
+// The function to determine the full load of the map (in fact, the loading of tiles)
 function waitForTilesLoad(layer) {
   return new ymaps.vow.Promise(function (resolve, reject) {
     var tc = getTileContainer(layer), readyAll = true;
@@ -306,7 +232,7 @@ function getTileContainer(layer) {
   return null;
 }
 
-// Функция загрузки API Яндекс.Карт по требованию (в нашем случае при наведении)
+// The download function of the Yandex.Maps API on demand (in our case, when hovering)
 function loadScript(url, callback){
   var script = document.createElement("script");
 
@@ -318,7 +244,7 @@ function loadScript(url, callback){
         callback();
       }
     };
-  } else {  // Другие браузеры
+  } else {  // Other browsers
     script.onload = function(){
       callback();
     };
@@ -328,20 +254,20 @@ function loadScript(url, callback){
   document.getElementsByTagName("head")[0].appendChild(script);
 }
 
-// Основная функция, которая проверяет когда мы навели на блок с классом "ymap-container"
+// The main function that checks when we hover over the block with the class "ymap-container"
 var ymap = function() {
   $('.ymap-container').mouseenter(function(){
-      if (!check_if_load) { // проверяем первый ли раз загружается Яндекс.Карта, если да, то загружаем
+      if (!check_if_load) { // We check whether Yandex.Map is loaded for the first time, if yes, then we load
 
-      // Чтобы не было повторной загрузки карты, мы изменяем значение переменной
+          // To avoid reloading the map, we change the value of the variable.
         check_if_load = true;
 
-    // Показываем индикатор загрузки до тех пор, пока карта не загрузится
+        // Show the download indicator until the map loads.
         spinner.addClass('is-active');
 
-    // Загружаем API Яндекс.Карт
+        // Downloading Yandex.Maps API
         loadScript("https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;loadByRequire=1", function(){
-           // Как только API Яндекс.Карт загрузились, сразу формируем карту и помещаем в блок с идентификатором "map-yandex"
+           // As soon as the Yandex.Maps API has loaded, we immediately create a map and place it in a block with the identifier "map-yandex"
            ymaps.load(init);
         });
       }
@@ -350,8 +276,5 @@ var ymap = function() {
 }
 
 $(function() {
-
-  //Запускаем основную функцию
-  ymap();
-
+  ymap(); // We start the main function
 });

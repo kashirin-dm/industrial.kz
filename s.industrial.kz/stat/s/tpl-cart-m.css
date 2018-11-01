@@ -16,6 +16,9 @@ Cart Mobile Style
         padding: 5vw 0 4vw;
     }
     .breadcrumbs ul li {font-size: 3.4vw;}
+
+    /* In Cart Button Modificator */
+    .cart-btn {margin: 14vw 0;}
 }
 
 /*

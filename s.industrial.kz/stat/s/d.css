@@ -40,6 +40,7 @@ Desktop Style
     .article h3 {font-weight: 400;}
     .article ul > li {padding-bottom: .4vmax;}
 
+
     /* Contacts and Map Block */
     .map-contacts {height: 50vh;}
     .ymap-container {height: 50vh;}
@@ -72,6 +73,7 @@ Desktop Style
     footer > div:nth-of-type(4) {grid-column: 5;}
     footer ul li {line-height: 2.5;}
     footer h3 {margin-top: 0;}
+
 }
 
 /*
@@ -135,6 +137,13 @@ for-desktop-only */
         padding: 1.7vw;
         margin: 2vw 0;
     }
+
+    .some-items h3 {
+        font-size: 2vmax;
+        margin-bottom: -2vw;
+    }
+    .some-items aside {padding: 5vw 0;}
+    .some-items aside a {font-size: 1.5vmax;}
 }
 
 /*
@@ -219,4 +228,27 @@ for-big-desktop-up */
         padding: 1.3vw;
         margin: 2vw 0;
     }
-}
+
+    /* Some products */
+    .some-items {grid-template-columns: 12vw 1fr 12vw;}
+    .some-items h3 {
+        font-size: 1.5vmax;
+        grid-column: 1/9;
+        margin-bottom: 0;
+    }
+    .some-items aside {
+        grid-template-columns: repeat(8, 1fr);
+        padding: 3vw 0;
+        grid-column-gap: .5vw;
+        grid-row-gap: 1vw;
+    }
+    .some-items aside a {font-size: 1vmax;}
+    .some-items aside a figcaption {padding: .4vmax 0;}
+    .some-items aside a:nth-of-type(8n+1) {/* each 1 */grid-column: 1;}
+    .some-items aside a:nth-of-type(8n+2) {/* each 2 */grid-column: 2;}
+    .some-items aside a:nth-of-type(8n+3) {/* each 3 */grid-column: 3;}
+    .some-items aside a:nth-of-type(8n+4) {/* each 4 */grid-column: 4;}
+    .some-items aside a:nth-of-type(8n+5) {/* each 5 */grid-column: 5;}
+    .some-items aside a:nth-of-type(8n+6) {/* each 6*/grid-column: 6;}
+    .some-items aside a:nth-of-type(8n+7) {/* each 7*/grid-column: 7;}
+    .some-items aside a:nth-of-type(8n) {/* each 8*/grid-column: 8;}

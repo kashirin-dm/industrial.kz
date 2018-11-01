@@ -49,6 +49,24 @@ Tablet Style
         grid-row: 3;
         margin-top: 5vmax;
     }
+
+    /* Some products */
+    .some-items {grid-template-columns: 3vw 1fr 3vw;}
+    .some-items h3 {
+        font-size: 3.5vmax;
+        grid-column: 1/5;
+        margin-bottom: -1vw;
+    }
+    .some-items aside {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 8vw 0;
+    }
+    .some-items aside a {font-size: 2.8vmax;}
+    .some-items aside a figcaption {padding: .6vmax 0;}
+    .some-items aside a:nth-of-type(4n+1) {/* each 1 */grid-column: 1;}
+    .some-items aside a:nth-of-type(4n+2) {/* each 2 */grid-column: 2;}
+    .some-items aside a:nth-of-type(4n+3) {/* each 3 */grid-column: 3;}
+    .some-items aside a:nth-of-type(4n) {/* each 4 */grid-column: 4;}
 }
 
 /*
@@ -157,6 +175,25 @@ for-tablet-portait-only */
     }
     .contacts {width: 80%;}
     .contacts p {font-size: 1.9vmax;}
+
+    /* Some products */
+    .some-items h3 {
+        font-size: 2.8vmax;
+        grid-column: 1/7;
+        margin-bottom: -2vw;
+    }
+    .some-items aside {
+        grid-template-columns: repeat(6, 1fr);
+        padding: 6vw 0;
+    }
+    .some-items aside a {font-size: 1.8vmax;}
+    .some-items aside a figcaption {padding: .4vmax 0;}
+    .some-items aside a:nth-of-type(6n+1) {/* each 1 */grid-column: 1;}
+    .some-items aside a:nth-of-type(6n+2) {/* each 2 */grid-column: 2;}
+    .some-items aside a:nth-of-type(6n+3) {/* each 3 */grid-column: 3;}
+    .some-items aside a:nth-of-type(6n+4) {/* each 4 */grid-column: 4;}
+    .some-items aside a:nth-of-type(6n+5) {/* each 4 */grid-column: 5;}
+    .some-items aside a:nth-of-type(6n) {/* each 5*/grid-column: 6;}
 }
 
 /*
