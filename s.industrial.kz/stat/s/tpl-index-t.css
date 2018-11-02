@@ -35,7 +35,11 @@ for-tablet-portait-only */
 @media (min-width: 600px) and (max-width: 899px) {
     /* Main Cover */
     .main-cover {
-        background: url(../../../i.industrial.kz/stat/i/covers/cover_480.webp) center no-repeat;
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_480.webp) center no-repeat #bb4024;
+        background-size: cover;
+    }
+    .no-webp .main-cover {
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_480.jpg) center no-repeat #bb4024;
         background-size: cover;
     }
     /* Search Form */
@@ -66,7 +70,11 @@ for-tablet-portait-only */
 @media (min-width: 900px) {
     /* Main Cover */
     .main-cover {
-        background: url(../../../i.industrial.kz/stat/i/covers/cover_600.webp) center no-repeat;
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_600.webp) center no-repeat #bb4024;
+        background-size: cover;
+    }
+    .no-webp .main-cover {
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_600.jpg) center no-repeat #bb4024;
         background-size: cover;
     }
     .main-cover p {

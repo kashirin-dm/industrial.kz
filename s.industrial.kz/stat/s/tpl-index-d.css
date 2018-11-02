@@ -31,7 +31,11 @@ for-desktop-only */
 @media (min-width: 1200px) and (max-width: 1799px) {
     /* Main Cover */
     .main-cover {
-        background: url(../../../i.industrial.kz/stat/i/covers/cover_600.webp) center no-repeat;
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_600.webp) center no-repeat #bb4024;
+        background-size: cover;
+    }
+    .no-webp .main-cover {
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_600.jpg) center no-repeat #bb4024;
         background-size: cover;
     }
     .main-cover h1 {
@@ -60,7 +64,11 @@ for-big-desktop-up */
     /* Main Cover */
     .main-cover {
         grid-template-columns: 15% 1fr 15%;
-        background: url(../../../i.industrial.kz/stat/i/covers/cover_800.webp) center no-repeat;
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_800.webp) center no-repeat #bb4024;
+        background-size: cover;
+    }
+    .no-webp .main-cover {
+        background: url(../../../i.industrial.kz/stat/i/covers/cover_800.jpg) center no-repeat #bb4024;
         background-size: cover;
     }
     .main-cover h1 {
