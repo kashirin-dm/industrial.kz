@@ -6,34 +6,39 @@ Cart Tablet Style
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {
     /* Breadcrumbs */
-    .breadcrumbs {
-        grid-template-columns: 3vw 1fr 3vw;
-        padding: 5vw 0 4vw;
-    }
+    .breadcrumbs {padding: 5vw 0 4vw;}
     .breadcrumbs ul li {font-size: 2.4vw;}
 
     /* Cart Lead */
     .cart-lead {
-        grid-template-columns: 0 1fr 0;
         grid-gap: 3vw;
         padding-bottom: 3vmax;
     }
     /* Cart Lead Article */
-    .cart-lead h1 {font-size: 4.8vw;}
-    .cart-lead p {font-size: 3.5vw;}
+    .cart-lead h1 {
+        font-size: 4.8vw;
+        text-align: left;
+    }
+    .cart-lead p {
+        text-align: justify;
+        font-size: 3.5vw;
+    }
 
     /* Cart Price Block */
     .cart-lead figure {
+        grid-template-columns: 1fr 2fr;
         grid-gap: 2vmax;
         padding: 0 0 4vmax;
+        justify-items: start;
     }
     .cart-delivery {
-        grid-template-columns: 5.5vmax 1fr;
+        grid-column: 1/3;
         font-size: 2.4vw;
-        padding: 2.8vmax;
-        margin: 3vmax 0 0;
     }
-    .cart-price {font-size: 3vw;}
+    .cart-price {
+        text-align: left;
+        font-size: 3vw;
+    }
 
     /* Cart Gallery */
     .cart-lead > div {grid-column: 2;}
@@ -42,17 +47,13 @@ Cart Tablet Style
     .cart-bage-sale-off {
         padding: 4vw;
         margin-bottom: 6vw;
+        text-align: left;
     }
     .cart-bage-sale-off h3 {font-size: 4vw;}
     .cart-bage-sale-off span {font-size: 2.7vw;}
 
-    /* In Cart Button Modificator */
-    .cart-btn {margin: 8vw 0;}
-
     /* Core Cart article and description */
-    .cart-article__wrapper {grid-template-columns: 3vw 1fr 3vw;}
-    /* Special Attention block */
-    .attention {width: auto;}
+    .cart-article__wrapper .cart-article__content {margin: 3vmax 0 0;}
     /* Special Attention block */
     .attention figcaption {font-size: 2.2vmax;}
 
@@ -61,10 +62,6 @@ Cart Tablet Style
     .cart-article__content h2 ~ figure figcaption {font-size: 2.1vmax;}
 
     /* Cart Table */
-    caption {
-        font-size: 3vmax;
-        padding: .5vmax 0;
-    }
     table th,
     table td{
         padding: .8vmax;
@@ -83,22 +80,8 @@ Cart Tablet Style
 
 
     /* Blue block, clients */
-    .cart-blue-block {
-        grid-template-columns: 3vw 1fr 3vw;
-        padding: 5vmax 0;
-    }
-    .cart-blue-block h4 {
-        font-size: 3.5vmax;
-        margin-bottom: 2vmax;
-    }
-
     /* Reviews */
-    .cart-reviews {
-        grid-template-columns: 1fr;
-        grid-gap: 2vw;
-        margin-bottom: 5vmax;
-    }
-    .cart-reviews img {grid-column: 1;}
+    .cart-reviews {grid-gap: 2vw;}
 
     /* Clients logo */
     .cart-clients {
@@ -109,6 +92,14 @@ Cart Tablet Style
     .cart-clients img:nth-of-type(4n+2) {/* each 2 */grid-column: 2;}
     .cart-clients img:nth-of-type(4n+3) {/* each 3 */grid-column: 3;}
     .cart-clients img:nth-of-type(4n) {/* each 4 */grid-column: 4;}
+
+    /* Scroll to top Button */
+    .scrollup {
+        width: 6vw;
+        height: 6vw;
+        bottom: 3vw;
+        left: 3vw;
+    }
 }
 
 /*
@@ -120,7 +111,7 @@ for-tablet-portait-only */
 /* for-tablet-landscape-up */
 @media (min-width: 900px) {
     /* Breadcrumbs */
-    .breadcrumbs {padding: 14vw 0 2vw;}
+    .breadcrumbs {padding: 12vw 0 2vw;}
     .breadcrumbs ul li {font-size: 1.4vw;}
 
     /* Cart Lead */
@@ -196,6 +187,14 @@ for-tablet-portait-only */
     .cart-clients img:nth-of-type(8n+6) {/* each 6 */grid-column: 6;}
     .cart-clients img:nth-of-type(8n+7) {/* each 7 */grid-column: 7;}
     .cart-clients img:nth-of-type(8n) {/* each 8 */grid-column: 8;}
+
+    /* Scroll to top Button */
+    .scrollup {
+        width: 4vw;
+        height: 4vw;
+        bottom: 2vw;
+        left: 3vw;
+    }
 }
 
 /*

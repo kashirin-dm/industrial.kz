@@ -47,6 +47,13 @@ Cart Desktop Style
 
     /* Reviews */
     .cart-reviews {margin-bottom: 4vmax;}
+
+
+    /* Scroll to top Button */
+    .scrollup {
+        width: 3vw;
+        height: 3vw;
+    }
 }
 
 /*
@@ -54,7 +61,7 @@ Cart Desktop Style
 for-desktop-only */
 @media (min-width: 1200px) and (max-width: 1799px) {
     /* Breadcrumbs */
-    .breadcrumbs {padding: 8vw 0 2vw;}
+    .breadcrumbs {padding: 4vw 0 0;}
     .breadcrumbs ul li {font-size: 1.2vw;}
 
     /* Cart Lead */
@@ -94,7 +101,7 @@ for-big-desktop-up */
     /* Breadcrumbs */
     .breadcrumbs {
         grid-template-columns: 12vw 1fr 12vw;
-        padding: 7vw 0 1vw;
+        padding: 2vw 0 0;
     }
     .breadcrumbs ul li {font-size: .8vw;}
 
@@ -169,4 +176,11 @@ for-big-desktop-up */
 
     /* Reviews */
     .cart-reviews {margin-bottom: 3vmax;}
+
+    /* Scroll to top Button */
+    .scrollup {
+        width: 2vw;
+        height: 2vw;
+        left: 2vw;
+    }
 }

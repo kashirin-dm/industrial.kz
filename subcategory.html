@@ -109,7 +109,7 @@
             <a href="tel:+77273565227" title="Позвонить по телефону или Skype">+7 (727) 356-52-27</a>
             <span>Звоните с 8 до 17 по будням</span>
         </div>
-        <a href="#" class="callback">Заказать звонок</a>
+        <a href="#contact-form" class="callback form-toggler">Заказать звонок</a>
     </header>
     <!--
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -374,8 +374,23 @@
             </ul>
         </div>
     </footer>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <!-- Contact form -->
+    <div id="contact-form">
+        <!-- To close this modal, the class name has to match the name given on the ID -->
+        <div class="close-contact-form">Закрыть окно</div>
+        <form action="" method="post" class="contact-form__form">
+            <h4>Введите свой номер телефона и мы свяжемся с Вами в ближайшее время</h4>
+            <input type="tel" name="phone" placeholder="Введите Ваш номер" pattern="[\x1F-\xBF]*">
+            <button type="submit" name="phonesubmit">Отправить</button>
+            <span>Нажимая кнопку <q>отправить</q> Вы даёте согласие на обработку и хранение персональных данных</span>
+        </form>
+    </div>
+    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js" defer></script>
+    <script src="s.industrial.kz/stat/s/animatedModal.js" defer></script>
     <script src="s.industrial.kz/stat/s/core.js" defer></script>
 </body>
 

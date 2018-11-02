@@ -98,5 +98,5 @@ Index Mobile Style
         padding: 1vmax;
     }
     .main-clients p {display: inline-block;}
-    .main-clients .logos img:last-child {display: none;}
+    .main-clients .logos img:last-of-type {display: none;}
 }

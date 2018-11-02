@@ -103,7 +103,7 @@
             <a href="tel:+77273565227" title="Позвонить по телефону или Skype">+7 (727) 356-52-27</a>
             <span>Звоните с 8 до 17 по будням</span>
         </div>
-        <a href="#" class="callback">Заказать звонок</a>
+        <a href="#contact-form" class="callback form-toggler">Заказать звонок</a>
     </header>
     <!--
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -126,19 +126,17 @@
     <main>
         <section class="cart-lead">
             <article>
-                <!--
                 <aside class="cart-bage-sale-off">
                     <h3>Простите, товар снят с продажи</h3>
                     <span>Но Вы можете почитать информацию о нём или посетить наш <a href="#">каталог</a></span>
                 </aside>
-                -->
                 <h1>Висмут Ви00, Ви1, Ви2</h1>
                 <figure>
                     <div class="cart-delivery">
                         <div></div>
                         <span>Бесплатная и быстрая доставка по Алматы при заказе от 30 000 тенге</span>
                     </div>
-                    <a href="#" class="button cart-button">Сделать запрос</a>
+                    <a href="#contact-form" class="button cart-button form-toggler">Сделать запрос</a>
                     <span class="cart-price">от <span>4 880</span> тенге за 1 килограмм</span>
                 </figure>
                 <p><strong>Висмут</strong> представляет <b>собой</b> металл <i>серебристо-серого</i> цвета с розоватым оттенком. Является редким и <em>достаточно хрупким</em> металлом.</p>
@@ -146,18 +144,18 @@
             </article>
             <div>
                 <div class="slider-for">
-                    <img data-lazy="img/vismut-img (1).jpg" alt="Название товара" title="Смотреть товар: Название товара">
+                    <img data-lazy="img/tellurium.jpg" alt="Название товара" title="Смотреть товар: Название товара">
                     <img data-lazy="img/tellurium.jpg" alt="Название товара" title="Смотреть товар: Название товара">
                     <img data-lazy="img/curraguratedalum-i.jpg" alt="Название товара" title="Смотреть товар: Название товара">
-                    <img data-lazy="img/vismut-img (1).jpg" alt="Название товара" title="Смотреть товар: Название товара">
+                    <img data-lazy="img/tellurium.jpg" alt="Название товара" title="Смотреть товар: Название товара">
                     <img data-lazy="img/tellurium.jpg" alt="Название товара" title="Смотреть товар: Название товара">
                     <img data-lazy="img/curraguratedalum-i.jpg" alt="Название товара" title="Смотреть товар: Название товара">
                 </div>
                 <div class="slider-nav">
-                    <img data-lazy="img/vismut-img (1).jpg" alt="Название товара" title="Посмотреть">
+                    <img data-lazy="img/tellurium.jpg" alt="Название товара" title="Посмотреть">
                     <img data-lazy="img/tellurium.jpg" alt="Название товара" title="Посмотреть">
                     <img data-lazy="img/curraguratedalum-i.jpg" alt="Название товара" title="Посмотреть">
-                    <img data-lazy="img/vismut-img (1).jpg" alt="Название товара" title="Посмотреть">
+                    <img data-lazy="img/tellurium.jpg" alt="Название товара" title="Посмотреть">
                     <img data-lazy="img/tellurium.jpg" alt="Название товара" title="Посмотреть">
                     <img data-lazy="img/curraguratedalum-i.jpg" alt="Название товара" title="Посмотреть">
                 </div>
@@ -254,9 +252,9 @@
                 </table>
                 <p>Висмут стал известен человечеству примерно со времен средневековья и часто был использован алхимиками. В то время считали, что висмут является разновидностью серебра, но более красивого цвета. В наше время висмут является самостоятельным элементом и часто используется в медицинской, химической и металлургической промышленностях.</p>
                 <figure>
-                    <img class="lazy" data-src="img/vismut-img (1).jpg" data-srcset="img/vismut-img (1).jpg" alt="Некая картинка">
+                    <img class="lazy" data-src="img/tellurium.jpg" data-srcset="img/tellurium.jpg" alt="Некая картинка">
                     <noscript>
-                        <img src="img/vismut-img (1).jpg">
+                        <img src="img/tellurium.jpg">
                     </noscript>
                     <figcaption>Описание к картинке</figcaption>
                 </figure>
@@ -279,9 +277,8 @@
         </section>
     </main>
     <aside class="button-wrapper btn-wrap-bg-white">
-        <a href="#" class="button btn-color-blue cart-btn">Сделать запрос</a>
+        <a href="#contact-form" class="button btn-color-blue cart-btn form-toggler">Сделать запрос</a>
     </aside>
-
     <!--googleoff: all-->
     <!--noindex-->
     <section class="some-items">
@@ -449,10 +446,8 @@
         </div>
     </section>
     <aside class="button-wrapper btn-wrap-bg-white">
-        <a href="#" class="button btn-color-blue cart-btn">Сделать запрос</a>
+        <a href="#contact-form" class="button btn-color-blue cart-btn form-toggler">Сделать запрос</a>
     </aside>
-
-
 
     <!--
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -529,9 +524,24 @@
             </ul>
         </div>
     </footer>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <!-- Contact form -->
+    <div id="contact-form">
+        <!-- To close this modal, the class name has to match the name given on the ID -->
+        <div class="close-contact-form">Закрыть окно</div>
+        <form action="" method="post" class="contact-form__form">
+            <h4>Введите свой номер телефона и мы свяжемся с Вами в ближайшее время</h4>
+            <input type="tel" name="phone" placeholder="Введите Ваш номер" pattern="[\x1F-\xBF]*">
+            <button type="submit" name="phonesubmit">Отправить</button>
+            <span>Нажимая кнопку <q>отправить</q> Вы даёте согласие на обработку и хранение персональных данных</span>
+        </form>
+    </div>
+    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+    <script src="s.industrial.kz/stat/s/animatedModal.js" defer></script>
     <script src="s.industrial.kz/stat/s/core.js" defer></script>
     <script src="s.industrial.kz/stat/s/slider.js" defer></script>
 </body>

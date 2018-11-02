@@ -11,14 +11,54 @@ Cart Mobile Style
 /* for-small-phone-up */
 @media (min-width: 320px) {
     /* Breadcrumbs */
-    .breadcrumbs {
-        grid-template-columns: 3vw 1fr 3vw;
-        padding: 5vw 0 4vw;
-    }
-    .breadcrumbs ul li {font-size: 3.4vw;}
+    .breadcrumbs ul li {font-size: 4.5vw;}
+
+    /* Cart Lead */
+    .cart-lead {grid-gap: 3vw;}
+
+    /* Cart Lead Article */
+    /* Cart Price Block */
+    .cart-delivery {font-size: 4.4vw;}
+    .cart-price {font-size: 6vw;}
+
+
+    /* Red Bage SALE OFF */
+    .cart-bage-sale-off h3 {font-size: 6vw;}
+    .cart-bage-sale-off span {font-size: 4.7vw;}
 
     /* In Cart Button Modificator */
-    .cart-btn {margin: 14vw 0;}
+    .cart-btn {margin: 8vw 0;}
+
+    /* Core Cart article and description */
+    .cart-article__wrapper .cart-article__content {margin: 6vmax 0 0;}
+
+    /* Characteristics sheet */
+    .cart-article__content h2 + ul {font-size: 3.4vmax;}
+
+    /* Cart Table */
+    caption {
+        font-size: 3vmax;
+        padding: .5vmax 0;
+    }
+    table th,
+    table td{
+        padding: .9vmax;
+    }
+    table th {
+        padding: .9vmax;
+        font-size: 3vmax;
+    }
+    table td {font-size: 3vmax;}
+
+    /* Blue block, clients */
+    .cart-blue-block h4 {font-size: 3.5vmax;}
+
+
+    /* Scroll to top Button */
+    .scrollup {
+        width: 9vw;
+        height: 9vw;
+    }
 }
 
 /*

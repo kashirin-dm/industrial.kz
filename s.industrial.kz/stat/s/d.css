@@ -74,6 +74,37 @@ Desktop Style
     footer ul li {line-height: 2.5;}
     footer h3 {margin-top: 0;}
 
+    /* Contact Form */
+    .contact-form__form {
+        width: 38vw;
+        height: 15vw;
+    }
+    /* Form header */
+    .contact-form__form h4 {font-size: 2vw;}
+    /* Input Phone field */
+    .contact-form__form input {
+        height: calc(4.5vw - 6px);
+        font-size: 1.4vw;
+        line-height: 4.5vw;
+    }
+    .contact-form__form input::placeholder {
+        font-size: 1.4vw;
+        line-height: 4.5vw;
+    }
+    /* Submit Button */
+    .contact-form__form button {
+        font-size: 1.2vw;
+        height: 4.5vw;
+    }
+    /* Form text */
+    .contact-form__form span {font-size: 1.2vw;}
+    /* Close Button */
+    .close-contact-form {
+        width: 3vw;
+        height: 3vw;
+        top: 3vw;
+    }
+
 }
 
 /*
@@ -252,3 +283,32 @@ for-big-desktop-up */
     .some-items aside a:nth-of-type(8n+6) {/* each 6*/grid-column: 6;}
     .some-items aside a:nth-of-type(8n+7) {/* each 7*/grid-column: 7;}
     .some-items aside a:nth-of-type(8n) {/* each 8*/grid-column: 8;}
+
+    /* Contact Form */
+    .contact-form__form {
+        padding: 2vw;
+        width: 25vw;
+        height: 9vw;
+    }
+    /* Form header */
+    .contact-form__form h4 {font-size: 1.2vw;}
+    /* Input Phone field */
+    .contact-form__form input {
+        height: calc(3vw - 6px);
+        padding: 0 1vw;
+        font-size: 1vw;
+        line-height: 3vw;
+    }
+    .contact-form__form input::placeholder {
+        font-size: 1vw;
+        line-height: 3vw;
+    }
+    /* Submit Button */
+    .contact-form__form button {
+        font-size: .8vw;
+        height: 3vw;
+    }
+    /* Form text */
+    .contact-form__form span {font-size: .7vw;}
+    /* Close Button */
+    .close-contact-form {top: 2vw;}

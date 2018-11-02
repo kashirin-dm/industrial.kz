@@ -16,7 +16,7 @@ Index Tablet Style
         line-height: 1.2;
         margin-bottom: 3vmax;
     }
-    .main-cover .form-search input {max-width: 100%;)
+    .main-cover .form-search input {max-width: 100%;}
     /* Main Company Block */
     .main-clients {
         height: 100vh;
@@ -24,7 +24,7 @@ Index Tablet Style
         background-size: cover;
     }
     .main-clients .logos {
-        display: grid;
+        display: inline-grid;
         grid-template-columns: repeat(5, 1fr);
     }
 }

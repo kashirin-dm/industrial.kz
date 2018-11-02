@@ -117,6 +117,10 @@ Mobile Style
     footer div {grid-column: 2;}
     footer h3 {margin-top: 5vmax 0 1vmax;}
     footer ul li {line-height: 2;}
+
+
+    /* Some products */
+    .some-items h3 {font-size: 3.5vmax;}
 }
 /*
 -------------------------- for-phone-only */
