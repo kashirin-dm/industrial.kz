@@ -223,14 +223,16 @@
             <div class="loader loader-default"></div>
             <div id="map-yandex"></div>
         </div>
-        <div class="contacts">
-            <h2>ТОО «Industrial Energy JSC»</h2>
+        <div class="contacts" itemscope itemtype="http://schema.org/Organization">
+            <h2 itemprop="name">ТОО «Industrial Energy JSC»</h2>
             <p>
-                Тел.: <a href="+77273565227">+7 (727) 356-52-27</a><br>
-                E-mail: <a href="mailto:sales@industrial.kz">sales@industrial.kz</a>
+                Тел.: <a href="+77273565227" itemprop="telephone">+7 (727) 356-52-27</a><br>
+                E-mail: <a href="mailto:sales@industrial.kz" itemprop="email">sales@industrial.kz</a>
             </p>
-            <p>050031, Алматы, Казахстан<br>
-                пр. Райымбека 496а, пром. база «Жигер»</p>
+            <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="postalCode">050031</span>, <span itemprop="addressLocality">Алматы</span>, Казахстан<br>
+                <span itemprop="streetAddress">пр. Райымбека 496а, пром. база «Жигер»</span>
+            </p>
             <aside class="yandex-button">
                 <script src="//yastatic.net/taxi-widget/ya-taxi-widget.js" async></script>
                 <div class="ya-taxi-widget" data-use-location="true" data-size="s" data-theme="dark" data-title="Вызвать такси" data-point-b="76.845866,43.246347" data-clid="industrial" data-apikey="8d8f0f0031c04547be28b4e2801952c8" data-proxy-url="https://3.redirect.appmetrica.yandex.com/route?start-lat={start-lat}&amp;start-lon={start-lon}&amp;end-lat={end-lat}&amp;end-lon={end-lon}&amp;ref=industrial&amp;appmetrica_tracking_id=1178268795219780156">
@@ -299,7 +301,7 @@
             <span>Нажимая кнопку <q>отправить</q> Вы даёте согласие на обработку и хранение персональных данных</span>
         </form>
     </div>
-    
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js" defer></script>
     <script src="s.industrial.kz/stat/s/animatedModal.js" defer></script>
